@@ -1,4 +1,5 @@
-site_name: documentation
+site_name: Dokumentation
+site_description: Verifleet Dokumentation
 site_url: https://verifleet.github.io/vf-documentation/
 theme:
   name: material
