@@ -5,8 +5,8 @@ theme:
   name: material
   font:
     text: Roboto
-  logo: assets/vf-logo.svg
-  favicon: assets/vf-logo.ico
+  logo: assets/FleetHub_Logo.svg
+  favicon: assets/FleetHub_Logo.ico
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
