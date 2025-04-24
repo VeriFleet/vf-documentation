@@ -1,6 +1,6 @@
 # Start
 
-VeriFleet ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der Algorithmus basiert auf einem KI gestützten System, um Ihnen höchste Sicherheit bei der Führerscheinkontrolle Ihrer Mitarbeiter zu bieten.
+Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der Algorithmus basiert auf einem KI gestützten System, um Ihnen höchste Sicherheit bei der Führerscheinkontrolle Ihrer Mitarbeiter zu bieten.
 
 <div class="grid cards" markdown>
 
@@ -79,3 +79,5 @@ VeriFleet ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der Algo
     </p>
 
 </div>
+
+## Weitere relevante Themen

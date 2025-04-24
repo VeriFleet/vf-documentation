@@ -12,7 +12,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: grey
-      accent: red
+      accent: cyan
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -21,7 +21,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: grey
-      accent: red
+      accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -30,8 +30,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.sections
-    - toc.integrate
+    # - navigation.sections
+    # - toc.integrate
     - search.suggest
     - search.highlight
 
@@ -50,6 +50,26 @@ extra_css:
 #      link: /en/
 #      lang: en
 
+nav:
+  - Home: index.md
+  - Einstieg:
+    - Erste Schritte: GettingStarted/getting-started.md
+    - Kartenführerscheine: GettingStarted/driver-license-card.md
+    - Alte Führerscheine: GettingStarted/driver-license-old.md
+  - Firmen: 
+    - Überblick: Companies/company-management.md
+    - Firma anlegen: Companies/company-create.md
+    - Firma bearbeiten: Companies/company-edit.md
+    - Firma aktivieren/sperren: Companies/company-activate.md
+    - Carano-Import: Companies/company-carano-connection.md
+  - Benutzer:
+    - Überblick: Users/user-management.md
+    - Benutzerliste: Users/user-list.md
+    - Benutzer anlegen: Users/user-create.md
+    - Benutzer bearbeiten: Users/user-edit.md
+    - Benutzerrechte: Users/user-permissions.md
+    - Excel-Import: Users/user-excel-import.md
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -57,6 +77,10 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
+  - pymdownx.blocks.caption
   - pymdownx.details
   - pymdownx.superfences
 
+plugins:
+  - glightbox
+  - search
