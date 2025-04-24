@@ -30,10 +30,13 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.path
-    - navigation.instant
     - navigation.sections
-    - navigation.tracking
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - stylesheets/extra.css
 
 #extra:
 #  alternate:
@@ -49,9 +52,11 @@ theme:
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
