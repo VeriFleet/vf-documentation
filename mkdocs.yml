@@ -1,0 +1,56 @@
+site_name: documentation
+site_url: https://sitename.example
+theme:
+  name: material
+  font:
+    text: Roboto
+  logo: assets/vf-logo.svg
+  favicon: assets/vf-logo.ico
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: grey
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.path
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+
+extra:
+  alternate:
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: English
+      link: /en/
+      lang: en
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
