@@ -2,6 +2,8 @@
 
 Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der Algorithmus basiert auf einem KI gestützten System, um Ihnen höchste Sicherheit bei der Führerscheinkontrolle Ihrer Mitarbeiter zu bieten.
 
+![ShoutOut](images/verifyfleethub.jpg){ border-effect="line" thumbnail="true" width="100%" }
+
 <div class="grid cards" markdown>
 
 - :fontawesome-solid-rocket:{ .icon-xxl .icon-grey }
