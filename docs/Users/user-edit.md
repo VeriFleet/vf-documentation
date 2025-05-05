@@ -23,7 +23,7 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 | **Fahrerunterweisung (Intervall)** | Standard: 180 Tage. Optional veränderbar. |
 | **Geburtsdatum** | Für Dokumentations- oder Prüfzwecke. |
 | **Abteilung / Personalnummer** | Optionale Zusatzdaten. |
-| **Rollen** | Mehrfachauswahl möglich (z. B. `Fahrer`, `Fuhrparkleiter`). |
+| **Rollen** | Mehrfachauswahl möglich (z. B. `Fahrer`, `Fuhrparkleiter`, `Carano-Import berechtigt`, `Zur Nachkontrolle berechtigt`, `Sub-Firmen erstellen (API)`). |
 
 **Aktionen:**
 - **Zurücksetzen**: Setzt alle geänderten Eingaben zurück.
