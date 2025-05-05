@@ -67,7 +67,6 @@ nav:
     - Benutzerliste: Users/user-list.md
     - Benutzer anlegen: Users/user-create.md
     - Benutzer bearbeiten: Users/user-edit.md
-    - Benutzerrechte: Users/user-permissions.md
     - Excel-Import: Users/user-excel-import.md
     - Benutzer-Export: Users/user-export.md
 
