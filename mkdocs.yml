@@ -69,6 +69,9 @@ nav:
     - Benutzer bearbeiten: Users/user-edit.md
     - Excel-Import: Users/user-excel-import.md
     - Benutzer-Export: Users/user-export.md
+  - Nachkontrolle:
+    - Liste der Nachkontrollen: Checks/FollowUpCheckList.md
+    - Nachkontrolle: Checks/FollowUpCheck.md
 
 markdown_extensions:
   - attr_list
