@@ -69,6 +69,7 @@ nav:
     - Benutzer bearbeiten: Users/user-edit.md
     - Benutzerrechte: Users/user-permissions.md
     - Excel-Import: Users/user-excel-import.md
+    - Benutzer-Export: Users/user-export.md
 
 markdown_extensions:
   - attr_list
