@@ -40,7 +40,7 @@ jobs:
               COLOR="#ff0000"
               LOGO="verifleet-logo.svg"
               ;;
-            "fleethub-verify")
+            "fleethub")
               COLOR="#189EDA"
               LOGO="fleethub-logo.svg"
               ;;
