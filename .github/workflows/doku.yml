@@ -1,52 +1,72 @@
-#!/usr/bin/env bash
+name: dokus
 
-set -e
+on:
+  push:
+    branches:
+      - master
+      - main
 
-TARGET_NAME="${TARGET_NAME:-verifleet}"
+permissions:
+  contents: write
 
-case "$TARGET_NAME" in
-  "verifleet")
-    COLOR="#ff0000"
-    LOGO="verifleet-logo.svg"
-    ;;
-  "fleethub")
-    COLOR="#189EDA"
-    LOGO="fleethub-logo.svg"
-    ;;
-  "bamaka")
-    COLOR="#ff0000"
-    LOGO="bamaka-logo.svg"
-    ;;
-  *)
-    echo "Ungültiges Ziel: $TARGET_NAME"
-    exit 1
-    ;;
-esac
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [verifleet, fleethub, bamaka] # Definiere deine Ziel-Konfigurationen
 
-echo "::group::Updating mkdocs.yml for $TARGET_NAME"
+    steps:
+      - uses: actions/checkout@v4
 
-# Setze site_name
-sed -i "s/^site_name:.*/site_name: $TARGET_NAME/" mkdocs.yml
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
 
-# Ersetze theme block vollständig mit printf
-THEME_BLOCK=$(cat <<EOF
-theme:
-  name: material
-  palette:
-    primary: primary
-    accent: $COLOR
-EOF
-)
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-glightbox
 
-# Entferne alte theme-Zeile(n)
-awk '
-  BEGIN { skip=0 }
-  /^theme:/ { print "'$THEME_BLOCK'"; skip=1; next }
-  skip && /^[^[:space:]]/ { skip=0 }
-  !skip
-' mkdocs.yml > mkdocs.tmp && mv mkdocs.tmp mkdocs.yml
+      - name: Configure MkDocs for ${{ matrix.target }}
+        run: |
+          TARGET_NAME="${{ matrix.target }}"
+          COLOR=""
+          LOGO=""
 
-# Setze logo
-sed -i "s#^logo:.*#logo: assets/$LOGO#" mkdocs.yml
+          case "$TARGET_NAME" in
+            "verifleet")
+              COLOR="#ff0000"
+              LOGO="verifleet-logo.svg"
+              ;;
+            "fleethub")
+              COLOR="#189EDA"
+              LOGO="fleethub-logo.svg"
+              ;;
+            "bamaka")
+              COLOR="#ff0000"
+              LOGO="bamaka-logo.svg"
+              ;;
+            *)
+              echo "Ungültiges Ziel: $TARGET_NAME"
+              exit 1
+              ;;
+          esac
 
-echo "::endgroup::"
+          echo "::group::Updating mkdocs.yml for ${{ matrix.target }}"
+          sed -i "s#site_name: .*#site_name: ${{ matrix.target }}#" mkdocs.yml
+          sed -i "s#theme:.*#theme:\n  name: material\n  palette:\n    primary: primary\n    accent: $COLOR#" mkdocs.yml
+          sed -i "s#logo: .*#logo: assets/$LOGO#" mkdocs.yml
+          echo "::endgroup::"
+
+      - name: Build and Deploy ${{ matrix.target }}
+        run: |
+          TARGET_NAME="${{ matrix.target }}"
+          OUTPUT_DIR="site-$TARGET_NAME"
+          mkdocs build -d "$OUTPUT_DIR"
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add "$OUTPUT_DIR"
+          git commit -m "Deploy $TARGET_NAME" || echo "Keine Änderungen zum Übertragen."
+          git push origin HEAD:refs/heads/gh-pages-"$TARGET_NAME" --force
