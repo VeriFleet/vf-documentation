@@ -1,20 +1,20 @@
-name: dokus
-# Nur ein Kommentar
+name: Dokus
+
 on:
   push:
     branches:
-      - master
       - main
+      - master
 
 permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [verifleet, fleethub, bamaka] # Definiere deine Ziel-Konfigurationen
+        target: [verifleet, fleethub, bamaka]
 
     steps:
       - uses: actions/checkout@v4
@@ -26,10 +26,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material
-          pip install mkdocs-glightbox
+          pip install mkdocs-material mkdocs-glightbox
 
-      - name: Configure MkDocs for ${{ matrix.target }}
+      - name: Configure and Build for ${{ matrix.target }}
         run: |
           TARGET_NAME="${{ matrix.target }}"
           COLOR=""
@@ -54,22 +53,44 @@ jobs:
               ;;
           esac
 
-          echo "::group::Updating mkdocs.yml for ${{ matrix.target }}"
-          sed -i "s|site_name: .*|site_name: ${{ matrix.target }}|" mkdocs.yml
-          sed -i "s|theme:.*|theme:\n  name: material\n  palette:\n    primary: primary\n    accent: $COLOR|" mkdocs.yml
-          sed -i "s|logo: .*|logo: assets/$LOGO|" mkdocs.yml
-          echo "::endgroup::"
+          cp mkdocs.yml mkdocs.temp.yml
+          sed -i "s|site_name: .*|site_name: $TARGET_NAME|" mkdocs.temp.yml
+          sed -i "s|logo: .*|logo: assets/$LOGO|" mkdocs.temp.yml
+          sed -i "/theme:/,/^$/c\theme:\n  name: material\n  palette:\n    primary: custom\n    accent: $COLOR" mkdocs.temp.yml
 
-      - name: Build and Deploy ${{ matrix.target }}
+          mkdocs build -f mkdocs.temp.yml -d site/${TARGET_NAME}
+
+      - name: Upload ${{ matrix.target }} site folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ matrix.target }}
+          path: site/${{ matrix.target }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: site
+
+      - name: Flatten site structure
         run: |
-          TARGET_NAME="${{ matrix.target }}"
-          OUTPUT_DIR="site/$TARGET_NAME"
-          mkdocs build -d "$OUTPUT_DIR"
+          mkdir merged_site
+          for dir in site/*; do
+            if [ -d "$dir" ]; then
+              NAME=$(basename "$dir")
+              mv "$dir" "merged_site/$NAME"
+            fi
+          done
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./merged_site
           publish_branch: gh-pages
-          keep_files: true
