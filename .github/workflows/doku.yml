@@ -1,5 +1,5 @@
 name: dokus
-
+# Nur ein Kommentar
 on:
   push:
     branches:
@@ -55,9 +55,9 @@ jobs:
           esac
 
           echo "::group::Updating mkdocs.yml for ${{ matrix.target }}"
-          sed -i "s#site_name: .*#site_name: ${{ matrix.target }}#" mkdocs.yml
-          sed -i "s#theme:.*#theme:\n  name: material\n  palette:\n    primary: primary\n    accent: $COLOR#" mkdocs.yml
-          sed -i "s#logo: .*#logo: assets/$LOGO#" mkdocs.yml
+          sed -i "s|site_name: .*|site_name: ${{ matrix.target }}|" mkdocs.yml
+          sed -i "s|theme:.*|theme:\n  name: material\n  palette:\n    primary: primary\n    accent: $COLOR|" mkdocs.yml
+          sed -i "s|logo: .*|logo: assets/$LOGO|" mkdocs.yml
           echo "::endgroup::"
 
       - name: Build and Deploy ${{ matrix.target }}
