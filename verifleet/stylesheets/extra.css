@@ -1,33 +1,26 @@
-.icon-xl {
-  font-size: 2em;
-}
-
-.icon-xxl {
-  font-size: 3em;
-}
-
-.icon-xxxl {
-  font-size: 4em;
-}
-
-.icon-grey {
-  color: #808080;
-}
-
-/*
-.md-nav__link {
-    color: #000000 !important;
+/* stylesheets/extra.template.css */
+a {
+    color: #ff0000;
   }
-*/
+  a:visited {
+    color: #ff0000;
+  }
+  a:hover {
+    color: darken(#ff0000, 10%);
+  }
+
+  .icon-xl {
+    font-size: 2em;
+  }
   
-.md-nav__link--hover {
-/* color: rgb(0, 155, 155) !important; */
-text-decoration: underline;
-}
-
-.md-nav__link--active {
-/* color: rgb(0, 155, 155) !important; */
-font-weight: bold; 
-}
-
-
+  .icon-xxl {
+    font-size: 3em;
+  }
+  
+  .icon-xxxl {
+    font-size: 4em;
+  }
+  
+  .icon-grey {
+    color: #808080;
+  }

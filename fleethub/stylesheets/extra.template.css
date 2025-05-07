@@ -1,12 +1,12 @@
 /* stylesheets/extra.template.css */
 a {
-    color: #189EDA;
+    color: __LINK_COLOR__;
   }
   a:visited {
-    color: #189EDA;
+    color: __LINK_COLOR__;
   }
   a:hover {
-    color: darken(#189EDA, 10%);
+    color: darken(__LINK_COLOR__, 10%);
   }
 
   .icon-xl {
