@@ -52,7 +52,7 @@ jobs:
               ;;
           esac
 
-          cp mkdocs.yml mkdocs.yml
+          # cp mkdocs.yml mkdocs.yml # wird benötigt, wenn es mehrere mkdocs.yml gibt
 
           # Passe mkdocs config an (falls nötig)
           # sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.yml
