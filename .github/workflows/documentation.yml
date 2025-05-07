@@ -31,6 +31,27 @@ jobs:
       - name: Configure and Build ${{ matrix.target }}
         run: |
           TARGET=${{ matrix.target }}
+
+          # Setze Farbe & Logo je nach Target
+          case "$TARGET" in
+            "verifleet")
+              COLOR="#ff0000"
+              LOGO="verifleet-logo.svg"
+              ;;
+            "fleethub")
+              COLOR="#189EDA"
+              LOGO="fleethub-logo.svg"
+              ;;
+            "bamaka")
+              COLOR="#0A74DA"
+              LOGO="bamaka-logo.svg"
+              ;;
+            *)
+              echo "Unbekanntes Ziel: $TARGET"
+              exit 1
+              ;;
+          esac
+
           cp mkdocs.yml mkdocs.${TARGET}.yml
 
           # Passe mkdocs config an (falls nötig)
