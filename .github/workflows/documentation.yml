@@ -52,15 +52,17 @@ jobs:
               ;;
           esac
 
-          cp mkdocs.yml mkdocs.${TARGET}.yml
+          cp mkdocs.yml mkdocs.yml
 
           # Passe mkdocs config an (falls nötig)
-          # sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.${TARGET}.yml
-          sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.${TARGET}.yml
-          sed -i "s|logo: assets/.*|logo: assets/${LOGO}|" mkdocs.${TARGET}.yml
+          # sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.yml
+          sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.yml
+          sed -i "s|logo: assets/.*|logo: assets/${LOGO}|" mkdocs.yml
+          sed -i "s|accent: .*|accent: ${COLOR}|" mkdocs.yml
+
 
           # Build in Unterverzeichnis
-          mkdocs build -f mkdocs.${TARGET}.yml -d site/${TARGET}
+          mkdocs build -f mkdocs.yml -d site/${TARGET}
 
       - name: Upload site-${{ matrix.target }}
         uses: actions/upload-artifact@v4

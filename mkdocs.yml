@@ -1,12 +1,12 @@
-site_name: Dokumentation
-site_description: Verifleet Dokumentation
-site_url: https://verifleet.github.io/vf-documentation/
+site_name: fleethub
+site_description: Dokumentation
+# site_url: https://verifleet.github.io/vf-documentation/
 theme:
   name: material
   font:
     text: Roboto
-  logo: assets/FleetHub_Logo.svg
-  favicon: assets/FleetHub_Logo.ico
+  logo: assets/fleethub-logo.svg # wird vom github workflow überschrieben
+  # favicon: assets/FleetHub_Logo.ico
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
