@@ -59,8 +59,8 @@ Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der A
 
 <div class="grid cards" markdown>
 
-<a href="Companies/company-management/">
--   :fontawesome-solid-building:{ .icon-xxl .icon-grey }
+
+-  <a href="Companies/company-management/"> :fontawesome-solid-building:{ .icon-xxl .icon-grey }
     <p>
     __Firmen__ <br/>
     Lernen Sie, wie Sie Firmen und Firmenstrukturen einrichten und managen.
