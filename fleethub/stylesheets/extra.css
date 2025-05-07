@@ -1,0 +1,31 @@
+.icon-xl {
+  font-size: 2em;
+}
+
+.icon-xxl {
+  font-size: 3em;
+}
+
+.icon-xxxl {
+  font-size: 4em;
+}
+
+.icon-grey {
+  color: #808080;
+}
+
+.md-nav__link {
+    color: #000000 !important;
+  }
+
+  /*
+  .md-nav__link--hover {
+    color: rgb(0, 155, 155) !important; 
+  }
+
+  .md-nav__link--active {
+    color: rgb(0, 155, 155) !important; 
+    font-weight: bold; 
+  }
+*/
+
