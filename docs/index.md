@@ -66,11 +66,12 @@ Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der A
     Lernen Sie, wie Sie Firmen und Firmenstrukturen einrichten und managen.
     </p>
 </a>
-- :fontawesome-solid-users:{ .icon-xxl .icon-grey } 
+- <a href="Users/user-management/"> :fontawesome-solid-users:{ .icon-xxl .icon-grey } 
     <p>
     __Benutzer/Fahrer__ <br/> 
     Lernen Sie, wie Sie Benutzer im System einrichten und verwalten    
     </p>
+</a>
 - :fontawesome-solid-user-check:{ .icon-xxl .icon-grey }
     <p>
     __Kontrolle planen/anfordern__ <br/>
