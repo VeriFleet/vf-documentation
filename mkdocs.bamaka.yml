@@ -5,7 +5,7 @@ theme:
   name: material
   font:
     text: Roboto
-  logo: assets/bamaka-logo.svg
+  logo: bamaka-logo.svg
   # favicon: assets/FleetHub_Logo.ico
   palette:
     # Palette toggle for light mode

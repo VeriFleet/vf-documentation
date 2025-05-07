@@ -5,7 +5,7 @@ theme:
   name: material
   font:
     text: Roboto
-  logo: assets/verifleet-logo.svg
+  logo: verifleet-logo.svg
   # favicon: assets/FleetHub_Logo.ico
   palette:
     # Palette toggle for light mode
