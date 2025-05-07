@@ -19,14 +19,14 @@
   }
 
   
-  .md-nav__link--hover {
-    /* color: rgb(0, 155, 155) !important; */
-    text-decoration: underline;
-  }
+.md-nav__link--hover {
+/* color: rgb(0, 155, 155) !important; */
+text-decoration: underline;
+}
 
-  .md-nav__link--active {
-    /* color: rgb(0, 155, 155) !important; */
-    font-weight: bold; 
-  }
+.md-nav__link--active {
+/* color: rgb(0, 155, 155) !important; */
+font-weight: bold; 
+}
 
 
