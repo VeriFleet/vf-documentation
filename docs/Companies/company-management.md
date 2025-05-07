@@ -30,7 +30,7 @@ Wenn Sie für die Carano-Anbindung freigeschaltet sind, können Sie die erforder
 Um die Anbindung vorzunehmen, benötigen Sie das **Carano-Kürzel** (auch bekannt als **Carano-ID**) und ein Carano-Login.
 
 !!! tip 
-Sollten Ihnen nicht alle erforderlichen Informationen vorliegen, wenden Sie sich bitte an Ihren Anbieter oder an Ihre zuständige Administratorin bzw. Ihren zuständigen Administrator.
+    Sollten Ihnen nicht alle erforderlichen Informationen vorliegen, wenden Sie sich bitte an Ihren Anbieter oder an Ihre zuständige Administratorin bzw. Ihren zuständigen Administrator.
 
 ## Sub-Firma aus Carano importieren
 
