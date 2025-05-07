@@ -1,10 +1,12 @@
 /* stylesheets/extra.template.css */
+/*
 a {
     color: __LINK_COLOR__;
   }
   a:visited {
     color: __LINK_COLOR__;
   }
+*/
   a:hover {
     color: darken(__LINK_COLOR__, 10%);
   }
