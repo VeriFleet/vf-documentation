@@ -63,8 +63,8 @@ jobs:
           sed -i "s|logo: assets/.*|logo: assets/${LOGO}|" mkdocs.yml
           sed -i "s|accent: .*|accent: ${COLOR}|" mkdocs.yml
           # Erzeuge stylesheets/extra.css mit der Ziel-Linkfarbe
-          sed "s|__HOVER_COLOR__|${HOVER}|g" docs/stylesheets/extra.template.css > docs/stylesheets/extra.css
-          sed "s|__LINK_COLOR__|${COLOR}|g" docs/stylesheets/extra.template.css > docs/stylesheets/extra.css
+          sed -e "s|__HOVER_COLOR__|${HOVER}|g" -e "s|__LINK_COLOR__|${COLOR}|g" docs/stylesheets/extra.template.css > docs/stylesheets/extra.css
+
 
           # Build in Unterverzeichnis
           mkdocs build -f mkdocs.yml -d site/${TARGET}
