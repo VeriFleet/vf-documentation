@@ -26,3 +26,8 @@
     color: rgb(0, 155, 155) !important; /* Beispiel: Orange */
     font-weight: bold; /* Optional: Schrift fett machen */
   }
+
+
+.md-ellipsis {
+    display: none;
+}
