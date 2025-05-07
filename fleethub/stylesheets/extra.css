@@ -8,7 +8,7 @@ a {
   }
 */
   a:hover {
-    color: darken(__HOVER_COLOR__, 10%);
+    color: darken(#189EDA, 10%);
   }
 
   a:active {
