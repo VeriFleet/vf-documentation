@@ -34,7 +34,9 @@ jobs:
           cp mkdocs.yml mkdocs.${TARGET}.yml
 
           # Passe mkdocs config an (falls nötig)
+          # sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.${TARGET}.yml
           sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.${TARGET}.yml
+          sed -i "s|logo: assets/.*|logo: assets/${LOGO}|" mkdocs.${TARGET}.yml
 
           # Build in Unterverzeichnis
           mkdocs build -f mkdocs.${TARGET}.yml -d site/${TARGET}
