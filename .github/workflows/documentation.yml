@@ -46,7 +46,7 @@ jobs:
               ;;
             "bamaka")
               COLOR="#ff0000"
-              HOVER="#ff0000
+              HOVER="#ff0000"
               LOGO="bamaka-logo.svg"
               ;;
             *)
