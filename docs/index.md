@@ -59,22 +59,25 @@ Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der A
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-building:{ .icon-xxl .icon-grey }
+- <a href="/Companies/">
+    :fontawesome-solid-building:{ .icon-xxl .icon-grey }
     <p>
     __Firmen__ <br/>
     Lernen Sie, wie Sie Firmen und Firmenstrukturen einrichten und managen.
     </p>
-- :fontawesome-solid-users:{ .icon-xxl .icon-grey } 
+  </a>
+- <a href="/Users/">
+    :fontawesome-solid-users:{ .icon-xxl .icon-grey } 
     <p>
     __Benutzer/Fahrer__ <br/> 
     Lernen Sie, wie Sie Benutzer im System einrichten und verwalten    
     </p>
-- :fontawesome-solid-user-check:{ .icon-xxl .icon-grey }
+    :fontawesome-solid-user-check:{ .icon-xxl .icon-grey }
     <p>
     __Kontrolle planen/anfordern__ <br/>
     Lernen Sie, wie Sie Kontrollen automatisch oder manuell planen bzw. anfordern.
     </p>
-- :fontawesome-solid-chart-line:{ .icon-xxl .icon-grey } 
+    :fontawesome-solid-chart-line:{ .icon-xxl .icon-grey } 
     <p>
     __Dashboard__ <br/> 
     Lernen Sie, wie Sie auf dem DashBoard Probleme erkennen und die betroffenen Fahrer identifizieren.
