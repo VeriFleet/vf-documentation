@@ -23,9 +23,7 @@ Aufruf der Importfunktion, die weiter unten beschrieben wird.
 
     Bitte beachten Sie, das im Carano-System Firmen IMMER unterhalb eines Mandanten aufgehängt sind. Aus diesem Grund
     müssen Sie
-    1. den Mandanten in
-       <control>%vfProduct%</control>
-       anlegen
+    1. den Mandanten im System anlegen
     2. Im Mandaten Ihre Zugangsdaten eintragen<br> **(Die Zugangsdaten dürfen nur auf Ebene des Mandanten eingetragen
     werden. Tragen Sie die Zugangsdaten nicht in einer bereits aus Carano importierten Firma - also eine Ebene tiefer - ein!)**
     3. Unterhalb des Mandanten die gewünschten Firmen importieren

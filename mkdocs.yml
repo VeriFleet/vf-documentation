@@ -61,7 +61,7 @@ nav:
     - Firma anlegen: Companies/company-create.md
     - Firma bearbeiten: Companies/company-edit.md
     - Firma aktivieren/sperren: Companies/company-activate.md
-    - Carano-Import: Companies/company-carano-connection.md
+    - Carano-Anbindung: Companies/company-carano-connection.md
   - Benutzer:
     - Überblick: Users/user-management.md
     - Benutzerliste: Users/user-list.md
