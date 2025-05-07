@@ -1,12 +1,18 @@
 /* stylesheets/extra.template.css */
+/*
 a {
     color: #ff0000;
   }
   a:visited {
     color: #ff0000;
   }
+*/
   a:hover {
-    color: darken(#ff0000, 10%);
+    color: darken(__HOVER_COLOR__, 10%);
+  }
+
+  a:active {
+    color: #ff0000;
   }
 
   .icon-xl {
