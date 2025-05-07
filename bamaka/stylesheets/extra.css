@@ -7,10 +7,6 @@ a {
     color: #ff0000;
   }
 */
-/* Normaler Link */
-a:link {
-    color: #ff0000 !important;
-  }
   
   /* Hover-Effekt */
   a:hover {

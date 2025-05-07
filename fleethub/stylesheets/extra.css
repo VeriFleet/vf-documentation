@@ -7,10 +7,6 @@ a {
     color: #189EDA;
   }
 */
-/* Normaler Link */
-a:link {
-    color: #189EDA !important;
-  }
   
   /* Hover-Effekt */
   a:hover {
