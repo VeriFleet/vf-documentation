@@ -26,6 +26,15 @@ a {
     border-bottom: 2px solid #ff0000;
   }
 
+  .grid.cards a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+  .grid.cards a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
   .icon-xl {
     font-size: 2em;
   }
