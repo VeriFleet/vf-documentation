@@ -7,12 +7,27 @@ a {
     color: #189EDA;
   }
 */
-  a:hover {
-    color: #189EDA !important; 
-  }
-
-  a:active {
+/* Normaler Link */
+a:link {
     color: #189EDA !important;
+  }
+  
+  /* Hover-Effekt */
+  a:hover {
+    color: #189EDA !important;
+  }
+  
+  /* Aktives Menüelement in der Navigation */
+  .md-nav__link--active,
+  .md-nav__item--active > .md-nav__link {
+    color: #189EDA !important;
+    font-weight: bold;
+  }
+  
+  /* Aktiver Tab (z. B. auf Indexseiten oder in Reitern) */
+  .md-tabs__link--active {
+    color: #189EDA !important;
+    border-bottom: 2px solid #189EDA;
   }
 
   .icon-xl {
