@@ -1,4 +1,4 @@
-name: ci
+name: verifleet-docs
 on:
   push:
     branches:

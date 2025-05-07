@@ -1,0 +1,73 @@
+name: Build and Deploy Multi-Site MkDocs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [verifleet, fleethub]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material mkdocs-glightbox
+
+      - name: Configure and Build ${{ matrix.target }}
+        run: |
+          TARGET=${{ matrix.target }}
+          cp mkdocs.yml mkdocs.${TARGET}.yml
+
+          # Passe mkdocs config an (falls nötig)
+          sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.${TARGET}.yml
+
+          # Build in Unterverzeichnis
+          mkdocs build -f mkdocs.${TARGET}.yml -d site/${TARGET}
+
+      - name: Upload site-${{ matrix.target }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ matrix.target }}
+          path: site/${{ matrix.target }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all built sites
+        uses: actions/download-artifact@v4
+        with:
+          path: site
+
+      - name: Flatten site structure
+        run: |
+          mkdir merged_site
+          for dir in site/*; do
+            name=$(basename "$dir")
+            mv "$dir" "merged_site/$name"
+          done
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./merged_site
+          publish_branch: gh-pages
