@@ -11,6 +11,10 @@ a {
     color: darken(__LINK_COLOR__, 10%);
   }
 
+  a:active {
+    color: __LINK_COLOR__;
+  }
+
   .icon-xl {
     font-size: 2em;
   }
