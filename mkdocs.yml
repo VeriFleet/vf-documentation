@@ -5,14 +5,14 @@ theme:
   name: material
   font:
     text: Roboto
-  logo: assets/fleethub-logo.svg # wird vom github workflow überschrieben
+  logo: assets/verifleet-logo.svg # wird vom github workflow überschrieben
   # favicon: assets/FleetHub_Logo.ico
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: grey
-      accent: cyan
+      accent: red
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -21,7 +21,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: grey
-      accent: cyan
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode

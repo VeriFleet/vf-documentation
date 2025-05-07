@@ -1,0 +1,26 @@
+/* stylesheets/extra.template.css */
+a {
+    color: __LINK_COLOR__;
+  }
+  a:visited {
+    color: __LINK_COLOR__;
+  }
+  a:hover {
+    color: darken(__LINK_COLOR__, 10%);
+  }
+
+  .icon-xl {
+    font-size: 2em;
+  }
+  
+  .icon-xxl {
+    font-size: 3em;
+  }
+  
+  .icon-xxxl {
+    font-size: 4em;
+  }
+  
+  .icon-grey {
+    color: #808080;
+  }
