@@ -8,11 +8,11 @@ a {
   }
 */
   a:hover {
-    color: darken(__HOVER_COLOR__, 10%);
+    color: __HOVER_COLOR__ !important; 
   }
 
   a:active {
-    color: __LINK_COLOR__;
+    color: __LINK_COLOR__ !important;
   }
 
   .icon-xl {
