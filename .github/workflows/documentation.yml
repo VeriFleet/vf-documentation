@@ -69,6 +69,20 @@ jobs:
           # Build in Unterverzeichnis
           mkdocs build -f mkdocs.yml -d site/${TARGET}
 
+          # Verifiziere, dass die Linkfarbe im HTML vorhanden ist
+          if ! grep -r "${COLOR}" "site/${TARGET}"; then
+            echo "❌ Fehler: Linkfarbe ${COLOR} wurde nicht in der HTML-Ausgabe gefunden!"
+            exit 1
+          else
+            echo "✅ Linkfarbe ${COLOR} korrekt in HTML-Ausgabe gefunden."
+          fi
+
+          # Optional: Prüfe, ob extra.css eingebunden wurde
+          if ! grep -r "extra.css" "site/${TARGET}"; then
+            echo "❌ Fehler: stylesheets/extra.css ist nicht in der HTML-Ausgabe verlinkt!"
+            exit 1
+          fi
+
       - name: Upload site-${{ matrix.target }}
         uses: actions/upload-artifact@v4
         with:
