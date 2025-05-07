@@ -56,7 +56,7 @@ jobs:
 
           # Passe mkdocs config an (falls nötig)
           # sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.yml
-          sed -i "s|site_name: .*|site_name: ${TARGET}|" mkdocs.yml
+          sed -i "s|site_name: .*|site_name: Dokumentation|" mkdocs.yml
           sed -i "s|logo: assets/.*|logo: assets/${LOGO}|" mkdocs.yml
           sed -i "s|accent: .*|accent: ${COLOR}|" mkdocs.yml
 
