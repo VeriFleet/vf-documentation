@@ -182,7 +182,7 @@ Geben Sie die Daten für die neue Firma möglichst vollständig ein (Name, Stra�
     Sollten Sie Pflichtfelder nicht füllen, werden Sie vom System durch eine Meldung darauf
     hingewiesen.
 
-![DashBoard](images/vfDashboardFirmaNew.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/DashboardFirmaNew.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 5. Speichern der neuen Firma
 
