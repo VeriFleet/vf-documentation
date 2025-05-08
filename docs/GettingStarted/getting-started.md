@@ -14,7 +14,7 @@ Das DashBoard hat verschiedene Bereiche, in denen Sie die wichtigsten Informatio
 Systems und der
 Kontrollen finden. Die Bereiche sind auf dem Bild unten markiert und werden im Folgenden erläutert.
 
-![DashBoard](images/vfDashboardOverview.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/Dashboard.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 1. Firmensuche / -auswahl
 
@@ -81,17 +81,9 @@ nach 7 Tagen wiederholt zur Prüfung aufgefordert und Sie erhalten als Fuhrparkl
 Info per Mail.
 Durch Klick auf einen Benutzer, können Sie in dessen Detaildaten springen.
 
-### 8. Liste fehlende Kontrollmerkmale
+### 8. Nachkontrolle
 
-Die Liste fehlende Kontrollmerkmale zeigt Benutzer an, für die weder eine Führerscheinnummer noch
-eine Siegelnummer
-in den Daten gepflegt ist. Dies führt dazu, dass diese Fahrer keine Aufforderung zur
-Führerscheinkontrolle erhalten.
-Klicken Sie auf den Benutzer, um in dessen Detaildaten zu gelangen und pflegen Sie die notwendigen
-Daten schnellstmöglich
-nachträglich ein. Sobald ein Fahrer "prüfbar", erhält er vom System automatisch eine
-Aufforderung zur
-Führerscheinkontrolle.
+Die Nachkontrolle zeigt an, welche Fahrer die Kantrolle nicht erfolgreich abgeschlossen haben. Für diese Benutzer muss eine manuelle Nachkontrolle durchgeführt werden, in der ein Mensch entscheidet, ob die Prüfung als erfolgreich einzustufen ist oder der Benutzer kontaktiert werden muss.
 
 !!! warning
     Benutzer die "nicht prüfbar" oder "nicht erreichbar" sind, erhalten keine
@@ -115,7 +107,7 @@ Um in der Liste zu suchen, geben Sie den gesuchten Text in das Suchfeld oberhalb
 Um einen neuen Datensatz anzulegen klicken Sie oben links, oberhalb der Liste auf den Button "+ Neuer
 Benutzer,etc.".
 
-![DashBoard](images/vfListView.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/listenansichten.png){ border-effect="line" thumbna1il="true" width="500"}
 
 Falls es für den betrachteten Datenbereich ein Import-/Export-Funktion gibt, kann diese über die Buttons
 oberhalb der Liste gestartet werden. Ebenfalls findet sich dort (falls verfügbar) ein Button für die
@@ -148,13 +140,13 @@ definiert werden (z.B. Carano).
 
 Melden Sie sich am System an, so dass Sie das DashBoard sehen.
 
-![DashBoard](images/vfDashboard.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/1-Firma_anlegen_anmelden.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Firma (aktuelle) aufrufen
 
 Klicken Sie links im Menü auf "Firma", um die Stammdaten der aktuellen Firma anzuzeigen.
 
-![DashBoard](images/vfDashboardMenFirma.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/2-Firma_anlegen_aktuelle_Firma_aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Neue (Sub-)Firma anlegen
 
@@ -163,7 +155,7 @@ anlegen".
 
 Damit wird eine neue Firma unterhalb der aktuellen Firma erzeugt.
 
-![DashBoard](images/vfDashboardFirma.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Daten der neuen Firma erfassen
 
@@ -182,13 +174,13 @@ Geben Sie die Daten für die neue Firma möglichst vollständig ein (Name, Stra�
     Sollten Sie Pflichtfelder nicht füllen, werden Sie vom System durch eine Meldung darauf
     hingewiesen.
 
-![DashBoard](images/DashboardFirmaNew.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/4-Firma-neu_Daten_erfassen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 5. Speichern der neuen Firma
 
 Klicken Sie rechts unten auf den Button "Speichern", um die neue Firma zu speichern.
 
-![DashBoard](images/vfDashboardFirmaNewSave.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
 
 !!! tip
     Weiterführende Informationen zur Verwaltung von Firmen finden Sie unter [Firmenverwaltung](../Companies/company-management.md).
