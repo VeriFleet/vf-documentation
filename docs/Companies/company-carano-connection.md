@@ -43,7 +43,7 @@ aus.
 3. Tragen Sie die Zugangsdaten in den dafür vorgesehenen Bereich ein.
 4. Speichern Sie die Änderungen durch Klick auf den Button "Speichern".
 
-![DashBoard](images/vfCaranoCredentials.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Sie sehen die Eingabefelder für die Carano-Anbindung nur, wenn Sie die notwendigen Benutzer-Berechtigungen
@@ -55,13 +55,13 @@ aus.
 Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen unterhalb der
 Firmendaten ein neuer Menüpunkt "Sub-Firma aus Carano importieren" zur Verfügung.
 
-![DashBoard](images/vfCaranoImport1.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 ### Carano-Import aufrufen
 
 Klicken Sie auf den neuen Menüpunkt, um den Carano-Import Dialog zu öffnen.
 
-![DashBoard](images/vfCaranoImport2.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 Sie können im Carano-Import Dialog durch Eingabe eines Suchbegriffs in der Suchzeile nach Firmen suchen. Dies
 ermöglicht ein einfacheres Auffinden der zu synchronisierenden Firmen, wenn viele Firmen in der Liste aufgeführt sind.
@@ -73,7 +73,7 @@ Klicken Sie bei den zu synchronisierenden Firmen auf den Button "Importieren" hi
 des Buttons ändert sich in "OK". Sie können Ihre Auswahl durch nochmaliges Klicken rückgängig machen. Klicken Sie
 abschließend rechts unten auf "OK", um Ihre Auswahl zu bestätigen.
 
-![DashBoard](images/vfCaranoImport3.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/4-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Firmen die bereits synchronisiert werden, sind durch die Aufschrift "Sync" auf dem Button hinter dem
@@ -88,7 +88,7 @@ Wählen Sie im folgenden Dialog, ob Sie die Firma aktiv oder gesperrt importiere
     Führerscheins. Es wird ausdrücklich empfohlen Firmen immer zunächst "gesperrt" zu importieren und nach Prüfung
     der Import-Daten auf "aktiv" zu setzen.
 
-![DashBoard](images/vfCaranoImport4.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/5-Warnung-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 #### 4. Import erfolgreich?
 
@@ -96,12 +96,10 @@ Ein erfolgreicher Import wird durch eine entsprechnde Meldung des Systems bestä
 erfolgreich sein, prüfen Sie Ihre Zugriffsdaten oder wenden Sie sich an Ihren Support. Bestätigen Sie den Dialog
 mit "OK".
 
-![DashBoard](images/vfCaranoImport5.png){ border-effect="line" thumbnail="true" width="500" }
-
 ### Import-Kennzeichen in der Suchliste
 
 Nachdem Sie eine Firma zur Synchronisation mit Carano importiert haben, hat die Firma in der Firmen-Suche ein
 entsprechendes Kennzeichen. So erkennen Sie Firmen, die mit Carano synchronisisert werden bereits bei der
 Firmen-Auswahl bzw. bei der Firmen-Suche.
 
-![DashBoard](images/vfCaranoImport6.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/6-Carano-sync-Kennzeichen.png){ border-effect="line" thumbnail="true" width="500" }
