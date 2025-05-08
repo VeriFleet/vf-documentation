@@ -191,14 +191,14 @@ Klicken Sie rechts unten auf den Button "Speichern", um die neue Firma zu speich
 
 Klicken Sie nach dem Anmelden links im Menü auf den Eintrag "Benutzer".
 
-![DashBoard](images/vfDashboardMenBenutzer.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/1-Fahrer-anlegen_Benutzerliste-aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Neuen Benutzer anlegen
 
 Es wird die Benutzer-Liste angezeigt. Falls noch keine Benutzer existieren ist diese leer.
 Klicken Sie oberhalb der Liste auf den Button "Neuer Benutzer".
 
-![DashBoard](images/vfDashboardBenutzerListe.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/2-Fahrer-anlegen_neuer-Fahrer.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Daten des neuen Benutzers erfassen
 
@@ -221,12 +221,12 @@ Mobilnummer).
     Sollten Sie Pflichtfelder nicht füllen, werden Sie vom System durch eine Meldung darauf
     hingewiesen.
 
-![DashBoard](images/vfDashboardBenutzerNew.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/3-Fahrer-anlegen_Daten-erfassen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Speichern des neuen Benutzers
 
 Klicken Sie unten rechts auf Speichern, um den Fahrer zu speichern.
 
-![DashBoard](images/vfDashboardBenutzerNewSave.png){ border-effect="line" thumbnail="true" width="500"}
+![DashBoard](images/4-Fahrer-anlegen_Daten-speichern.png){ border-effect="line" thumbnail="true" width="500"}
 
 Nachdem der Benutzer gespeichert wurde, wird dieser in der Benutzerliste angezeigt.
