@@ -107,7 +107,7 @@ Um in der Liste zu suchen, geben Sie den gesuchten Text in das Suchfeld oberhalb
 Um einen neuen Datensatz anzulegen klicken Sie oben links, oberhalb der Liste auf den Button "+ Neuer
 Benutzer,etc.".
 
-![DashBoard](images/listenansichten.png){ border-effect="line" thumbna1il="true" width="500"}
+![DashBoard](images/Listenansichten.png){ border-effect="line" thumbna1il="true" width="500"}
 
 Falls es für den betrachteten Datenbereich ein Import-/Export-Funktion gibt, kann diese über die Buttons
 oberhalb der Liste gestartet werden. Ebenfalls findet sich dort (falls verfügbar) ein Button für die
