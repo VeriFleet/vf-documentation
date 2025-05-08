@@ -6,13 +6,13 @@ Eine neue Firma kann immer nur hierarchisch unterhalb einer bereits vorhandenen 
 1. Klicken Sie dazu links im Menü auf den Button "Firma", um die Firmenstammdaten anzuzeigen.
 2. Klicken Sie danach unten in der Ansicht auf "Sub-Firma anlegen".
 
-![Firma bearbeiten](images/vfFirmaBearbeiten.png){ border-effect="line" thumbnail="true" width="500" }
+![Firma bearbeiten](images/1-Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500" }
 
 Danach öffnet sich die Ansicht, um eine neue Firma zu erfassen. Führen Sie hier alle Felder möglichst vollständig aus.
 Es empfiehlt sich, das Prüfinterval im Standard bei 180 Tagen zu belassen.
 Nachdem sie alle Daten eingegeben haben, speichern Sie die neue Firma mit dem "Speichern"-Button unten rechts.
 
-![Firma neu](images/vfFirmaNeu.png){ border-effect="line" thumbnail="true" width="500" }
+![Firma neu](images/2-Firma-anlegen-speichern.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Die neu angelegte Firma wird unterhalb der zuletzt ausgewählten Firma angelegt. In dem sie vorher die passende

@@ -7,10 +7,10 @@ Klicken Sie dazu auf den Schalter am oben links in der Ansicht, in der Sie die F
 
 Klicken Sie nach der Änderung auf Speichern, um die Änderungen zu sichern.
 
-![DashBoard](images/vfFirmaSperrenAktivieren.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/Firma-sperren.png){ border-effect="line" thumbnail="true" width="500" }
 
 ## gesperrte Firmen in der Suchansicht
 
 Gesperrte Firmen werden in der Suchansicht durch einen Tag (gesperrt) gekennzeichnet.
 
-![DashBoard](images/vfFirmaSperrenAktivieren2.png){ border-effect="line" thumbnail="true" width="500" }
+![DashBoard](images/gesperrte_Firma_in_Suchansicht.png){ border-effect="line" thumbnail="true" width="500" }
