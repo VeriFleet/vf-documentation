@@ -90,6 +90,17 @@ plugins:
             Nachkontrollen: Follow-up checks
             Liste der Nachkontrollen: Follow-up check list
             Nachkontrolle: Follow-up check
+            Design & Branding: Design & branding
+            NFC-Siegel: NFC seals
+            Prüfarten: Check types
+            UVV-Unterweisung (E-Learning): UVV instruction (e-learning)
+            Fahrerqualifikationsnachweis (FQN): Driver qualification card (DQC)
+            Reporting: Reporting
+            Administration: Administration
+            Einstellungen (Rollen): Settings (roles)
+            Abrechnung: Billing
+            Mail-OAuth: Mail OAuth
+            Zwei-Faktor-Authentifizierung: Two-factor authentication
 
 nav:
   - Start: index.md
@@ -102,6 +113,7 @@ nav:
       - Firma anlegen: Companies/company-create.md
       - Firma bearbeiten: Companies/company-edit.md
       - Firma aktivieren/sperren: Companies/company-activate.md
+      - Design & Branding: Companies/company-theming.md
       - Carano-Anbindung: Companies/company-carano-connection.md
   - Benutzer:
       - Überblick: Users/user-management.md
@@ -110,6 +122,16 @@ nav:
       - Benutzer bearbeiten: Users/user-edit.md
       - Excel-Import: Users/user-excel-import.md
       - Benutzer-Export: Users/user-export.md
+      - NFC-Siegel: Users/user-nfc-tags.md
+  - Prüfarten:
+      - UVV-Unterweisung (E-Learning): Services/uvv-elearning.md
+      - Fahrerqualifikationsnachweis (FQN): Services/fqn.md
   - Nachkontrollen:
       - Liste der Nachkontrollen: Checks/FollowUpCheckList.md
       - Nachkontrolle: Checks/FollowUpCheck.md
+  - Reporting: Reporting/reporting.md
+  - Administration:
+      - Einstellungen (Rollen): Admin/settings-roles.md
+      - Abrechnung: Admin/invoices.md
+      - Mail-OAuth: Admin/mail-oauth.md
+      - Zwei-Faktor-Authentifizierung: Admin/two-factor.md

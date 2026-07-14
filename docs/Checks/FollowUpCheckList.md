@@ -2,6 +2,9 @@
 
 In diesem Modul wird eine Übersicht aller Benutzer angezeigt, bei denen eine **Nachprüfung erforderlich** ist. Die Nachkontrollen betreffen in der Regel Führerscheinkontrollen (FSK) oder andere regelmäßige Prüfungen.
 
+
+![Nachkontroll-Liste](images/nachkontrolle-queue.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Navigationspfad
 
 1. **Linke Seitenleiste** > **Nachkontrolle**

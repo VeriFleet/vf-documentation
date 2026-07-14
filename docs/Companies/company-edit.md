@@ -26,8 +26,8 @@ Der Status der Firma (Aktiv / Gesperrt) lässt sich oben per Schaltfläche umsch
 Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Konfigurationen:
 
 - **Abrechnungseinstellungen**: Informationen zur Rechnungsstellung und ggf. Abrechnungsart
-- **Backendanpassungen**: Technische Konfigurationen oder spezifische Einstellungen
-- **Mailing-/Clientanpassungen**: Layout, Text oder Verhalten von Benachrichtigungen
+- **Backendanpassungen**: Theme, Logos und Experten-CSS — siehe [Design & Branding](company-theming.md)
+- **Mailing-/Clientanpassungen**: Erscheinungsbild und Absender von Benachrichtigungen — siehe [Design & Branding](company-theming.md)
 - **Carano-Anbindung**: Anbindung an das externe System von Carano, z. B. durch Eingabe einer Carano-ID
 
 ## Sub-Firma verwalten

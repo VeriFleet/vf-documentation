@@ -23,6 +23,7 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 | **Fahrerunterweisung (Intervall)** | Standard: 180 Tage. Optional veränderbar. |
 | **Geburtsdatum** | Für Dokumentations- oder Prüfzwecke. |
 | **Abteilung / Personalnummer** | Optionale Zusatzdaten. |
+| **Siegel-Nummer** | 14-stellige Kennung eines NFC-Siegels — siehe [NFC-Siegel](user-nfc-tags.md). |
 | **Rollen** | Mehrfachauswahl möglich (z. B. `Fahrer`, `Fuhrparkleiter`, `Carano-Import berechtigt`, `Zur Nachkontrolle berechtigt`, `Sub-Firmen erstellen (API)`). |
 
 **Aktionen:**

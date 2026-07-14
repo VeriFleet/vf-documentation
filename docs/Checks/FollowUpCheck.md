@@ -52,3 +52,12 @@ Am unteren Rand der Ansicht stehen drei Buttons zur Verfügung:
 
 Falls das System die Dokumentklasse nicht automatisch erkennen kann, sollte geprüft werden, ob die Bildqualität ausreichend ist. Ggf. ist eine neue Aufnahme erforderlich.
 
+
+### Entscheidung
+
+Prüfen Sie die hochgeladenen Bilder und die erfassten Daten und entscheiden Sie dann:
+
+- **Genehmigen** — die Kontrolle gilt als erfolgreich abgeschlossen. Eine Begründung ist
+  optional.
+- **Ablehnen / Rückfrage** — die Kontrolle wird abgelehnt; eine Begründung (mindestens
+  10 Zeichen) ist Pflicht und wird in der Historie gespeichert.

@@ -38,6 +38,16 @@ Unser System ist eine digitale Führerscheinkontrolle für Ihren Fuhrpark. Der A
     __UVV__ <br/> 
     Unsere App bietet Ihnen ebenfalls die Möglichkeit, die UVV Prüfung über die App abzubilden. Das bedeutet maximale Sicherheit und minimaler Aufwand.
     </p>
+- :fontawesome-solid-id-badge:{ .icon-xxl .icon-grey }
+    <p>
+    __Fahrerqualifikationsnachweis (FQN)__ <br/>
+    Der Qualifikationsnachweis von Berufskraftfahrern (Schlüsselzahl 95) wird automatisch geprüft — mit Frühwarnung vor Ablauf.
+    </p>
+- :fontawesome-solid-chart-line:{ .icon-xxl .icon-grey }
+    <p>
+    __Reporting__ <br/>
+    Compliance, Trends, Qualität, Frühwarnung und Audit — alle Auswertungen als Excel exportierbar.
+    </p>
 - :fontawesome-solid-arrow-right-to-bracket:{ .icon-xxl .icon-grey } 
     <p>
     __Ohne Login__ <br/> 

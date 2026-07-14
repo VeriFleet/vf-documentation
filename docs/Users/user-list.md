@@ -2,6 +2,9 @@
 
 Im Bereich **Benutzer** verwalten Sie alle Fahrer bzw. Nutzer Ihres Fuhrparks. Hier können neue Benutzer angelegt, bestehende Daten eingesehen, kontrolliert und exportiert werden.
 
+
+![Benutzerliste](images/user-list.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Übersicht der Benutzerliste
 
 Die Tabelle zeigt alle registrierten Benutzer samt relevanter Informationen:
