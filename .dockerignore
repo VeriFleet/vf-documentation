@@ -1,0 +1,9 @@
+.git
+site/
+venv/
+path/
+backups/
+*.zip
+tree.txt
+.DS_Store
+mkdocs.yml

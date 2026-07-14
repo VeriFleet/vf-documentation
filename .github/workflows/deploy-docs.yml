@@ -1,0 +1,84 @@
+name: Build & Deploy Docs → hetzner-verifleet-prod
+
+# Vollautomatischer Deploy der Dokumentation.
+#   Push auf main → Image bauen (alle Mandanten x Sprachen) → nach GHCR pushen →
+#   per SSH auf dem Prod-Server neu ziehen und starten.
+#
+# Anders als beim Backend ist Vollautomatik hier vertretbar: rein statische
+# Dateien, kein DB-Zugriff, Rollback = Image-Tag zurücksetzen (siehe README).
+#
+# Der Doku-Container ist NICHT von außen erreichbar (nur internes Docker-Netz);
+# das AdminPanel reicht Requests nach Session-Prüfung durch (/hilfe).
+#
+# Benötigte Repository-Secrets:
+#   DOCS_DEPLOY_SSH_KEY   privater Key, dessen public-Key auf dem Server mit
+#                         Forced Command (/root/deploy-docs.sh) hinterlegt ist
+#   DOCS_DEPLOY_HOST      z.B. 49.13.45.139
+#   DOCS_DEPLOY_USER      z.B. root
+#   DOCS_DEPLOY_KNOWN_HOSTS  Ausgabe von `ssh-keyscan -H <host>`
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-docs-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE: ghcr.io/verifleet/verifleet-docs
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Floatender main-Tag (Auto-Deploy zieht immer :main) + unveränderlicher SHA
+      # als Rollback-Anker.
+      - name: Build & Push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:main
+            ${{ env.IMAGE }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    needs: build-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DOCS_DEPLOY_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          echo "${{ secrets.DOCS_DEPLOY_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      # Der Server-Key ist per Forced Command an /root/deploy-docs.sh gebunden;
+      # das gesendete Kommando ist daher irrelevant, wir übergeben den SHA nur
+      # informativ (das Skript kann ihn per SSH_ORIGINAL_COMMAND lesen).
+      - name: Deploy on server
+        run: |
+          ssh -i ~/.ssh/id_deploy \
+            "${{ secrets.DOCS_DEPLOY_USER }}@${{ secrets.DOCS_DEPLOY_HOST }}" \
+            "deploy-docs ${{ github.sha }}"
