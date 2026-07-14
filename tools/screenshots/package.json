@@ -1,0 +1,8 @@
+{
+  "name": "verifleet-docs-screenshots",
+  "private": true,
+  "type": "module",
+  "description": "Automatisierte Doku-Screenshots (Playwright) aus dem lokal laufenden AdminPanel",
+  "scripts": { "shoot": "node shoot.mjs" },
+  "dependencies": { "playwright": "^1.61.0" }
+}

@@ -134,3 +134,8 @@ backups/
 *.zip
 .DS_Store
 site/
+
+# Doku-Werkzeuge: lokale Artefakte
+tools/screenshots/node_modules/
+tools/screenshots/out/
+tools/**/__pycache__/
