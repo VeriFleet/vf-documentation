@@ -1,3 +1,37 @@
+/* Gemeinsames Stylesheet für alle Mandanten.
+   Die Markenfarbe kommt aus --brand-color, gesetzt in brand-<tenant>.css.
+   Ersetzt das frühere extra.template.css, dessen Platzhalter (__LINK_COLOR__,
+   __HOVER_COLOR__) per sed im GitHub-Workflow ersetzt wurden. */
+
+a:hover {
+  color: var(--brand-color) !important;
+}
+
+.md-nav__link--hover {
+  text-decoration: underline;
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: var(--brand-color) !important;
+  font-weight: bold;
+}
+
+.md-tabs__link--active {
+  color: var(--brand-color) !important;
+  border-bottom: 2px solid var(--brand-color);
+}
+
+.grid.cards a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.grid.cards a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .icon-xl {
   font-size: 2em;
 }
@@ -13,21 +47,3 @@
 .icon-grey {
   color: #808080;
 }
-
-/*
-.md-nav__link {
-    color: #000000 !important;
-  }
-*/
-  
-.md-nav__link--hover {
-/* color: rgb(0, 155, 155) !important; */
-text-decoration: underline;
-}
-
-.md-nav__link--active {
-/* color: rgb(0, 155, 155) !important; */
-font-weight: bold; 
-}
-
-

@@ -1,0 +1,8 @@
+INHERIT: mkdocs.base.yml
+
+theme:
+  logo: assets/verifleet-logo.svg
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/brand-verifleet.css

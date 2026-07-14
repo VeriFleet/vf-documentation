@@ -1,0 +1,115 @@
+# Gemeinsame Basis-Konfiguration für alle Mandanten.
+# Wird NICHT direkt gebaut — die Mandanten-Overlays (mkdocs.<tenant>.yml) erben
+# hiervon per `INHERIT:` und überschreiben nur Logo und Markenfarbe.
+#
+# Sprachen: de (Standard) + en, über mkdocs-static-i18n mit Suffix-Struktur
+# (seite.md = deutsch, seite.en.md = englisch). Fehlt eine Übersetzung, fällt
+# die Seite auf die deutsche Fassung zurück (fallback_to_default).
+
+site_name: Dokumentation
+site_description: VeriFleet — Dokumentation
+
+# Bewusst KEIN site_url: Die Doku wird vom AdminPanel unter /hilfe/ durchgereicht
+# und muss daher unter beliebigem Basispfad funktionieren. Ohne site_url erzeugt
+# MkDocs ausschließlich relative Links.
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  logo: assets/verifleet-logo.svg   # wird im Overlay je Mandant überschrieben
+  language: de
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: grey
+      toggle:
+        icon: material/weather-night
+        name: Zu dunklem Design wechseln
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      toggle:
+        icon: material/weather-sunny
+        name: Zu hellem Design wechseln
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/brand-verifleet.css   # wird im Overlay je Mandant überschrieben
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - glightbox
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: de
+          name: Deutsch
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Start: Home
+            Einstieg: Getting started
+            Erste Schritte: First steps
+            Kartenführerscheine: Card driving licences
+            Alte Führerscheine: Old driving licences
+            Firmen: Companies
+            Überblick: Overview
+            Firma anlegen: Create a company
+            Firma bearbeiten: Edit a company
+            Firma aktivieren/sperren: Activate / block a company
+            Carano-Anbindung: Carano integration
+            Benutzer: Users
+            Benutzerliste: User list
+            Benutzer anlegen: Create a user
+            Benutzer bearbeiten: Edit a user
+            Excel-Import: Excel import
+            Benutzer-Export: User export
+            Nachkontrollen: Follow-up checks
+            Liste der Nachkontrollen: Follow-up check list
+            Nachkontrolle: Follow-up check
+
+nav:
+  - Start: index.md
+  - Einstieg:
+      - Erste Schritte: GettingStarted/getting-started.md
+      - Kartenführerscheine: GettingStarted/driver-license-card.md
+      - Alte Führerscheine: GettingStarted/driver-license-old.md
+  - Firmen:
+      - Überblick: Companies/company-management.md
+      - Firma anlegen: Companies/company-create.md
+      - Firma bearbeiten: Companies/company-edit.md
+      - Firma aktivieren/sperren: Companies/company-activate.md
+      - Carano-Anbindung: Companies/company-carano-connection.md
+  - Benutzer:
+      - Überblick: Users/user-management.md
+      - Benutzerliste: Users/user-list.md
+      - Benutzer anlegen: Users/user-create.md
+      - Benutzer bearbeiten: Users/user-edit.md
+      - Excel-Import: Users/user-excel-import.md
+      - Benutzer-Export: Users/user-export.md
+  - Nachkontrollen:
+      - Liste der Nachkontrollen: Checks/FollowUpCheckList.md
+      - Nachkontrolle: Checks/FollowUpCheck.md
