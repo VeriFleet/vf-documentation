@@ -65,6 +65,10 @@ jobs:
 
   deploy:
     needs: build-image
+    # Prod-Deploy erst nach dem Server-Setup (deploy/README.md) scharf schalten:
+    # Repo-Variable ENABLE_DOCS_DEPLOY=true setzen. Bis dahin baut jeder Push nur
+    # das Image nach GHCR (gleiches Muster wie ENABLE_PROD_DEPLOY im Backend-Repo).
+    if: ${{ vars.ENABLE_DOCS_DEPLOY == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Prepare SSH
