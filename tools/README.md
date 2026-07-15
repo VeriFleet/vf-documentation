@@ -60,6 +60,16 @@ Sprache über das `.AspNetCore.Culture`-Cookie.
 Env-Variablen: `BASE` (Default `http://localhost:5001`), `EMAIL`, `PW`, `LANGS`, `OUT`,
 `ONLY` (einzelne Route testen).
 
+### Hinweis: Image für den Testserver bauen
+
+Der Testserver ist **x86_64** — beim Build auf Apple Silicon zwingend die Plattform setzen,
+sonst landet ein arm64-Image auf dem Server (`exec format error`, Restart-Loop):
+
+```bash
+docker build --platform linux/amd64 -t verifleet-docs:test .
+docker save verifleet-docs:test | ssh hetzner-verifleet-test 'docker load'
+```
+
 ### 4. In die Doku übernehmen
 
 Die passenden Bilder nach `docs/<Bereich>/images/` kopieren und in den Markdown-Seiten
