@@ -7,6 +7,8 @@ This guide describes how to create a new user in the system.
 1. **Left sidebar** > **Users**
 2. Click **New user**
 
+![Create user](images/user-create.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Form: create user
 
 ### 1. **Choose the user status**

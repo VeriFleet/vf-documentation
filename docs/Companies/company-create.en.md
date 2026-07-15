@@ -12,7 +12,7 @@ The view for entering a new company opens. Fill in all fields as completely as p
 We recommend leaving the check interval at the default of 180 days. After entering all
 data, save the new company with the "Save" button at the bottom right.
 
-![New company](images/2-Firma-anlegen-speichern.png){ border-effect="line" thumbnail="true" width="500" }
+![New company](images/company-create-form.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
     The new company is created below the most recently selected company. By selecting the

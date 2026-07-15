@@ -12,7 +12,7 @@ Danach öffnet sich die Ansicht, um eine neue Firma zu erfassen. Führen Sie hie
 Es empfiehlt sich, das Prüfinterval im Standard bei 180 Tagen zu belassen.
 Nachdem sie alle Daten eingegeben haben, speichern Sie die neue Firma mit dem "Speichern"-Button unten rechts.
 
-![Firma neu](images/2-Firma-anlegen-speichern.png){ border-effect="line" thumbnail="true" width="500" }
+![Firma neu](images/company-create-form.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
     Die neu angelegte Firma wird unterhalb der zuletzt ausgewählten Firma angelegt. In dem sie vorher die passende

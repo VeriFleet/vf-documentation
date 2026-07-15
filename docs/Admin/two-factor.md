@@ -10,8 +10,11 @@ Benutzers gesendet wird.
 Ob 2FA verpflichtend ist, legen Sie **je Firma** fest:
 
 1. Öffnen Sie **Firma bearbeiten**.
-2. Aktivieren Sie die Option **„2FA erzwingen"**.
+2. Aktivieren Sie in den Stammdaten die Option
+   **„2-Faktor-Authentifizierung erzwingen (rekursiv)"**.
 3. Speichern Sie die Änderung.
+
+Die Einstellung wirkt **rekursiv** — sie gilt automatisch auch für alle Unterfirmen.
 
 Ab sofort durchlaufen alle Benutzer dieser Firma bei der Anmeldung die
 Zwei-Faktor-Prüfung.

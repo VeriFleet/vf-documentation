@@ -2,6 +2,8 @@
 
 In diesem Bereich verwalten Sie zentrale Informationen zur aktuell ausgewählten Firma. Hier können Sie Stammdaten ändern, zusätzliche Einstellungen konfigurieren und Sub-Firmen verwalten.
 
+![Firma bearbeiten](images/company-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Übersicht
 
 Die Firmenbearbeitungsmaske ist in zwei Hauptbereiche unterteilt:
@@ -25,10 +27,20 @@ Der Status der Firma (Aktiv / Gesperrt) lässt sich oben per Schaltfläche umsch
 
 Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Konfigurationen:
 
-- **Abrechnungseinstellungen**: Informationen zur Rechnungsstellung und ggf. Abrechnungsart
-- **Backendanpassungen**: Theme, Logos und Experten-CSS — siehe [Design & Branding](company-theming.md)
-- **Mailing-/Clientanpassungen**: Erscheinungsbild und Absender von Benachrichtigungen — siehe [Design & Branding](company-theming.md)
-- **Carano-Anbindung**: Anbindung an das externe System von Carano, z. B. durch Eingabe einer Carano-ID
+- **Abrechnungseinstellungen**: Abrechnungsart (keine / individuell / vererbt) — siehe [Abrechnung](../Admin/invoices.md)
+- **Corporate Identity (Logo & Farben)**: eigenes Branding oder von der übergeordneten Firma erben — siehe [Design & Branding](company-theming.md)
+- **Backendanpassungen**: Experten-CSS für die Oberfläche — siehe [Design & Branding](company-theming.md)
+- **Mailing/-Clientanpassungen**: Mail-Template-Anpassung oder Vererbung — siehe [Design & Branding](company-theming.md)
+- **Carano-Anbindung**: Anbindung an das externe Carano-System — siehe [Carano-Anbindung](company-carano-connection.md)
+- **Mail-Konto**: eigenes Firmen-Postfach (Microsoft 365 / Google) als Mail-Absender verbinden
+- **Nachkontrolle: Score-Schwellen**: Schwellwerte, ab denen Kontrollen automatisch genehmigt bzw. zur Nachkontrolle gegeben werden
+- **Erinnerungen & Führerschein-Ablauf**: Erinnerungs-Intervalle und Vorwarnzeit vor Ablauf des Führerscheins
+- **Datenaufbewahrung**: Aufbewahrungsfristen für Daten dieser Firma
+- **Mail-Vorlagen**: Texte der versendeten E-Mails je Firma anpassen
+
+!!! note
+    Die aufklappbaren Abschnitte erscheinen nur bei **Unterfirmen** (Firmen mit übergeordneter
+    Firma) und nur, wenn Ihr Benutzer die jeweilige Berechtigung besitzt.
 
 ## Sub-Firma verwalten
 

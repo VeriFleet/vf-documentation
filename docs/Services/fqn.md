@@ -8,7 +8,7 @@ Für Berufskraftfahrer prüft das System zusätzlich zur Führerscheinkontrolle 
 ## Voraussetzung: Service buchen
 
 Die FQN-Prüfung ist ein buchbarer Service. Er wird je Firma unter
-**Firma bearbeiten → Gebuchte Services** aktiviert.
+**Firma bearbeiten → Gebuchte Dienste** als **„FQN-Kontrolle"** aktiviert.
 
 ## Ablauf für den Fahrer
 

@@ -7,6 +7,8 @@ This guide describes how to edit and manage existing users.
 1. **Left sidebar** > **Users**
 2. Select an existing user from the list
 
+![Edit user](images/user-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Editing master data
 
 ### Status
@@ -21,10 +23,11 @@ This guide describes how to edit and manage existing users.
 | **Mobile phone number** | Optional, for SMS notifications. Format: `+49...` |
 | **First / last name** | Full name of the user. |
 | **Licence number** | Captured automatically during the next check. |
-| **Driver instruction (interval)** | Default: 180 days. Adjustable. |
+| **Individual licence-check interval** | If this driver's check interval differs from the company default, enable and set it in days. The instruction (UVV) interval is fixed at one year. |
 | **Date of birth** | For documentation and verification purposes. |
 | **Department / employee ID** | Optional extra data. |
-| **Seal number** | 14-character identifier of an NFC seal — see [NFC seals](user-nfc-tags.md). |
+| **Security seal** | 14-character identifier of an NFC seal — see [NFC seals](user-nfc-tags.md). |
+| **Foreign driving licence** | Enable if the document is not German — the licence-number format validation is then skipped. |
 | **Roles** | Multiple selection possible (e.g. `driver`, `fleet manager`, `Carano import`, `follow-up check`, plus custom roles). |
 
 **Actions:**
@@ -36,9 +39,11 @@ This guide describes how to edit and manage existing users.
 
 Special categories that can be triggered or reviewed for the user:
 
-- **Access & security**
-- **Licence check**
-- **Dangerous actions**
+- **Access & security** (e.g. set/reset password)
+- **Licence check** (manually request a driving-licence check)
+- **FQN check** (request a qualification-card check)
+- **UVV** (request an instruction)
+- **Dangerous actions** (e.g. delete user, move to another company)
 
 ## Checks / instructions
 

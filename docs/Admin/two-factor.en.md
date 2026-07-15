@@ -9,8 +9,11 @@ for a **6-digit verification code** that is sent to the user's e-mail address.
 Whether 2FA is mandatory is configured **per company**:
 
 1. Open **Edit company**.
-2. Enable the option **"Enforce 2FA"**.
+2. In the master data, enable the option **"Enforce two-factor authentication
+   (recursive)"**.
 3. Save the change.
+
+The setting is **recursive** — it automatically applies to all sub-companies as well.
 
 From then on, every user of this company goes through the two-factor check when signing
 in.

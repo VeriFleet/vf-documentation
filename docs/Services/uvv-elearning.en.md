@@ -8,8 +8,8 @@ reminders, escalation and proof of completion are handled by the system.
 ## Prerequisite: book the service
 
 The UVV instruction is a bookable service. It is enabled per company under
-**Edit company → Booked services**. Only then does the system request instructions for
-this company's drivers.
+**Edit company → Booked services** as **"UVV driver instruction"**. Only then does the
+system request instructions for this company's drivers.
 
 ## Flow for the driver
 
@@ -34,5 +34,5 @@ You can see the current state on the dashboard ("UVV pending" / "UVV missed") an
 driver in the **Checks / instructions** tab of the user detail view.
 
 !!! note
-    The instruction interval (default: yearly) is controlled per company or per driver
-    via the driver-instruction interval in the master data.
+    The instruction interval is fixed at **one year** and cannot be changed (statutory
+    UVV requirement).

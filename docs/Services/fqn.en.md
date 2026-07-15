@@ -8,7 +8,7 @@ act (BKrFQG), i.e. the proof of initial qualification or periodic training (form
 ## Prerequisite: book the service
 
 The DQC check is a bookable service. It is enabled per company under
-**Edit company → Booked services**.
+**Edit company → Booked services** as **"FQN check"**.
 
 ## Flow for the driver
 

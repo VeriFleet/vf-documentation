@@ -7,6 +7,8 @@ Diese Anleitung beschreibt, wie ein neuer Benutzer im System angelegt wird.
 1. **Linke Seitenleiste** > **Benutzer**
 2. Klicken Sie auf **Benutzer anlegen**
 
+![Benutzer anlegen](images/user-create.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Formular: Benutzer Anlegen
 
 ### 1. **Benutzerstatus wählen**

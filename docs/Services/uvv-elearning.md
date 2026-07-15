@@ -8,7 +8,7 @@ und Erfolgs-Nachweis steuert das System.
 ## Voraussetzung: Service buchen
 
 Die UVV-Unterweisung ist ein buchbarer Service. Er wird je Firma unter
-**Firma bearbeiten → Gebuchte Services** aktiviert. Erst danach fordert das System
+**Firma bearbeiten → Gebuchte Dienste** als **„UVV-Fahrerunterweisung"** aktiviert. Erst danach fordert das System
 Unterweisungen für die Fahrer dieser Firma an.
 
 ## Ablauf für den Fahrer
@@ -34,5 +34,5 @@ Den aktuellen Stand sehen Sie auf dem Dashboard („UVV ausstehend" / „UVV ver
 sowie je Fahrer im Reiter **Kontrollen / Unterweisungen** der Benutzer-Detailansicht.
 
 !!! note
-    Das Unterweisungs-Intervall (Standard: jährlich) wird je Firma bzw. je Fahrer über das
-    Fahrerunterweisungs-Intervall in den Stammdaten gesteuert.
+    Das Unterweisungs-Intervall liegt fest bei **einem Jahr** und kann nicht geändert
+    werden (gesetzliche Vorgabe der UVV).

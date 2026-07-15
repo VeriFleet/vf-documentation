@@ -7,6 +7,8 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 1. **Linke Seitenleiste** > **Benutzer**
 2. Wählen Sie einen bestehenden Benutzer aus der Liste aus
 
+![Benutzer bearbeiten](images/user-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+
 ## Stammdaten bearbeiten
 
 ### Status
@@ -20,10 +22,11 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 | **Mobil-Telefonnummer** | Optional, für SMS-Benachrichtigungen. Format: `+49...` |
 | **Vorname / Nachname** | Vollständiger Name des Benutzers. |
 | **Führerscheinnummer** | Wird bei der nächsten Kontrolle automatisch erfasst. |
-| **Fahrerunterweisung (Intervall)** | Standard: 180 Tage. Optional veränderbar. |
+| **Individuelles FS-Kontroll-Intervall** | Weicht das Kontroll-Intervall dieses Fahrers vom Firmen-Standard ab, hier aktivieren und in Tagen setzen. Das Unterweisungs-Intervall (UVV) liegt fest bei einem Jahr. |
 | **Geburtsdatum** | Für Dokumentations- oder Prüfzwecke. |
 | **Abteilung / Personalnummer** | Optionale Zusatzdaten. |
-| **Siegel-Nummer** | 14-stellige Kennung eines NFC-Siegels — siehe [NFC-Siegel](user-nfc-tags.md). |
+| **Sicherheitssiegel** | 14-stellige Kennung eines NFC-Siegels — siehe [NFC-Siegel](user-nfc-tags.md). |
+| **Ausländischer Führerschein** | Aktivieren, wenn das Dokument nicht aus Deutschland stammt — die Format-Validierung der Führerscheinnummer wird dann übersprungen. |
 | **Rollen** | Mehrfachauswahl möglich (z. B. `Fahrer`, `Fuhrparkleiter`, `Carano-Import berechtigt`, `Zur Nachkontrolle berechtigt`, `Sub-Firmen erstellen (API)`). |
 
 **Aktionen:**
@@ -34,9 +37,11 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 
 Spezielle Kategorien, die für den Benutzer aktiviert oder geprüft werden können:
 
-- **Zugang & Sicherheit**
-- **FS-Kontrolle**
-- **Gefährliche Aktionen**
+- **Zugang & Sicherheit** (z. B. Passwort setzen/zurücksetzen)
+- **FS-Kontrolle** (Führerscheinkontrolle manuell anfordern)
+- **FQN-Kontrolle** (Qualifikationsnachweis-Prüfung anfordern)
+- **UVV** (Unterweisung anfordern)
+- **Gefährliche Aktionen** (z. B. Benutzer löschen, Firma wechseln)
 
 ## Kontrollen / Unterweisungen
 

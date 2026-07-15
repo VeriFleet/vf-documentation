@@ -11,7 +11,7 @@ For a driver to be checked via NFC seal, the seal number must be stored in their
 data:
 
 1. Open the driver's **user detail view**.
-2. Enter the 14-character identifier of the seal in the **seal number** field
+2. Enter the 14-character identifier of the seal in the **security seal** field
    (hexadecimal characters 0–9, A–F).
 3. Save the user.
 

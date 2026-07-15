@@ -11,7 +11,7 @@ Damit ein Fahrer per NFC-Siegel geprüft werden kann, muss die Siegel-Nummer in 
 Stammdaten hinterlegt sein:
 
 1. Öffnen Sie die **Benutzer-Detailansicht** des Fahrers.
-2. Tragen Sie im Feld **Siegel-Nummer** die 14-stellige Kennung des Siegels ein
+2. Tragen Sie im Feld **Sicherheitssiegel** die 14-stellige Kennung des Siegels ein
    (Hexadezimal-Zeichen 0–9, A–F).
 3. Speichern Sie den Benutzer.
 
