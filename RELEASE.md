@@ -3,6 +3,17 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-08-30 · deploy · fix — Erster Prod-Rollout des Doku-Containers; Healthcheck auf IPv4
+
+- **deploy (Prod `server_hosting_stack`):** Service `docs` mit Image
+  `ghcr.io/verifleet/verifleet-docs:270372e…` und internem Netz `docs` in die Compose
+  aufgenommen (Backup `docker-compose.yml.bak.20260830-183003`); Backend ans Netz gehängt.
+  Hilfe-Panel unter `admin.verifleet.de/hilfe` vom Owner abgenommen.
+- **fix (`deploy/deploy-docs.sh`, `deploy/README.md`):** Healthcheck ruft `127.0.0.1` statt
+  `localhost` auf — nginx im Container lauscht nur auf IPv4, `localhost` löste nach `::1` auf
+  und der Container galt als *unhealthy*. Gleiche Korrektur in der Prod-Compose und in
+  `verifleet/docker-compose.test.yml`.
+
 ### 2026-08-30 · docs — Ergänzungen für VeriFleet Release 2 (de + en)
 
 - **Benutzer bearbeiten:** Mobil-Telefonnummer im internationalen Format (E.164, automatische

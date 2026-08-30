@@ -24,7 +24,7 @@ docker compose up -d docs       >> "$LOG" 2>&1
 
 # Kurzer Health-Check gegen den frisch gestarteten Container.
 sleep 2
-if docker compose exec -T docs wget -q -O /dev/null http://localhost/_health; then
+if docker compose exec -T docs wget -q -O /dev/null http://127.0.0.1/_health; then
     echo "$(date -Is) deploy-docs ok" >> "$LOG"
     echo "docs deployed"
 else

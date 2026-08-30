@@ -81,7 +81,7 @@ kein Zugriff auf `backend` oder `mysql`.
 cd /root/server_hosting_stack
 docker compose pull docs
 docker compose up -d docs
-docker compose exec docs wget -qO- http://localhost/_health   # -> ok
+docker compose exec docs wget -qO- http://127.0.0.1/_health   # -> ok
 ```
 
 ---
