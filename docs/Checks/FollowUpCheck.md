@@ -7,6 +7,9 @@ In der Detailansicht einer Nachkontrolle sehen Sie die erfassten Daten des über
 - **Dokument nicht erkannt**  
   Falls das System das Dokument nicht automatisch identifizieren kann, erscheint eine rote Warnmeldung. In diesem Fall ist eine manuelle Prüfung notwendig.
 
+- **Dokumenttyp**  
+  Der Dokumenttyp wird an der **Vorderseite** festgestellt (z. B. Personalausweis statt Führerschein → Nachkontrolle). Die Rückseite wird getrennt bewertet; ein nicht erkanntes Rückseiten-Bild allein führt nicht zur Ablehnung, wird aber als Hinweis angezeigt.
+
 ### Zusätzliche Daten
 
 | Feld              | Beschreibung |
@@ -61,3 +64,6 @@ Prüfen Sie die hochgeladenen Bilder und die erfassten Daten und entscheiden Sie
   optional.
 - **Ablehnen / Rückfrage** — die Kontrolle wird abgelehnt; eine Begründung (mindestens
   10 Zeichen) ist Pflicht und wird in der Historie gespeichert.
+
+!!! note "Doppelte Nachkontrollen"
+    Reicht ein Fahrer mehrfach Bilder ein, während bereits eine Nachkontrolle offen ist, schließt das System nach einer erfolgreichen Kontrolle die übrigen offenen Nachkontrollen desselben Fahrers automatisch. Sie müssen diese nicht einzeln bearbeiten.

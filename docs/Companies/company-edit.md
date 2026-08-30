@@ -34,7 +34,7 @@ Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Ko
 - **Carano-Anbindung**: Anbindung an das externe Carano-System — siehe [Carano-Anbindung](company-carano-connection.md)
 - **Mail-Konto**: eigenes Firmen-Postfach (Microsoft 365 / Google) als Mail-Absender verbinden
 - **Nachkontrolle: Score-Schwellen**: Schwellwerte, ab denen Kontrollen automatisch genehmigt bzw. zur Nachkontrolle gegeben werden
-- **Erinnerungen & Führerschein-Ablauf**: Erinnerungs-Intervalle und Vorwarnzeit vor Ablauf des Führerscheins
+- **Erinnerungen & Führerschein-Ablauf**: Erinnerungs-Intervalle, Vorwarnzeit vor Ablauf des Führerscheins und der **Standard-Kontaktkanal** (*Erben* / *E-Mail* / *SMS*), über den die Fahrer dieser Firma zur Kontrolle aufgefordert werden. *Erben* übernimmt den Wert der übergeordneten Firma; einzelne Fahrer können den Kanal in ihrem Profil überschreiben (siehe [Benutzer bearbeiten](../Users/user-edit.md))
 - **Datenaufbewahrung**: Aufbewahrungsfristen für Daten dieser Firma
 - **Mail-Vorlagen**: Texte der versendeten E-Mails je Firma anpassen
 

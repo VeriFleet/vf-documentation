@@ -35,7 +35,7 @@ Below the master data you find expandable sections for additional configuration:
 - **Carano connection**: connection to the external Carano system — see [Carano connection](company-carano-connection.md)
 - **Mail account**: connect the company's own mailbox (Microsoft 365 / Google) as mail sender
 - **Manual review: score thresholds**: thresholds for automatic approval vs. follow-up check
-- **Reminders & licence expiry**: reminder intervals and early warning before licence expiry
+- **Reminders & licence expiry**: reminder intervals, early warning before licence expiry and the **default contact channel** (*Inherit* / *Email* / *SMS*) used to request checks from this company's drivers. *Inherit* takes the value from the parent company; individual drivers can override the channel in their profile (see [Editing a user](../Users/user-edit.en.md))
 - **Data retention**: retention periods for this company's data
 - **Mail templates**: customise the texts of the e-mails sent, per company
 
