@@ -3,6 +3,21 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-09-26 · fix — Eingebettete Doku folgt der Anwendung: feste helle Palette, kein Sprachwechsler
+
+- **Branch:** `fix/embedded-help-follows-app` (`ed4383c`). **Noch nicht auf `main`** — ein Push
+  dorthin rollt automatisch nach Produktion; Freigabe des Eigentümers steht aus.
+- **Anlass:** Im Hilfe-Panel des AdminPanels (Radzen-11-Branch) folgte die Doku dem
+  System-Dunkelmodus, die Anwendung nicht; zusätzlich bot die Doku eigene Umschalter für
+  Design und Sprache. Entscheidung des Eigentümers: beides gehört nur in die Hauptanwendung.
+- **Änderung:** `mkdocs.base.yml` — eine Palette (`scheme: default`, ohne `media`/`toggle`);
+  `docs/stylesheets/extra.css` blendet `.md-header__option` (Sprachwechsler von
+  mkdocs-static-i18n) aus. Die Sprache wählt das Gateway über den Pfad (`/en/`).
+- **Staging:** Image lokal gebaut (`docker build --platform linux/amd64 -t verifleet-docs:test .`),
+  per `docker save | ssh … docker load` auf `hetzner-verifleet-test` und nur den Container `docs`
+  neu gestartet (`docker compose -f docker-compose.test.yml up -d docs`); App unberührt.
+- **Rollback:** vorheriges Image `dfb11bc…` (15.07.) auf dem Testserver, `up -d docs` damit.
+
 ### 2026-08-30 · deploy · fix — Erster Prod-Rollout des Doku-Containers; Healthcheck auf IPv4
 
 - **deploy (Prod `server_hosting_stack`):** Service `docs` mit Image
