@@ -19,19 +19,13 @@ theme:
     text: Roboto
   logo: assets/verifleet-logo.svg   # wird im Overlay je Mandant überschrieben
   language: de
+  # Nur das helle Schema, ohne Umschalter und ohne Kopplung an die Systemeinstellung:
+  # Die Doku läuft eingebettet im AdminPanel (Hilfe-Panel), und das hat kein dunkles Design.
+  # Design und Sprache werden allein in der Anwendung gewählt (Eigentümer, 26.09.2026);
+  # die Sprache kommt über den Pfad (/en/) vom Gateway.
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: grey
-      toggle:
-        icon: material/weather-night
-        name: Zu dunklem Design wechseln
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: grey
-      toggle:
-        icon: material/weather-sunny
-        name: Zu hellem Design wechseln
+    scheme: default
+    primary: grey
   features:
     - navigation.tabs
     - navigation.tabs.sticky

@@ -47,3 +47,9 @@ a:hover {
 .icon-grey {
   color: #808080;
 }
+
+/* Eingebettet im AdminPanel: Sprache und Design wählt die Anwendung, nicht die Doku.
+   mkdocs-static-i18n hängt sonst einen Sprachwechsler in den Kopf (.md-header__option). */
+.md-header__option {
+    display: none;
+}
