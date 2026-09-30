@@ -24,7 +24,7 @@ Oben im Abschnitt wählen Sie die Datenquelle:
 
 | Auswahl | Bedeutung |
 |---|---|
-| **Übernehmen** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
+| **Vererbt** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
 | **Manuell** | Die Fahrer werden in der Oberfläche gepflegt. |
 | **Carano** | Die Fahrer kommen aus Carano; der Import läuft alle 4 Stunden. |
 | **REST-API** | Das System des Kunden legt Fahrer an, pflegt sie und verbucht Kontrollen über die Schnittstelle. |
@@ -32,7 +32,7 @@ Oben im Abschnitt wählen Sie die Datenquelle:
 **Vererbung:** Die Datenquelle wird am Mandanten eingestellt und gilt für alle Firmen darunter,
 die keinen eigenen Wert haben. Ist in der ganzen Firmenkette nichts eingestellt, gilt
 **„Manuell“**. Unter der Auswahl sehen Sie, was tatsächlich gilt und woher es kommt, zum Beispiel
-„Wirksam: Carano (übernommen von „Musterfirma GmbH“)“.
+„Wirksam: Carano (vererbt von „Musterfirma GmbH“)“.
 
 ### Datenquelle umstellen
 

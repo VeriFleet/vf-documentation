@@ -24,7 +24,7 @@ At the top of the section you choose the data source:
 
 | Option | Meaning |
 |---|---|
-| **Inherit** | The setting of the parent company applies. Only available for companies with a parent company. |
+| **Inherited** | The setting of the parent company applies. Only available for companies with a parent company. |
 | **Manual** | Drivers are maintained in the user interface. |
 | **Carano** | Drivers come from Carano; the import runs every 4 hours. |
 | **REST API** | The customer's system creates and maintains drivers and books checks via the interface. |

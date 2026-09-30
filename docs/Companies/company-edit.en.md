@@ -32,7 +32,7 @@ Below the master data you find expandable sections for additional configuration:
 - **Corporate identity (logo & colors)**: own branding or inherit from the parent company — see [Design & branding](company-theming.md)
 - **Backend customizations**: expert CSS for the user interface — see [Design & branding](company-theming.md)
 - **Mailing/client customizations**: mail template customisation or inheritance — see [Design & branding](company-theming.md)
-- **Driver data & interface** (formerly "Carano connection"): driver data source (*Inherit* / *Manual* / *Carano* / *REST API*), Carano credentials and API keys for the interface — see [Driver data & interface](company-driver-data.md) and [Carano connection](company-carano-connection.md). Visible to platform administrators only
+- **Driver data & interface** (formerly "Carano connection"): driver data source (*Inherited* / *Manual* / *Carano* / *REST API*), Carano credentials and API keys for the interface — see [Driver data & interface](company-driver-data.md) and [Carano connection](company-carano-connection.md). Visible to platform administrators only
 - **Mail account**: connect the company's own mailbox (Microsoft 365 / Google) as mail sender
 - **Manual review: score thresholds**: thresholds for automatic approval vs. follow-up check
 - **Reminders & licence expiry**: reminder intervals, early warning before licence expiry and the **default contact channel** (*Inherit* / *Email* / *SMS*) used to request checks from this company's drivers. *Inherit* takes the value from the parent company; individual drivers can override the channel in their profile (see [Editing a user](../Users/user-edit.en.md))
