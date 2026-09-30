@@ -32,7 +32,7 @@ Oben im Abschnitt wählen Sie die Datenquelle:
 **Vererbung:** Die Datenquelle wird am Mandanten eingestellt und gilt für alle Firmen darunter,
 die keinen eigenen Wert haben. Ist in der ganzen Firmenkette nichts eingestellt, gilt
 **„Manuell“**. Unter der Auswahl sehen Sie, was tatsächlich gilt und woher es kommt, zum Beispiel
-„Wirksam: Carano (übernommen von Musterfirma GmbH)“.
+„Wirksam: Carano (übernommen von „Musterfirma GmbH“)“.
 
 ### Datenquelle umstellen
 
@@ -147,7 +147,10 @@ Bisher meldeten sich Kundensysteme mit E-Mail-Adresse und Passwort eines Benutze
   Einstellung übernehmen, mit **HTTP 403 `password_login_disabled`** abgelehnt. Die Anmeldung an der
   Oberfläche ist davon **nicht** betroffen.
 
-Der Schalter wird wie die Datenquelle an die Firmen darunter vererbt.
+Der Schalter wird wie die Datenquelle an die Firmen darunter vererbt. Er wirkt **sofort** – nicht
+erst mit „Speichern“; das Ausschalten fragt vorher nach und wird in der Historie des
+Administrators festgehalten. Auch Sitzungen, die ein Kundensystem schon vorher über
+`POST api/auth` geholt hat, werden spätestens nach einer Minute abgewiesen.
 
 **Empfohlenes Vorgehen:**
 

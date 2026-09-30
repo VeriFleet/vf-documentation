@@ -32,7 +32,7 @@ At the top of the section you choose the data source:
 **Inheritance:** The data source is set at the tenant and applies to every company below it that
 has no value of its own. If nothing is set anywhere in the company chain, **"Manual"** applies.
 Below the selection you see what actually applies and where it comes from, for example
-"Effective: Carano (inherited from Sample Company Ltd)".
+"In effect: Carano (inherited from “Sample Company Ltd”)".
 
 ### Changing the data source
 
@@ -134,7 +134,7 @@ for traceability.
 
 Until now, customer systems logged in with a user's e-mail address and password
 (`POST api/auth`) and received a session token. The switch
-**"Allow e-mail and password login at the API (transition)"** controls whether this keeps
+**"Allow e-mail/password login to the API (transition)"** controls whether this keeps
 working:
 
 - **On** (default): the previous way keeps working **in parallel** to the API keys, so the
@@ -143,7 +143,10 @@ working:
   this company and of all companies below it that inherit the setting. Logging in to the user
   interface is **not** affected.
 
-Like the data source, the switch is inherited by the companies below.
+Like the data source, the switch is inherited by the companies below. It takes effect
+**immediately** – not only when you click "Save"; switching it off asks for confirmation first and
+is recorded in the administrator's history. Sessions a customer system obtained earlier via
+`POST api/auth` are rejected within a minute at the latest.
 
 **Recommended procedure:**
 
