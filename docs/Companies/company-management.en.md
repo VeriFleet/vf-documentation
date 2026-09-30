@@ -21,11 +21,18 @@ The currently selected company can be edited at any time via the menu on the lef
 the **"Company"** menu entry. The edit form opens, where you can adjust all company data.
 Make sure all entries are complete and follow the respective requirements.
 
+## Driver data & interface
+
+Where a company's driver data comes from — the user interface, Carano, or the customer's own
+system via the interface (REST API) — is set by platform administrators in the
+**"Driver data & interface"** section of the company settings. The API keys for the interface
+are managed there as well. Details: [Driver data & interface](company-driver-data.md).
+
 ## Carano connection
 
 If you are enabled for the Carano connection, you can enter the required data in the
-company settings. You need the **Carano identifier** (also known as the **Carano ID**) and
-a Carano login.
+company settings ("Driver data & interface" section, data source "Carano"). You need the
+**Carano identifier** (also known as the **Carano ID**) and a Carano login.
 
 !!! tip
     If you do not have all the required information, contact your provider or your

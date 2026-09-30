@@ -3,6 +3,22 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-09-30 · docs — Fahrerdaten & Schnittstelle: Datenquelle je Firma, API-Schlüssel (de + en)
+
+- **Branch:** `docs/driver-data-source-api-keys`, noch nicht auf `main` (ein Push auf `main` baut
+  das Produktions-Image der Doku). Gehört zu VeriFleet #91, #92, #89 und #90 (Teil 1); die
+  Oberfläche dazu entsteht parallel — Screenshots folgen, sobald sie steht.
+- **Neu:** Seite **„Fahrerdaten & Schnittstelle“** / „Driver data & interface“
+  (`Companies/company-driver-data`) — Datenquelle der Fahrer (Übernehmen / Manuell / Carano /
+  REST-API) mit Vererbung und Bestätigungsdialog, Wirkung jeder Umstellung, Carano-Zugangsdaten
+  ohne Passwortanzeige, API-Schlüssel (Übersicht, Erzeugen, technischer API-Benutzer, Widerrufen),
+  Übergangsschalter für die Passwort-Anmeldung an der API mit empfohlenem Vorgehen, Nutzung des
+  Schlüssels durch die Kunden-IT, Oberfläche ohne API-Sitzungen. In der Navigation unter „Firmen“
+  (alle drei Mandanten über `mkdocs.base.yml`), mit englischer Nav-Übersetzung.
+- **Angepasst:** Carano-Anbindung (Voraussetzung Datenquelle „Carano“, neuer Abschnittsname,
+  Passwortfeld), Firma bearbeiten (Abschnittsliste, Ausnahme von „Speichern“), Firmenverwaltung.
+- Build aller 3 Mandanten `--strict`-sauber.
+
 ### 2026-08-30 · deploy · fix — Erster Prod-Rollout des Doku-Containers; Healthcheck auf IPv4
 
 - **deploy (Prod `server_hosting_stack`):** Service `docs` mit Image

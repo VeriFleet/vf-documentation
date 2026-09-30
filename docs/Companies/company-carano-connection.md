@@ -10,6 +10,13 @@ Mit Hilfe der Carano-Verknüpfung werden Ihre Daten (Firmen und Benutzer/Fahrer)
 Sie können dabei entweder einzelne Firmen importieren oder alle Ihre Firmen importieren. Dies entscheiden Sie beim
 Aufruf der Importfunktion, die weiter unten beschrieben wird.
 
+!!! info "Voraussetzung: Datenquelle „Carano“"
+    Die Carano-Anbindung ist Teil des Abschnitts **„Fahrerdaten & Schnittstelle“** (früher
+    „Carano-Anbindung“). Zugangsdaten und Import stehen nur zur Verfügung, wenn dort als
+    **Datenquelle der Fahrer „Carano“** eingestellt ist. Wie Sie die Datenquelle wählen oder eine
+    Firma wieder von Carano lösen — ohne Carano-Kennungen zu verlieren —, lesen Sie unter
+    [Fahrerdaten & Schnittstelle](company-driver-data.md).
+
 !!! note
     Sprechen Sie mit Ihrem Carano-Support oder mit Ihrem Flotten-Management-Dienstleister (wenn dieser Ihre Firma/Firmen)
     über Carano managed, um die notwendigen Zugangsdaten zu erhalten. Sie benötigen:
@@ -39,21 +46,29 @@ aus.
 ### Zugangsdaten eintragen
 
 1. Klicken Sie im Menü auf "Firma".
-2. Öffnen Sie den Bereich "Carano-Anbindung".
-3. Tragen Sie die Zugangsdaten in den dafür vorgesehenen Bereich ein.
-4. Speichern Sie die Änderungen durch Klick auf den Button "Speichern".
+2. Öffnen Sie den Bereich "Fahrerdaten & Schnittstelle" (früher "Carano-Anbindung").
+3. Stellen Sie die Datenquelle der Fahrer auf "Carano" und bestätigen Sie die Umstellung
+   (siehe [Fahrerdaten & Schnittstelle](company-driver-data.md#datenquelle-umstellen)).
+4. Tragen Sie Mandantenkürzel, Benutzer und Passwort in die dafür vorgesehenen Felder ein.
+5. Speichern Sie die Änderungen durch Klick auf den Button "Speichern".
 
 ![DashBoard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
+    Das gespeicherte Carano-Passwort wird nie angezeigt, das Feld bleibt leer. Lassen Sie es leer,
+    bleibt das gespeicherte Passwort erhalten; ein neu eingegebenes Passwort ersetzt es. Mit
+    "Gespeichertes Passwort entfernen" löschen Sie es.
+
+!!! note
     Sie sehen die Eingabefelder für die Carano-Anbindung nur, wenn Sie die notwendigen Benutzer-Berechtigungen
-    besichtzen. Wenden Sie sich ggfls. an Ihren Admnistrator, falls sie den Bereich für die Carano-Anbindung
-    nicht sehen.
+    besitzen ("Carano-Import berechtigt"). Wenden Sie sich ggf. an Ihren Administrator, falls Sie den Bereich
+    "Fahrerdaten & Schnittstelle" nicht sehen.
 
 ## Firmen importieren
 
 Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen unterhalb der
-Firmendaten ein neuer Menüpunkt "Sub-Firma aus Carano importieren" zur Verfügung.
+Firmendaten ein neuer Menüpunkt "Sub-Firma aus Carano importieren" zur Verfügung — nur solange die
+Datenquelle der Fahrer auf "Carano" steht.
 
 ![DashBoard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 

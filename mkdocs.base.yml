@@ -80,6 +80,7 @@ plugins:
             Firma anlegen: Create a company
             Firma bearbeiten: Edit a company
             Firma aktivieren/sperren: Activate / block a company
+            Fahrerdaten & Schnittstelle: Driver data & interface
             Carano-Anbindung: Carano integration
             Benutzer: Users
             Benutzerliste: User list
@@ -114,6 +115,7 @@ nav:
       - Firma bearbeiten: Companies/company-edit.md
       - Firma aktivieren/sperren: Companies/company-activate.md
       - Design & Branding: Companies/company-theming.md
+      - Fahrerdaten & Schnittstelle: Companies/company-driver-data.md
       - Carano-Anbindung: Companies/company-carano-connection.md
   - Benutzer:
       - Überblick: Users/user-management.md

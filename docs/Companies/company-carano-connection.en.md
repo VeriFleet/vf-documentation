@@ -8,6 +8,13 @@ With the Carano link, your data (companies and users/drivers) is updated at leas
 day. You can import individual companies or all of them — you decide when calling the
 import function described below.
 
+!!! info "Prerequisite: data source “Carano”"
+    The Carano connection is part of the **"Driver data & interface"** section (formerly
+    "Carano connection"). Credentials and import are only available when the **driver data
+    source** there is set to **"Carano"**. How to choose the data source or detach a company from
+    Carano again — without losing the Carano IDs — is described under
+    [Driver data & interface](company-driver-data.md).
+
 !!! note
     Talk to your Carano support or your fleet-management provider (if they manage your
     companies via Carano) to obtain the required credentials. You need:
@@ -37,20 +44,29 @@ After [creating a company](company-create.md) that you want to use as the Carano
 ### Entering the credentials
 
 1. Click "Company" in the menu.
-2. Open the "Carano connection" section.
-3. Enter the credentials in the dedicated fields.
-4. Save with the "Save" button.
+2. Open the "Driver data & interface" section (formerly "Carano connection").
+3. Set the driver data source to "Carano" and confirm the change
+   (see [Driver data & interface](company-driver-data.md#changing-the-data-source)).
+4. Enter tenant identifier, user and password in the dedicated fields.
+5. Save with the "Save" button.
 
 ![Dashboard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
-    The Carano fields are only visible with the required user permissions. Contact your
-    administrator if you cannot see the Carano section.
+    The stored Carano password is never displayed; the field stays empty. Leave it empty to
+    keep the stored password; a newly entered password replaces it. "Remove stored password"
+    deletes it.
+
+!!! note
+    The Carano fields are only visible with the required user permission ("Carano import
+    authorized"). Contact your administrator if you cannot see the "Driver data & interface"
+    section.
 
 ## Importing companies
 
 After entering the credentials in the Carano tenant company, a new entry
-"Import sub-company from Carano" appears below the company data.
+"Import sub-company from Carano" appears below the company data — only as long as the driver
+data source is set to "Carano".
 
 ![Dashboard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 

@@ -32,7 +32,7 @@ Below the master data you find expandable sections for additional configuration:
 - **Corporate identity (logo & colors)**: own branding or inherit from the parent company — see [Design & branding](company-theming.md)
 - **Backend customizations**: expert CSS for the user interface — see [Design & branding](company-theming.md)
 - **Mailing/client customizations**: mail template customisation or inheritance — see [Design & branding](company-theming.md)
-- **Carano connection**: connection to the external Carano system — see [Carano connection](company-carano-connection.md)
+- **Driver data & interface** (formerly "Carano connection"): driver data source (*Inherit* / *Manual* / *Carano* / *REST API*), Carano credentials and API keys for the interface — see [Driver data & interface](company-driver-data.md) and [Carano connection](company-carano-connection.md). Visible to platform administrators only
 - **Mail account**: connect the company's own mailbox (Microsoft 365 / Google) as mail sender
 - **Manual review: score thresholds**: thresholds for automatic approval vs. follow-up check
 - **Reminders & licence expiry**: reminder intervals, early warning before licence expiry and the **default contact channel** (*Inherit* / *Email* / *SMS*) used to request checks from this company's drivers. *Inherit* takes the value from the parent company; individual drivers can override the channel in their profile (see [Editing a user](../Users/user-edit.en.md))
@@ -48,7 +48,7 @@ Below the master data you find expandable sections for additional configuration:
 At the bottom of the page:
 
 - **Create sub-company**: manually create a subordinate company
-- **Import sub-company from Carano**: transfer sub-companies from the Carano system (if connected)
+- **Import sub-company from Carano**: transfer sub-companies from the Carano system (only with data source "Carano" and stored credentials)
 
 ## Further actions
 
@@ -58,7 +58,8 @@ At the bottom of the page:
 
 ## Notes
 
-- Changes only take effect after clicking **"Save"**.
-- Some sections (e.g. Carano connection) are only visible with the corresponding
+- Changes only take effect after clicking **"Save"**. Exception: changing the **driver data
+  source** takes effect immediately once you confirm the "Change data source?" dialog.
+- Some sections (e.g. Driver data & interface) are only visible with the corresponding
   permissions or configuration.
 - Blocked companies cannot be edited or used in the system.

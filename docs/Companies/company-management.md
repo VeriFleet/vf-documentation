@@ -23,9 +23,13 @@ Klicken Sie dazu auf den Menüpunkt **„Firma bearbeiten“**.
 Daraufhin öffnet sich die **Bearbeitungsmaske**, in der Sie sämtliche Firmendaten anpassen können.  
 Achten Sie darauf, dass alle Angaben vollständig und gemäß den jeweiligen Vorgaben ausgefüllt sind.
 
+## Fahrerdaten & Schnittstelle
+
+Woher die Fahrerdaten einer Firma kommen — aus der Oberfläche, aus Carano oder über die Schnittstelle (REST-API) aus dem System des Kunden —, legen Plattform-Administratoren im Abschnitt **„Fahrerdaten & Schnittstelle“** der Firmeneinstellungen fest. Dort werden auch die API-Schlüssel für die Schnittstelle verwaltet. Einzelheiten: [Fahrerdaten & Schnittstelle](company-driver-data.md).
+
 ## Carano-Anbindung
 
-Wenn Sie für die Carano-Anbindung freigeschaltet sind, können Sie die erforderlichen Daten im Bereich der Firmeneinstellungen hinterlegen.
+Wenn Sie für die Carano-Anbindung freigeschaltet sind, können Sie die erforderlichen Daten im Bereich der Firmeneinstellungen hinterlegen (Abschnitt „Fahrerdaten & Schnittstelle“, Datenquelle „Carano“).
 
 Um die Anbindung vorzunehmen, benötigen Sie das **Carano-Kürzel** (auch bekannt als **Carano-ID**) und ein Carano-Login.
 

@@ -31,7 +31,7 @@ Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Ko
 - **Corporate Identity (Logo & Farben)**: eigenes Branding oder von der übergeordneten Firma erben — siehe [Design & Branding](company-theming.md)
 - **Backendanpassungen**: Experten-CSS für die Oberfläche — siehe [Design & Branding](company-theming.md)
 - **Mailing/-Clientanpassungen**: Mail-Template-Anpassung oder Vererbung — siehe [Design & Branding](company-theming.md)
-- **Carano-Anbindung**: Anbindung an das externe Carano-System — siehe [Carano-Anbindung](company-carano-connection.md)
+- **Fahrerdaten & Schnittstelle** (früher „Carano-Anbindung“): Datenquelle der Fahrer (*Übernehmen* / *Manuell* / *Carano* / *REST-API*), Carano-Zugangsdaten und API-Schlüssel für die Schnittstelle — siehe [Fahrerdaten & Schnittstelle](company-driver-data.md) und [Carano-Anbindung](company-carano-connection.md). Nur für Plattform-Administratoren sichtbar
 - **Mail-Konto**: eigenes Firmen-Postfach (Microsoft 365 / Google) als Mail-Absender verbinden
 - **Nachkontrolle: Score-Schwellen**: Schwellwerte, ab denen Kontrollen automatisch genehmigt bzw. zur Nachkontrolle gegeben werden
 - **Erinnerungen & Führerschein-Ablauf**: Erinnerungs-Intervalle, Vorwarnzeit vor Ablauf des Führerscheins und der **Standard-Kontaktkanal** (*Erben* / *E-Mail* / *SMS*), über den die Fahrer dieser Firma zur Kontrolle aufgefordert werden. *Erben* übernimmt den Wert der übergeordneten Firma; einzelne Fahrer können den Kanal in ihrem Profil überschreiben (siehe [Benutzer bearbeiten](../Users/user-edit.md))
@@ -47,7 +47,7 @@ Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Ko
 Am unteren Rand der Seite stehen Ihnen folgende Optionen zur Verfügung:
 
 - **Sub-Firma anlegen**: Manuelles Anlegen einer untergeordneten Firma
-- **Sub-Firma aus Carano importieren**: Übernahme von Sub-Firmen aus dem Carano-System (sofern vorhanden und verknüpft)
+- **Sub-Firma aus Carano importieren**: Übernahme von Sub-Firmen aus dem Carano-System (nur bei Datenquelle „Carano“ mit hinterlegten Zugangsdaten)
 
 ## Weitere Aktionen
 
@@ -57,6 +57,6 @@ Am unteren Rand der Seite stehen Ihnen folgende Optionen zur Verfügung:
 
 ## Hinweise
 
-- Änderungen werden erst nach Klick auf **„Speichern“** übernommen.
-- Einige Abschnitte (z. B. Carano-Anbindung) sind nur sichtbar, wenn entsprechende Berechtigungen oder Konfigurationen vorliegen.
+- Änderungen werden erst nach Klick auf **„Speichern“** übernommen. Ausnahme: Das Umstellen der **Datenquelle der Fahrer** wirkt sofort nach Bestätigung des Dialogs „Datenquelle umstellen?“.
+- Einige Abschnitte (z. B. Fahrerdaten & Schnittstelle) sind nur sichtbar, wenn entsprechende Berechtigungen oder Konfigurationen vorliegen.
 - Gesperrte Firmen können nicht bearbeitet oder im System verwendet werden.
