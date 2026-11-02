@@ -1,6 +1,6 @@
 # Settings — custom roles
 
-Under **Settings**, system administrators define custom roles with freely combined
+Under **System › Settings**, system administrators define custom roles with freely combined
 permissions. Custom roles complement the built-in system roles (e.g. "driver",
 "fleet manager") with precisely tailored permission profiles.
 

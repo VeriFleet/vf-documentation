@@ -100,7 +100,7 @@ plugins:
             Administration: Administration
             Einstellungen (Rollen): Settings (roles)
             Abrechnung: Billing
-            Mail-OAuth: Mail OAuth
+            Mail-Anbindung (Microsoft/Google): Mail connection (Microsoft/Google)
             Zwei-Faktor-Authentifizierung: Two-factor authentication
 
 nav:
@@ -135,5 +135,5 @@ nav:
   - Administration:
       - Einstellungen (Rollen): Admin/settings-roles.md
       - Abrechnung: Admin/invoices.md
-      - Mail-OAuth: Admin/mail-oauth.md
+      - Mail-Anbindung (Microsoft/Google): Admin/mail-oauth.md
       - Zwei-Faktor-Authentifizierung: Admin/two-factor.md
