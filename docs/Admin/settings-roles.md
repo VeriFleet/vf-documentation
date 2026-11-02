@@ -1,6 +1,6 @@
 # Einstellungen — eigene Rollen
 
-Unter **Einstellungen** definieren Systemadministratoren eigene Rollen mit frei
+Unter **System › Einstellungen** definieren Systemadministratoren eigene Rollen mit frei
 zusammengestellten Berechtigungen. Eigene Rollen ergänzen die fest eingebauten
 Systemrollen (z. B. „Fahrer", „Fuhrparkleiter") um passgenaue Rechteprofile.
 
