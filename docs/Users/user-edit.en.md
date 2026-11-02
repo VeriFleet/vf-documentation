@@ -21,7 +21,7 @@ This guide describes how to edit and manage existing users.
 |-------|-------------|
 | **E-mail address** | For communication and check requests. |
 | **Mobile phone number** | For SMS notifications. International format with country code, e.g. `+4916012345678` — spaces, dashes and brackets are removed automatically, a leading `00` becomes `+`. |
-| **Preferred contact channel** | Determines whether check requests are sent by **email** or **SMS**. **Default (company)** uses the company's default contact channel (see [Editing a company](../Companies/company-edit.en.md#advanced-settings)). If the chosen channel cannot be used (e.g. SMS without a phone number), the system falls back to the other channel. |
+| **Preferred contact channel** | Determines whether check requests are sent by **email** or **SMS**. **Default (company)** uses the company's default contact channel (see [Editing a company](../Companies/company-edit-drivers.en.md)). If the chosen channel cannot be used (e.g. SMS without a phone number), the system falls back to the other channel. |
 | **First / last name** | Full name of the user. |
 | **Licence number** | Captured automatically during the next check. |
 | **Individual licence-check interval** | If this driver's check interval differs from the company default, enable and set it in days. The instruction (UVV) interval is fixed at one year. |

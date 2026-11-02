@@ -79,6 +79,16 @@ plugins:
             Überblick: Overview
             Firma anlegen: Create a company
             Firma bearbeiten: Edit a company
+            Übersicht: Overview
+            Stammdaten & Dienste: Master data & services
+            Fahrer & Kontrollen: Drivers & checks
+            Kommunikation: Communication
+            Erscheinungsbild: Appearance
+            Plattform: Platform
+            Anleitungen: Guides
+            Neue Kundenfirma einrichten: Set up a new customer company
+            Erinnerungen und Eskalation einstellen: Set up reminders and escalation
+            Eigenes Postfach als Absender: Own mailbox as sender
             Firma aktivieren/sperren: Activate / block a company
             Fahrerdaten & Schnittstelle: Driver data & interface
             Carano-Anbindung: Carano integration
@@ -112,11 +122,21 @@ nav:
   - Firmen:
       - Überblick: Companies/company-management.md
       - Firma anlegen: Companies/company-create.md
-      - Firma bearbeiten: Companies/company-edit.md
+      - Firma bearbeiten:
+          - Übersicht: Companies/company-edit.md
+          - Stammdaten & Dienste: Companies/company-edit-master-data.md
+          - Fahrer & Kontrollen: Companies/company-edit-drivers.md
+          - Kommunikation: Companies/company-edit-communication.md
+          - Erscheinungsbild: Companies/company-edit-appearance.md
+          - Plattform: Companies/company-edit-platform.md
       - Firma aktivieren/sperren: Companies/company-activate.md
       - Design & Branding: Companies/company-theming.md
       - Fahrerdaten & Schnittstelle: Companies/company-driver-data.md
       - Carano-Anbindung: Companies/company-carano-connection.md
+      - Anleitungen:
+          - Neue Kundenfirma einrichten: Companies/guide-new-customer.md
+          - Erinnerungen und Eskalation einstellen: Companies/guide-reminders-escalation.md
+          - Eigenes Postfach als Absender: Companies/guide-own-mailbox.md
   - Benutzer:
       - Überblick: Users/user-management.md
       - Benutzerliste: Users/user-list.md

@@ -16,7 +16,7 @@ This section used to be called **"Carano connection"**.
 
 1. Select the company — usually the **tenant**, i.e. the customer's top-level company.
 2. Click **"Company"** in the menu.
-3. Expand the **"Driver data & interface"** section.
+3. Open the **"Platform"** tab and its **"Where the driver data comes from"** section.
 
 ## Driver data source
 
@@ -24,7 +24,7 @@ At the top of the section you choose the data source:
 
 | Option | Meaning |
 |---|---|
-| **Inherited** | The setting of the parent company applies. Only available for companies with a parent company. |
+| **Like parent company** | The setting of the parent company applies. Only available for companies with a parent company. |
 | **Manual** | Drivers are maintained in the user interface. |
 | **Carano** | Drivers come from Carano; the import runs every 4 hours. |
 | **REST API** | The customer's system creates and maintains drivers and books checks via the interface. |

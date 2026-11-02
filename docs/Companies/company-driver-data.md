@@ -1,6 +1,6 @@
 # Fahrerdaten & Schnittstelle
 
-Im Abschnitt **„Fahrerdaten & Schnittstelle“** der Firmeneinstellungen legen Sie fest, **woher die
+Im Reiter **„Plattform“** der Firmeneinstellungen, Abschnitt **„Woher die Fahrerdaten kommen“**, legen Sie fest, **woher die
 Fahrerdaten einer Firma kommen**: aus der Oberfläche, aus dem Fuhrpark-System Carano oder aus dem
 System des Kunden über die Schnittstelle (REST-API). Für die Schnittstelle verwalten Sie hier
 außerdem die **API-Schlüssel**, mit denen sich das Kundensystem anmeldet.
@@ -16,7 +16,7 @@ Der Abschnitt hieß bisher **„Carano-Anbindung“**.
 
 1. Wählen Sie die Firma aus — in der Regel den **Mandanten**, also die oberste Firma des Kunden.
 2. Klicken Sie im Menü auf **„Firma“**.
-3. Öffnen Sie den aufklappbaren Abschnitt **„Fahrerdaten & Schnittstelle“**.
+3. Öffnen Sie den Reiter **„Plattform“** und dort den Abschnitt **„Woher die Fahrerdaten kommen“**.
 
 ## Datenquelle der Fahrer
 
@@ -24,7 +24,7 @@ Oben im Abschnitt wählen Sie die Datenquelle:
 
 | Auswahl | Bedeutung |
 |---|---|
-| **Vererbt** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
+| **Wie Mutterfirma** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
 | **Manuell** | Die Fahrer werden in der Oberfläche gepflegt. |
 | **Carano** | Die Fahrer kommen aus Carano; der Import läuft alle 4 Stunden. |
 | **REST-API** | Das System des Kunden legt Fahrer an, pflegt sie und verbucht Kontrollen über die Schnittstelle. |

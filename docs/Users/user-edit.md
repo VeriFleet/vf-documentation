@@ -20,7 +20,7 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 |------|--------------|
 | **E-Mail-Adresse** | Zur Kommunikation und Versand von Prüfaufforderungen. |
 | **Mobil-Telefonnummer** | Für SMS-Benachrichtigungen. Internationales Format mit Ländervorwahl, z. B. `+4916012345678` — Leerzeichen, Bindestriche und Klammern werden automatisch entfernt, eine führende `00` wird zu `+`. |
-| **Bevorzugter Kontaktkanal** | Legt fest, ob Kontroll-Aufforderungen per **E-Mail** oder **SMS** versendet werden. **Standard (Firma)** übernimmt den Standard-Kontaktkanal der Firma (siehe [Firma bearbeiten](../Companies/company-edit.md#erweiterte-einstellungen)). Ist der gewählte Kanal nicht bedienbar (z. B. SMS ohne Telefonnummer), weicht das System auf den anderen Kanal aus. |
+| **Bevorzugter Kontaktkanal** | Legt fest, ob Kontroll-Aufforderungen per **E-Mail** oder **SMS** versendet werden. **Standard (Firma)** übernimmt den Standard-Kontaktkanal der Firma (siehe [Firma bearbeiten](../Companies/company-edit-drivers.md)). Ist der gewählte Kanal nicht bedienbar (z. B. SMS ohne Telefonnummer), weicht das System auf den anderen Kanal aus. |
 | **Vorname / Nachname** | Vollständiger Name des Benutzers. |
 | **Führerscheinnummer** | Wird bei der nächsten Kontrolle automatisch erfasst. |
 | **Individuelles FS-Kontroll-Intervall** | Weicht das Kontroll-Intervall dieses Fahrers vom Firmen-Standard ab, hier aktivieren und in Tagen setzen. Das Unterweisungs-Intervall (UVV) liegt fest bei einem Jahr. |
