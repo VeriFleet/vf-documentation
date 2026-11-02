@@ -70,7 +70,7 @@ section of the tenant (below the credentials) you choose what happens instead:
 - **Deactivate** (default): The driver is deactivated and receives no more requests. Their check history is kept. After
   the retention period (default 12 months, adjustable from 1 to 60 months) they are permanently deleted together with
   their check history.
-- **Do nothing**: Drivers who have left stay active unchanged. The import then deletes nothing either.
+- **Do nothing**: Drivers who have left stay active unchanged. The import then deletes nothing either; drivers the import already deactivated stay deactivated and are no longer deleted.
 
 If Carano delivers a driver the import deactivated again, they are reactivated automatically. The import never touches
 manually deactivated drivers.

@@ -72,7 +72,7 @@ des Mandanten (unter den Zugangsdaten) legen Sie fest, was stattdessen passiert:
 - **Deaktivieren** (Standard): Der Fahrer wird deaktiviert und bekommt keine Aufforderungen mehr. Seine
   Kontrollhistorie bleibt erhalten. Nach der eingestellten Aufbewahrungsfrist (Standard 12 Monate, einstellbar von 1 bis
   60 Monaten) wird er mit seiner Kontrollhistorie endgültig gelöscht.
-- **Nichts tun**: Ausgeschiedene Fahrer bleiben unverändert aktiv. Dann löscht der Import auch nichts.
+- **Nichts tun**: Ausgeschiedene Fahrer bleiben unverändert aktiv. Dann löscht der Import auch nichts; bereits vom Import deaktivierte Fahrer bleiben deaktiviert und werden nicht mehr gelöscht.
 
 Liefert Carano einen vom Import deaktivierten Fahrer wieder, wird er automatisch reaktiviert. Manuell deaktivierte Fahrer
 fasst der Import nie an.
