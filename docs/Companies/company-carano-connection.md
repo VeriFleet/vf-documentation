@@ -64,6 +64,24 @@ aus.
     besitzen ("Carano-Import berechtigt"). Wenden Sie sich ggf. an Ihren Administrator, falls Sie den Bereich
     "Fahrerdaten & Schnittstelle" nicht sehen.
 
+## Ausgeschiedene Fahrer
+
+Liefert Carano einen Fahrer nicht mehr, löscht der Import ihn nicht sofort. Im Bereich "Fahrerdaten & Schnittstelle"
+des Mandanten (unter den Zugangsdaten) legen Sie fest, was stattdessen passiert:
+
+- **Deaktivieren** (Standard): Der Fahrer wird deaktiviert und bekommt keine Aufforderungen mehr. Seine
+  Kontrollhistorie bleibt erhalten. Nach der eingestellten Aufbewahrungsfrist (Standard 12 Monate, einstellbar von 1 bis
+  60 Monaten) wird er mit seiner Kontrollhistorie endgültig gelöscht.
+- **Nichts tun**: Ausgeschiedene Fahrer bleiben unverändert aktiv. Dann löscht der Import auch nichts.
+
+Liefert Carano einen vom Import deaktivierten Fahrer wieder, wird er automatisch reaktiviert. Manuell deaktivierte Fahrer
+fasst der Import nie an.
+
+!!! note
+    Nach einer unvollständigen oder auffällig kleinen Lieferung von Carano deaktiviert und löscht der Import nichts und
+    schreibt eine Warnung ins Protokoll. Die Einstellung gilt für alle Firmen unterhalb des Mandanten und ist nur
+    mit dem Recht "Carano-Import berechtigt" änderbar.
+
 ## Firmen importieren
 
 Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen unterhalb der
