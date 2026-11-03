@@ -150,7 +150,7 @@ Klicken Sie links im Menü auf "Firma", um die Stammdaten der aktuellen Firma an
 
 ### 3. Neue (Sub-)Firma anlegen
 
-Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - unten auf "Sub-Firma
+Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - oben rechts auf "Sub-Firma
 anlegen".
 
 Damit wird eine neue Firma unterhalb der aktuellen Firma erzeugt.
@@ -178,7 +178,7 @@ Geben Sie die Daten für die neue Firma möglichst vollständig ein (Name, Stra�
 
 ### 5. Speichern der neuen Firma
 
-Klicken Sie rechts unten auf den Button "Speichern", um die neue Firma zu speichern.
+Klicken Sie oben rechts auf den Button "Speichern", um die neue Firma zu speichern.
 
 ![DashBoard](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
 
