@@ -19,7 +19,7 @@ Tabs from "Communication" onwards exist for **subsidiaries** only.
 "↳ Inherited from Fleet Partner GmbH: 7 days". If nothing is set anywhere up the chain, the default applies. A tab
 title with "n customised" shows how many settings the company sets itself.
 
-**Saving.** All changes apply only after **"Save"** (always visible at the bottom, with a count of unsaved
+**Saving.** All changes apply only after **"Save"** (top right in the page header, with a count of unsaved
 changes). If you leave the page with unsaved changes, the system asks first. What takes effect **immediately**
 without saving is marked **"takes effect immediately"** (data source, API keys, email templates, connecting or
 deleting a mailbox).

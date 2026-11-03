@@ -21,7 +21,7 @@ was gilt und woher es kommt, zum Beispiel „↳ Übernommen von Fleet Partner G
 ganzen Kette nichts eingestellt, gilt der Standardwert. Am Reitertitel zeigt „n angepasst“, wie
 viele Einstellungen die Firma selbst setzt.
 
-**Speichern.** Alle Änderungen gelten erst nach **„Speichern“** (unten fest sichtbar, mit Anzeige der
+**Speichern.** Alle Änderungen gelten erst nach **„Speichern“** (oben rechts in der Kopfzeile, mit Anzeige der
 ungespeicherten Änderungen). Verlassen Sie die Seite mit ungespeicherten Änderungen, fragt das System
 nach. Was ohne Speichern **sofort wirkt**, ist am Abschnitt mit **„wirkt sofort“** gekennzeichnet
 (Datenquelle, API-Schlüssel, Mail-Vorlagen, Postfach verbinden oder löschen).
