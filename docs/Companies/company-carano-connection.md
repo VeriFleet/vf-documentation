@@ -58,7 +58,7 @@ aus.
 5. Speichern Sie die Änderungen durch Klick auf den Button "Speichern" oben rechts. Anders als die Umstellung der
    Datenquelle gelten die Zugangsdaten erst nach dem Speichern.
 
-![DashBoard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
+![Reiter Plattform, Abschnitt „Woher die Fahrerdaten kommen“ mit Datenquelle Carano](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Das gespeicherte Carano-Passwort wird nie angezeigt, das Feld bleibt leer. Lassen Sie es leer,
@@ -92,18 +92,18 @@ fasst der Import nie an.
 
 ## Firmen importieren
 
-Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen unterhalb der
-Kopfzeile oben rechts die Schaltfläche "Tochterfirma aus Carano importieren" zur Verfügung — nur solange die
+Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen in der
+Kopfzeile der Seite, unter dem Firmennamen, die Schaltfläche "Tochterfirma aus Carano importieren" zur Verfügung — nur solange die
 Datenquelle der Fahrer auf "Carano" steht. Sie ist ausgegraut, solange Mandantenkürzel, Benutzer und Passwort fehlen
 oder die Firma selbst schon eine Carano-Kundennummer hat (importierte Firmen).
 
-![DashBoard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Kopfzeile mit der Schaltfläche „Tochterfirma aus Carano importieren“](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 ### Carano-Import aufrufen
 
 Klicken Sie auf die Schaltfläche, um den Dialog "Sub-Firma aus Carano importieren" zu öffnen.
 
-![DashBoard](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Dialog „Sub-Firma aus Carano importieren“ mit Suchfeld und Firmenliste](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 Sie können im Carano-Import Dialog durch Eingabe eines Suchbegriffs in der Suchzeile nach Firmen suchen. Dies
 ermöglicht ein einfacheres Auffinden der zu synchronisierenden Firmen, wenn viele Firmen in der Liste aufgeführt sind.
@@ -115,7 +115,7 @@ Klicken Sie bei den zu synchronisierenden Firmen auf den Button "Importieren" hi
 des Buttons ändert sich in "OK". Sie können Ihre Auswahl durch nochmaliges Klicken rückgängig machen. Klicken Sie
 abschließend rechts unten auf "OK", um Ihre Auswahl zu bestätigen.
 
-![DashBoard](images/4-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Ausgewählte Firma: Schaltfläche zeigt „OK“, bereits synchronisierte Firma zeigt „Sync“](images/4-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Firmen die bereits synchronisiert werden, sind durch die Aufschrift "Sync" auf dem Button hinter dem
@@ -130,7 +130,7 @@ Wählen Sie im folgenden Dialog, ob Sie die Firma aktiv oder gesperrt importiere
     Führerscheins. Es wird ausdrücklich empfohlen Firmen immer zunächst "gesperrt" zu importieren und nach Prüfung
     der Import-Daten auf "aktiv" zu setzen.
 
-![DashBoard](images/5-Warnung-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Zweiter Schritt: Umschalter Aktiv / Gesperrt je Firma](images/5-Warnung-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 #### 4. Import erfolgreich?
 
@@ -140,8 +140,8 @@ mit "OK".
 
 ### Import-Kennzeichen in der Suchliste
 
-Nachdem Sie eine Firma zur Synchronisation mit Carano importiert haben, hat die Firma in der Firmen-Suche ein
-entsprechendes Kennzeichen. So erkennen Sie Firmen, die mit Carano synchronisisert werden bereits bei der
+Nachdem Sie eine Firma zur Synchronisation mit Carano importiert haben, hat die Firma in der Firmen-Auswahl (Feld oben in der Kopfleiste, Dialog „Mandant auswählen“) ein
+entsprechendes Kennzeichen „Carano“, solange ihre Datenquelle Carano ist. So erkennen Sie Firmen, die mit Carano synchronisisert werden bereits bei der
 Firmen-Auswahl bzw. bei der Firmen-Suche.
 
-![DashBoard](images/6-Carano-sync-Kennzeichen.png){ border-effect="line" thumbnail="true" width="500" }
+![Dialog „Mandant auswählen“ mit dem Kennzeichen „Carano“](images/6-Carano-sync-Kennzeichen.png){ border-effect="line" thumbnail="true" width="500" }

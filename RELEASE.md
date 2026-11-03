@@ -3,6 +3,13 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — Hilfebilder Carano-Anbindung neu (de + en)
+
+- **Branch:** `docs/55-carano-leavers`, dann `dev`. Gehört zu VeriFleet #180.
+- **Geändert:** `company-carano-connection`: alle sechs Bilder neu aufgenommen (Reiter Plattform, Kopfzeile mit Import-Schaltfläche,
+  Import-Dialog, Auswahl, Aktiv/Gesperrt, Kennzeichen „Carano“), englische Bilder `*.en.png`; Lage der Schaltfläche (Kopfzeile unter dem
+  Firmennamen) und des Kennzeichens (Dialog „Mandant auswählen“) korrigiert; Hinweis auf die deutschen Dialogtexte in der englischen Oberfläche.
+
 ### 2026-11-03 · docs — Firma bearbeiten: Hilfe Aussage für Aussage gegen Oberfläche und Code geprüft (de + en)
 
 - **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #176.

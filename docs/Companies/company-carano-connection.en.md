@@ -52,7 +52,7 @@ After [creating a company](company-create.md) that you want to use as the Carano
 4. Enter tenant identifier, user and password in the dedicated fields. They appear as soon as the effective data source is "Carano".
 5. Save with the "Save" button at the top right. Unlike switching the data source, the credentials only apply after saving.
 
-![Dashboard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
+![Platform tab, section "Where the driver data comes from" with data source Carano](images/1-Firma_Carano-Anbindung.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     The stored Carano password is never displayed; the field stays empty. Leave it empty to
@@ -87,17 +87,21 @@ manually deactivated drivers.
 ## Importing companies
 
 After entering the credentials in the Carano tenant company, the button
-"Import subsidiary from Carano" is available in the page header at the top right — only as long as the driver
+"Import subsidiary from Carano" is available in the page header, below the company name — only as long as the driver
 data source is set to "Carano". It is greyed out while tenant identifier, user and password are missing or the
 company itself already has a Carano customer number (imported companies).
 
-![Dashboard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Page header with the "Import subsidiary from Carano" button](images/2-Sub-Firma-aus-Carano-importieren.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 ### Opening the Carano import
 
 Click the button to open the "Import sub-company from Carano" dialog.
 
-![Dashboard](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+!!! note
+    The texts inside this dialog (for example "Importieren" and "Abbrechen") and the title of the company selection
+    dialog ("Mandant auswählen") are currently shown in German in every interface language, as the screenshots show.
+
+![Dialog "Import sub-company from Carano" with search field and company list](images/3-Sub-Firma-aus-Carano-importieren.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 You can search for companies by typing into the search bar — useful when the list is long.
 
@@ -108,7 +112,7 @@ Proceed as follows:
 Click the "Import" button behind each company to synchronise; its label changes to "OK".
 Click again to undo. Finally click "OK" at the bottom right to confirm your selection.
 
-![Dashboard](images/4-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Selected company: button shows "OK", already synchronised company shows "Sync"](images/4-Sub-Firma-aus-Carano-importieren.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 !!! note
     Companies already synchronised are marked with "Sync" on the button behind the
@@ -123,7 +127,7 @@ In the following dialog, choose whether to import the company as active or block
     driving-licence check request. It is strongly recommended to always import companies
     as "blocked" first and set them to "active" after verifying the imported data.
 
-![Dashboard](images/5-Warnung-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
+![Second step: Active / Locked switch per company](images/5-Warnung-Sub-Firma-aus-Carano-importieren.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 #### 3. Import successful?
 
@@ -132,7 +136,8 @@ credentials or contact support. Confirm the dialog with "OK".
 
 ### Import marker in the search list
 
-After importing a company for synchronisation, it carries a marker in the company search —
+After importing a company for synchronisation, it carries a "Carano" marker in the company selection (the field
+at the top of the header bar, dialog "Mandant auswählen") for as long as its data source is Carano —
 so you can identify Carano-synchronised companies right at selection time.
 
-![Dashboard](images/6-Carano-sync-Kennzeichen.png){ border-effect="line" thumbnail="true" width="500" }
+![Company selection dialog with the "Carano" marker](images/6-Carano-sync-Kennzeichen.en.png){ border-effect="line" thumbnail="true" width="500" }
