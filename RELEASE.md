@@ -3,6 +3,10 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — `images/verifyfleethub.jpg` gelöscht
+
+- **Branch:** `dev`. Gehört zu VeriFleet #180. Unreferenziertes Fleet-Hub-Mockup mit alter Oberfläche.
+
 ### 2026-11-03 · docs — Hilfebilder der übrigen Bereiche neu aufgenommen (de + en)
 
 - **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
