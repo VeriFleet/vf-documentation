@@ -7,7 +7,7 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 1. **Linke Seitenleiste** > **Benutzer**
 2. Wählen Sie einen bestehenden Benutzer aus der Liste aus
 
-![Benutzer bearbeiten](images/user-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+![Maske „Benutzer bearbeiten“ mit Stammdaten und dem Menü „Aktionen“](images/user-edit.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Stammdaten bearbeiten
 
@@ -23,9 +23,11 @@ Diese Anleitung beschreibt, wie bestehende Benutzer im System bearbeitet und ver
 | **Bevorzugter Kontaktkanal** | Legt fest, ob Kontroll-Aufforderungen per **E-Mail** oder **SMS** versendet werden. **Standard (Firma)** übernimmt den Standard-Kontaktkanal der Firma (siehe [Firma bearbeiten](../Companies/company-edit-drivers.md)). Ist der gewählte Kanal nicht bedienbar (z. B. SMS ohne Telefonnummer), weicht das System auf den anderen Kanal aus. |
 | **Vorname / Nachname** | Vollständiger Name des Benutzers. |
 | **Führerscheinnummer** | Wird bei der nächsten Kontrolle automatisch erfasst. |
+| **Schlüsselzahl 95 gültig bis** | Solange die im Führerschein eingetragene Schlüsselzahl 95 gültig ist, braucht der Fahrer noch keinen eigenen Fahrerqualifizierungsnachweis; bis zu diesem Datum ruhen Aufforderung und Ablaufwarnung. Leer lassen, wenn keine gültige 95 vorliegt. |
 | **Individuelles FS-Kontroll-Intervall** | Weicht das Kontroll-Intervall dieses Fahrers vom Firmen-Standard ab, hier aktivieren und in Tagen setzen. Das Unterweisungs-Intervall (UVV) liegt fest bei einem Jahr. |
 | **Geburtsdatum** | Für Dokumentations- oder Prüfzwecke. |
 | **Abteilung / Personalnummer** | Optionale Zusatzdaten. |
+| **UVV-Kurs** | Der Kurs, der für die UVV-Unterweisung des Fahrers gilt. |
 | **Sicherheitssiegel** | 14-stellige Kennung eines NFC-Siegels — siehe [NFC-Siegel](user-nfc-tags.md). |
 | **Ausländischer Führerschein** | Aktivieren, wenn das Dokument nicht aus Deutschland stammt — die Format-Validierung der Führerscheinnummer wird dann übersprungen. |
 | **Rollen** | Mehrfachauswahl möglich (z. B. `Fahrer`, `Fuhrparkleiter`, `Carano-Import berechtigt`, `Zur Nachkontrolle berechtigt`, `Sub-Firmen erstellen (API)`). |

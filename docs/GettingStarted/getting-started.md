@@ -14,7 +14,7 @@ Das DashBoard hat verschiedene Bereiche, in denen Sie die wichtigsten Informatio
 Systems und der
 Kontrollen finden. Die Bereiche sind auf dem Bild unten markiert und werden im Folgenden erläutert.
 
-![DashBoard](images/Dashboard.png){ border-effect="line" thumbnail="true" width="500"}
+![Dashboard mit den neun markierten Bereichen](images/Dashboard.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 1. Firmensuche / -auswahl
 
@@ -57,8 +57,9 @@ versäumte Kontrollen stattgefunden haben.
 
 ### 5. Kennzahlen
 
-Die Kennzahlen im oberen Bereich der Applikation geben Ihnen einen schnellen Überblick über den
-Status der Führerscheinprüfung und ev. Probleme.
+Die Kennzahlen im oberen Bereich der Applikation geben Ihnen einen schnellen Überblick: die Zahl der Fahrer sowie
+ausstehende und versäumte Kontrollen für FSK (Führerscheinkontrolle), FQN (Fahrerqualifizierungsnachweis) und
+UVV (Unterweisung).
 
 !!! note
     Mit einem Klick auf "Angelegte Fahrer" und "Versäumte Kontrollen"
@@ -70,20 +71,21 @@ Status der Führerscheinprüfung und ev. Probleme.
 
 ### 6. Kontroll-Übersicht
 
-Die Statistik-Grafik, gibt Ihnen einen Überblick, wie viele Kontrollen in den Quartalen des Jahres
-durch Ihre Benutzer durchgeführt wurden.
+Die Statistik „pro Quartal“ gibt Ihnen einen Überblick, wie viele Kontrollen und Unterweisungen in den Quartalen
+des Jahres durch Ihre Benutzer durchgeführt wurden.
 
 ### 7. Liste versäumter Kontrollen
 
-Diese Liste zeigt alle Benutzer an, die Ihre geplante Kontrolle noch nicht durchgeführt haben. Diese
+Die Liste „FSK versäumt“ zeigt alle Benutzer an, die Ihre geplante Kontrolle noch nicht durchgeführt haben. Für FQN
+und UVV gibt es darunter eigene Listen „FQN versäumt“ und „UVV versäumt“. Diese
 fahrer werden
 nach 7 Tagen wiederholt zur Prüfung aufgefordert und Sie erhalten als Fuhrparkleiter parallel eine
 Info per Mail.
 Durch Klick auf einen Benutzer, können Sie in dessen Detaildaten springen.
 
-### 8. Nachkontrolle
+### 8. Nachkontrolle erforderlich
 
-Die Nachkontrolle zeigt an, welche Fahrer die Kantrolle nicht erfolgreich abgeschlossen haben. Für diese Benutzer muss eine manuelle Nachkontrolle durchgeführt werden, in der ein Mensch entscheidet, ob die Prüfung als erfolgreich einzustufen ist oder der Benutzer kontaktiert werden muss.
+Die Liste „Nachkontrolle erforderlich“ zeigt an, welche Fahrer die Kantrolle nicht erfolgreich abgeschlossen haben. Für diese Benutzer muss eine manuelle Nachkontrolle durchgeführt werden, in der ein Mensch entscheidet, ob die Prüfung als erfolgreich einzustufen ist oder der Benutzer kontaktiert werden muss.
 
 !!! warning
     Benutzer die "nicht prüfbar" oder "nicht erreichbar" sind, erhalten keine
@@ -95,8 +97,8 @@ Die Nachkontrolle zeigt an, welche Fahrer die Kantrolle nicht erfolgreich abgesc
 
 ### 9. Liste durchgeführter Kontrollen
 
-Die Liste durchgeführter Kontrollen gibt einen Überblick darüber, welche Benutzer zuletzt eine
-Führerscheinkontrolle durchgeführt haben.
+Die „Kontroll Historie FSK“ gibt einen Überblick darüber, welche Benutzer zuletzt eine
+Führerscheinkontrolle durchgeführt haben; darunter stehen die Historien für FQN und UVV.
 
 ## Listen-Ansichten
 
@@ -191,14 +193,14 @@ Klicken Sie oben rechts in der Kopfzeile auf den Button "Speichern", um die neue
 
 Klicken Sie nach dem Anmelden links im Menü auf den Eintrag "Benutzer".
 
-![DashBoard](images/1-Fahrer-anlegen_Benutzerliste-aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
+![Menüpunkt „Benutzer“ und Benutzerliste](images/1-Fahrer-anlegen_Benutzerliste-aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Neuen Benutzer anlegen
 
 Es wird die Benutzer-Liste angezeigt. Falls noch keine Benutzer existieren ist diese leer.
 Klicken Sie oberhalb der Liste auf den Button "Neuer Benutzer".
 
-![DashBoard](images/2-Fahrer-anlegen_neuer-Fahrer.png){ border-effect="line" thumbnail="true" width="500"}
+![Benutzerliste mit hervorgehobenem Button „Neuer Benutzer“](images/2-Fahrer-anlegen_neuer-Fahrer.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Daten des neuen Benutzers erfassen
 
@@ -221,12 +223,12 @@ Mobilnummer).
     Sollten Sie Pflichtfelder nicht füllen, werden Sie vom System durch eine Meldung darauf
     hingewiesen.
 
-![DashBoard](images/3-Fahrer-anlegen_Daten-erfassen.png){ border-effect="line" thumbnail="true" width="500"}
+![Maske „Benutzer anlegen“ mit ausgefüllten Daten](images/3-Fahrer-anlegen_Daten-erfassen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Speichern des neuen Benutzers
 
 Klicken Sie unten rechts auf Speichern, um den Fahrer zu speichern.
 
-![DashBoard](images/4-Fahrer-anlegen_Daten-speichern.png){ border-effect="line" thumbnail="true" width="500"}
+![Maske „Benutzer anlegen“, Button „Speichern“ unten rechts hervorgehoben](images/4-Fahrer-anlegen_Daten-speichern.png){ border-effect="line" thumbnail="true" width="500"}
 
 Nachdem der Benutzer gespeichert wurde, wird dieser in der Benutzerliste angezeigt.

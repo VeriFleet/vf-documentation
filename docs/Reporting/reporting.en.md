@@ -4,7 +4,7 @@ Reporting gives you comprehensive analytics across all checks, drivers and compa
 your area of responsibility. You reach it via the **Reporting** entry in the left-hand
 menu.
 
-![Reporting](images/reporting.png){ border-effect="line" thumbnail="true" width="100%" }
+![Reporting: filters, tabs and KPIs on the "Compliance" tab](images/reporting.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
     The menu entry is only visible if your user has the company-management or reporting
@@ -16,8 +16,10 @@ Above the analytics you define which data is evaluated:
 
 - **Period** — the evaluation period for all charts and KPIs.
 - **Services** — restrict to individual check types (driving licence, UVV, DQC).
-- **Companies** — evaluate the currently selected company with or without its
+- **Include sub-tenants** — evaluate the currently selected company with or without its
   sub-companies.
+- **Active drivers only** — hides blocked drivers.
+- **Quick ranges** ("Last 30 days", "Last 90 days", "Last year", "This year") and **Refresh**.
 
 ## The analytics tabs
 

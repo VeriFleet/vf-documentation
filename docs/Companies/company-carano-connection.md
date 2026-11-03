@@ -144,4 +144,4 @@ Nachdem Sie eine Firma zur Synchronisation mit Carano importiert haben, hat die 
 entsprechendes Kennzeichen „Carano“, solange ihre Datenquelle Carano ist. So erkennen Sie Firmen, die mit Carano synchronisisert werden bereits bei der
 Firmen-Auswahl bzw. bei der Firmen-Suche.
 
-![Dialog „Mandant auswählen“ mit dem Kennzeichen „Carano“](images/6-Carano-sync-Kennzeichen.png){ border-effect="line" thumbnail="true" width="500" }
+![Dialog „Mandant auswählen“ mit dem Kennzeichen „Carano“](images/Mandant-auswaehlen.png){ border-effect="line" thumbnail="true" width="500" }

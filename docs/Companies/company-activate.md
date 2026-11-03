@@ -18,4 +18,4 @@ anmelden, und die Fahrer bekommen keine Aufforderungen, Erinnerungen und Warnung
 Gesperrte Firmen sind im Dialog „Mandant auswählen“ (Feld oben in der Kopfleiste) durch das Kennzeichen „Gesperrt“
 gekennzeichnet.
 
-![Dialog „Mandant auswählen“ mit der gesperrten Firma „Beispiel Transporte AG“](images/gesperrte_Firma_in_Suchansicht.png){ border-effect="line" thumbnail="true" width="500" }
+![Dialog „Mandant auswählen“ mit den Kennzeichen „Gesperrt“ und „Carano“](images/Mandant-auswaehlen.png){ border-effect="line" thumbnail="true" width="500" }

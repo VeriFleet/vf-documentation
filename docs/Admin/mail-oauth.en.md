@@ -3,12 +3,12 @@
 Under **System › Mail connection (Microsoft/Google)**, system administrators set up the
 connection to Microsoft 365 and Google Workspace once for the whole system. There is exactly one
 app registration per provider (client ID and client secret). Every company uses it when someone
-clicks "Connect with Microsoft" or "Connect with Google" under **Edit company › Mail account**.
+clicks "Connect with Microsoft" or "Connect with Google" under **Edit company › Communication › Mail sender**.
 
 ![Mail connection](images/mail-oauth.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    This area is only visible to users with the **system administrator** role. You find it in
+    This area is only visible to users with the **Administrator** role. You find it in
     the menu under **System**. A company's own mail account, in contrast, is connected in the
     respective company under **Edit company**.
 
@@ -72,6 +72,6 @@ if the system can be reached under several addresses.
 
 1. The system administrator sets up the connection here once.
 2. The company administrator opens **Edit company** and clicks "Connect with Microsoft" or
-   "Connect with Google" in the **Mail account** section.
+   "Connect with Google" in the **Mail sender** section of **Edit company › Communication**.
 3. After signing in with the provider, the system sends this company's mails through the
    connected mailbox.

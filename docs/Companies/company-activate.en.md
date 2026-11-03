@@ -18,4 +18,4 @@ requests, reminders or warnings. The data is kept.
 Locked companies are marked with a "Locked" tag in the "Mandant auswählen" dialog (field at the top of the header bar;
 the dialog title is currently shown in German in every interface language).
 
-![Company selection dialog with the locked company "Beispiel Transporte AG"](images/gesperrte_Firma_in_Suchansicht.en.png){ border-effect="line" thumbnail="true" width="500" }
+![Company selection dialog with the "Locked" and "Carano" markers](images/Mandant-auswaehlen.en.png){ border-effect="line" thumbnail="true" width="500" }

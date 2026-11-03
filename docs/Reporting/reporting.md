@@ -4,7 +4,7 @@ Das Reporting bietet Ihnen umfassende Auswertungen über alle Kontrollen, Fahrer
 in Ihrem Verantwortungsbereich. Sie erreichen es über den Menüpunkt **Reporting** in der
 linken Seitenleiste.
 
-![Reporting](images/reporting.png){ border-effect="line" thumbnail="true" width="100%" }
+![Reporting: Filter, Tabs und Kennzahlen im Tab „Compliance“](images/reporting.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
     Der Menüpunkt ist nur sichtbar, wenn Ihr Benutzer die Berechtigung zur Firmenverwaltung
@@ -16,8 +16,10 @@ Oberhalb der Auswertungen legen Sie fest, welche Daten betrachtet werden:
 
 - **Zeitraum** — der Auswertungszeitraum für alle Diagramme und Kennzahlen.
 - **Services** — Einschränkung auf einzelne Prüfarten (FSK, UVV, FQN).
-- **Firmen** — Auswertung der aktuell ausgewählten Firma inklusive oder exklusive ihrer
+- **Untermandanten einbeziehen** — Auswertung der aktuell ausgewählten Firma inklusive oder exklusive ihrer
   Unterfirmen.
+- **Nur aktive Fahrer** — blendet gesperrte Fahrer aus.
+- **Schnellauswahl** („Letzte 30 Tage“, „Letzte 90 Tage“, „Letztes Jahr“, „Aktuelles Jahr“) und **Aktualisieren**.
 
 ## Die Auswertungs-Tabs
 

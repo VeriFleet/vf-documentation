@@ -4,10 +4,10 @@ Unter **System › Einstellungen** definieren Systemadministratoren eigene Rolle
 zusammengestellten Berechtigungen. Eigene Rollen ergänzen die fest eingebauten
 Systemrollen (z. B. „Fahrer", „Fuhrparkleiter") um passgenaue Rechteprofile.
 
-![Einstellungen — Rollen](images/settings-roles.png){ border-effect="line" thumbnail="true" width="100%" }
+![Seite „Einstellungen — Rollen“ mit Button „Neue Rolle“](images/settings-roles.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    Dieser Bereich ist nur für Benutzer mit der Rolle **Systemadministrator** sichtbar.
+    Dieser Bereich ist nur für Benutzer mit der Rolle **Administrator** sichtbar.
 
 ## Eine Rolle anlegen
 

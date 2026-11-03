@@ -3,13 +3,13 @@
 Unter **System › Mail-Anbindung (Microsoft/Google)** richten Systemadministratoren einmal für das
 ganze System die Anbindung an Microsoft 365 und Google Workspace ein. Pro Anbieter gibt es genau
 eine App-Registrierung (Client-ID und Client-Secret). Alle Firmen nutzen sie, sobald dort unter
-**Firma bearbeiten › Mail-Konto** auf „Mit Microsoft verbinden“ oder „Mit Google verbinden“
+**Firma bearbeiten › Kommunikation › Absender der Mails** auf „Mit Microsoft verbinden“ oder „Mit Google verbinden“
 geklickt wird.
 
-![Mail-Anbindung](images/mail-oauth.png){ border-effect="line" thumbnail="true" width="100%" }
+![Seite „Mail-Anbindung (Microsoft/Google)“ mit Client-ID und Client-Secret je Anbieter](images/mail-oauth.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    Dieser Bereich ist nur für Benutzer mit der Rolle **Systemadministrator** sichtbar. Sie finden
+    Dieser Bereich ist nur für Benutzer mit der Rolle **Administrator** sichtbar. Sie finden
     ihn im Menü unter **System**. Das Mail-Konto einer Firma selbst wird in der jeweiligen Firma
     unter **Firma bearbeiten** angebunden.
 
@@ -75,7 +75,7 @@ ein, wenn das System unter mehreren Adressen erreichbar ist.
 ## Ablauf für eine Firma
 
 1. Der Systemadministrator richtet hier einmalig die Anbindung ein.
-2. Der Firmen-Administrator öffnet **Firma bearbeiten** und klickt im Bereich **Mail-Konto** auf
+2. Der Firmen-Administrator öffnet **Firma bearbeiten › Kommunikation** und klickt im Abschnitt **Absender der Mails** auf
    „Mit Microsoft verbinden“ bzw. „Mit Google verbinden“.
 3. Nach der Anmeldung beim Anbieter versendet das System die Mails dieser Firma über das
    verbundene Postfach.

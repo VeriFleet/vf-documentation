@@ -3,7 +3,7 @@
 Im Bereich **Benutzer** verwalten Sie alle Fahrer bzw. Nutzer Ihres Fuhrparks. Hier können neue Benutzer angelegt, bestehende Daten eingesehen, kontrolliert und exportiert werden.
 
 
-![Benutzerliste](images/user-list.png){ border-effect="line" thumbnail="true" width="100%" }
+![Benutzerliste mit den Buttons „Neuer Benutzer“, „Benutzer importieren“, „Benutzer exportieren“ und „Globale Benutzersuche“](images/user-list.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Übersicht der Benutzerliste
 
@@ -11,12 +11,12 @@ Die Tabelle zeigt alle registrierten Benutzer samt relevanter Informationen:
 
 | Spalte | Beschreibung |
 |--------|--------------|
-| **FSK** | Status der Führerscheinkontrolle (✓ Erledigt / ⏱ Ausstehend) |
+| **FSK**, **UVV**, **FQN** | Status der Führerscheinkontrolle, der UVV-Unterweisung und der FQN-Kontrolle (✓ Erledigt / ⏱ Ausstehend / ❗ Nachprüfung); die Spalten gibt es, wenn der Dienst gebucht ist |
 | **Nachname / Vorname** | Name des Benutzers |
 | **E-Mail** | Kontaktadresse |
 | **Führerscheinnummer** | Nummer des hinterlegten Führerscheins |
 | **Siegel-Nr.** | Siegelnummer des zuletzt geprüften Führerscheins |
-| **Letzte Kontrolle** | Datum und Uhrzeit der letzten durchgeführten Kontrolle |
+| **Letzte FSK-Kontrolle**, **Letzte UVV-Unterweisung**, **Letzte FQN-Kontrolle** | Datum der letzten erfolgreich durchgeführten Kontrolle bzw. Unterweisung |
 
 ## Funktionen im Überblick
 

@@ -14,7 +14,7 @@ The dashboard has several areas containing the most important information about 
 of the system and the checks. The areas are marked in the image below and explained in the
 following sections.
 
-![Dashboard](images/Dashboard.png){ border-effect="line" thumbnail="true" width="500"}
+![Dashboard with the nine marked areas](images/Dashboard.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 1. Company search / selection
 
@@ -43,8 +43,8 @@ current month, pending and missed checks.
 
 ### 5. KPIs
 
-The KPIs at the top of the application give you a quick overview of the state of the
-licence checks and possible problems.
+The KPIs at the top of the application give you a quick overview: the number of drivers and the pending and
+missed checks for DLC (driving-licence check), DQC (driver qualification check) and APR (instruction).
 
 !!! note
     Clicking "drivers" and "missed checks" jumps directly to the user list or the list of
@@ -52,18 +52,19 @@ licence checks and possible problems.
 
 ### 6. Check overview
 
-The statistics chart shows how many checks were performed by your users in each quarter of
-the year.
+The "per quarter" statistics chart shows how many checks and instructions were performed by your users in each
+quarter of the year.
 
 ### 7. List of missed checks
 
-This list shows all users who have not yet performed their scheduled check. These drivers
+The "DLC missed" list shows all users who have not yet performed their scheduled check. Below it there are separate
+lists "DQC missed" and "APR missed". These drivers
 are reminded again after 7 days, and you as fleet manager receive a parallel notification
 by e-mail. Click a user to open their details.
 
-### 8. Follow-up check
+### 8. Follow-up check required
 
-The follow-up check shows which drivers did not complete their check successfully. For
+The "Follow-up check required" list shows which drivers did not complete their check successfully. For
 these users a manual follow-up check is required, in which a human decides whether the
 check counts as successful or the user has to be contacted.
 
@@ -75,8 +76,8 @@ check counts as successful or the user has to be contacted.
 
 ### 9. List of performed checks
 
-This list gives an overview of which users most recently performed a driving-licence
-check.
+The "History of DLC checks" gives an overview of which users most recently performed a driving-licence
+check; the histories for DQC and APR follow below it.
 
 ## List views
 
@@ -86,7 +87,7 @@ header. To search within a list, type into the search field above it.
 To create a new record, click the "+ New user" (etc.) button at the top left above the
 list.
 
-![List views](images/Listenansichten.png){ border-effect="line" thumbnail="true" width="500"}
+![User list with the "New user" button highlighted](images/Listenansichten.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 If the data area offers import/export, the corresponding buttons are above the list, as is
 the global search button (where available) for finding e.g. drivers outside the currently
@@ -164,14 +165,14 @@ Click the "Save" button at the top right of the page header to save the new comp
 
 After signing in, click "Users" in the menu on the left.
 
-![Dashboard](images/1-Fahrer-anlegen_Benutzerliste-aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
+![Menu item "Users" and the user list](images/1-Fahrer-anlegen_Benutzerliste-aufrufen.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Create a new user
 
 The user list is displayed (empty if no users exist yet). Click the "New user" button
 above the list.
 
-![Dashboard](images/2-Fahrer-anlegen_neuer-Fahrer.png){ border-effect="line" thumbnail="true" width="500"}
+![User list with the "New user" button highlighted](images/2-Fahrer-anlegen_neuer-Fahrer.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Enter the new user's data
 
@@ -190,8 +191,12 @@ Enter all required data (first name, last name, e-mail or mobile number).
 
     If you leave mandatory fields empty, the system points this out with a message.
 
-![Dashboard](images/3-Fahrer-anlegen_Daten-erfassen.png){ border-effect="line" thumbnail="true" width="500"}
+![Create user form with the data filled in](images/3-Fahrer-anlegen_Daten-erfassen.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Save the new user
 
-Click "Save" at the bottom right. After saving, the user appears in the user list.
+Click "Save" at the bottom right.
+
+![Create user form, "Save" button highlighted at the bottom right](images/4-Fahrer-anlegen_Daten-speichern.en.png){ border-effect="line" thumbnail="true" width="500"}
+
+After saving, the user appears in the user list.

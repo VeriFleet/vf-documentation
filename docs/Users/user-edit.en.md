@@ -7,7 +7,7 @@ This guide describes how to edit and manage existing users.
 1. **Left sidebar** > **Users**
 2. Select an existing user from the list
 
-![Edit user](images/user-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+![Edit user form with master data and the "Actions" menu](images/user-edit.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Editing master data
 
@@ -24,9 +24,11 @@ This guide describes how to edit and manage existing users.
 | **Preferred contact channel** | Determines whether check requests are sent by **email** or **SMS**. **Default (company)** uses the company's default contact channel (see [Editing a company](../Companies/company-edit-drivers.en.md)). If the chosen channel cannot be used (e.g. SMS without a phone number), the system falls back to the other channel. |
 | **First / last name** | Full name of the user. |
 | **Licence number** | Captured automatically during the next check. |
+| **Key number 95 valid until** | As long as key number 95 entered in the licence is valid, the driver does not yet need a driver qualification card; until this date requests and expiry warnings are paused. Leave empty if there is no valid 95. |
 | **Individual licence-check interval** | If this driver's check interval differs from the company default, enable and set it in days. The instruction (UVV) interval is fixed at one year. |
 | **Date of birth** | For documentation and verification purposes. |
 | **Department / employee ID** | Optional extra data. |
+| **APR course** | The course that applies to the driver's APR instruction. |
 | **Security seal** | 14-character identifier of an NFC seal — see [NFC seals](user-nfc-tags.md). |
 | **Foreign driving licence** | Enable if the document is not German — the licence-number format validation is then skipped. |
 | **Roles** | Multiple selection possible (e.g. `driver`, `fleet manager`, `Carano import`, `follow-up check`, plus custom roles). |

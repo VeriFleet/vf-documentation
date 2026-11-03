@@ -4,17 +4,17 @@ The **System › Billing** area generates the monthly invoice data for all compa
 It is based on the services booked per company and the checks performed in the billing
 month.
 
-![Billing](images/invoices.png){ border-effect="line" thumbnail="true" width="100%" }
+![Invoices page with the "Create JSON" and "Create XLSX" buttons](images/invoices.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    This area is only visible to users with the **system administrator** role.
+    This area is only visible to users with the **Administrator** role.
 
 ## Running the invoice generation
 
-1. Select month and year of the billing period.
-2. Start the generation — the system calculates the invoice items for every company from
-   its booked services.
-3. The preview shows the generated data before export.
+1. Click **"Create JSON"** or **"Create XLSX"**. There is no month selection: the run bills the **previous month**
+   and includes all active companies that have billing enabled.
+2. The system calculates the invoice items for every company from its booked services.
+3. With "Create JSON" the generated data appears in the text field below, with "Create XLSX" the download starts.
 
 ## Export
 
@@ -27,10 +27,10 @@ month.
 ## Billing settings per company
 
 How a company is billed is configured on the company itself under
-**Edit company → Billing settings**:
+**Edit company › Platform › Billing**:
 
 | Setting | Meaning |
 |---|---|
-| **No billing** | The company does not appear in the invoice run. |
-| **Individual** | The company is billed with its own conditions. |
-| **Inherited** | The company takes over the billing settings of its parent company. |
+| **Do not bill** | The company does not appear in the invoice run. |
+| **Own invoice** | The company gets its own invoice. |
+| **Via the parent company** | The costs appear on the invoice of the next higher company that has its own invoice. |

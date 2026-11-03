@@ -4,10 +4,10 @@ Under **System › Settings**, system administrators define custom roles with fr
 permissions. Custom roles complement the built-in system roles (e.g. "driver",
 "fleet manager") with precisely tailored permission profiles.
 
-![Settings — roles](images/settings-roles.png){ border-effect="line" thumbnail="true" width="100%" }
+![Settings — roles page with the "New role" button](images/settings-roles.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    This area is only visible to users with the **system administrator** role.
+    This area is only visible to users with the **Administrator** role.
 
 ## Creating a role
 

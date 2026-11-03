@@ -140,4 +140,4 @@ After importing a company for synchronisation, it carries a "Carano" marker in t
 at the top of the header bar, dialog "Mandant auswählen") for as long as its data source is Carano —
 so you can identify Carano-synchronised companies right at selection time.
 
-![Company selection dialog with the "Carano" marker](images/6-Carano-sync-Kennzeichen.en.png){ border-effect="line" thumbnail="true" width="500" }
+![Company selection dialog with the "Carano" marker](images/Mandant-auswaehlen.en.png){ border-effect="line" thumbnail="true" width="500" }

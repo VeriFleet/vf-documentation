@@ -4,17 +4,17 @@ Der Bereich **System › Abrechnung** erzeugt die monatlichen Rechnungsdaten fü
 System. Grundlage sind die je Firma gebuchten Services und die im Abrechnungsmonat
 angefallenen Kontrollen.
 
-![Abrechnung](images/invoices.png){ border-effect="line" thumbnail="true" width="100%" }
+![Seite „Rechnungen“ mit den Buttons „JSON Erstellen“ und „XLSX Erstellen“](images/invoices.png){ border-effect="line" thumbnail="true" width="100%" }
 
 !!! note
-    Dieser Bereich ist nur für Benutzer mit der Rolle **Systemadministrator** sichtbar.
+    Dieser Bereich ist nur für Benutzer mit der Rolle **Administrator** sichtbar.
 
 ## Rechnungslauf ausführen
 
-1. Wählen Sie Monat und Jahr des Abrechnungszeitraums.
-2. Starten Sie die Generierung — das System berechnet für jede Firma die
-   Rechnungspositionen aus den gebuchten Services.
-3. Die Voransicht zeigt die erzeugten Daten vor dem Export an.
+1. Klicken Sie auf **„JSON Erstellen“** oder **„XLSX Erstellen“**. Eine Monatsauswahl gibt es nicht: Der Lauf rechnet den
+   **Vormonat** ab und berücksichtigt alle aktiven Firmen, für die eine Abrechnung eingestellt ist.
+2. Das System berechnet für jede Firma die Rechnungspositionen aus den gebuchten Services.
+3. Bei „JSON Erstellen“ erscheinen die erzeugten Daten im Textfeld darunter, bei „XLSX Erstellen“ startet der Download.
 
 ## Export
 
@@ -27,10 +27,10 @@ angefallenen Kontrollen.
 ## Abrechnungseinstellungen je Firma
 
 Wie eine Firma abgerechnet wird, legen Sie in der jeweiligen Firma unter
-**Firma bearbeiten → Abrechnungseinstellungen** fest:
+**Firma bearbeiten › Plattform › Abrechnung** fest:
 
 | Einstellung | Bedeutung |
 |---|---|
-| **Keine Abrechnung** | Die Firma taucht im Rechnungslauf nicht auf. |
-| **Individuell** | Die Firma wird mit eigenen Konditionen abgerechnet. |
-| **Vererbt** | Die Firma übernimmt die Abrechnungseinstellungen ihrer übergeordneten Firma. |
+| **Nicht abrechnen** | Die Firma taucht im Rechnungslauf nicht auf. |
+| **Eigene Rechnung** | Die Firma bekommt eine eigene Rechnung. |
+| **Über die Mutterfirma** | Die Kosten stehen auf der Rechnung der nächsthöheren Firma, die eine eigene Rechnung hat. |

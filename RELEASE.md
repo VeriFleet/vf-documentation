@@ -3,6 +3,12 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — Hilfebilder der übrigen Bereiche neu aufgenommen (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
+- **Ersetzt:** Start-Dashboard, `getting-started` (Dashboard mit neun Markierungen, Listenansichten, vier Bilder „Fahrer anlegen“), `Users` (Liste, Anlegen, Bearbeiten), `Admin` (Rechnungen, Einstellungen, Mail-Anbindung), `Reporting`, `Checks` (Nachkontrolle); alle mit Testdaten, englische Seiten zeigen jetzt `*.en.png`. „Mandant auswählen“ ist ein zugeschnittenes Bild für `company-activate` und `company-carano-connection` (`Mandant-auswaehlen`).
+- **Text:** `invoices` (kein Monatsfilter, Vormonat; Abrechnungs-Optionen wie in der Oberfläche), `user-list` (Spalten UVV/FQN), `user-create`/`-edit` (Kontaktkanal, Schlüsselzahl 95, UVV-Kurs), `reporting` (Filter), Dashboard-Beschreibung in `getting-started` (FSK/FQN/UVV), Rolle „Administrator“, Mail-Konto → Kommunikation › Absender der Mails.
+
 ### 2026-11-03 · docs — Hilfebilder zu „Firma bearbeiten“ neu aufgenommen (de + en)
 
 - **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
