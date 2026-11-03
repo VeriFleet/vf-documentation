@@ -1,33 +1,36 @@
 # Tab "Master data & services"
 
-Basic data of the company and the services it uses.
+Basic data of the company and which services it uses.
 
 !!! note "Who sees this tab?"
-    All users with access to the company. **Name, address, contact addresses, language and check interval** can only
-    be changed by those who may manage the company; the fields are locked for everyone else.
+    All users with access to the company. **Name, address, contact addresses, language and check
+    interval** can only be changed by those who may manage the company (`ManageCompany` permission, for a new
+    subsidiary `CreateSubCompany`); the fields are locked for everyone else.
 
 ## Section "Company"
 
-| Setting | Effect |
+| Setting | What it does |
 |---|---|
-| **Active / Blocked** (button at the top) | Blocked companies can no longer be used in the system. |
+| **Active / Locked** (switch at the start of the section) | For a locked company, users can no longer sign in and drivers no longer receive requests, reminders or warnings. The data is kept. You cannot lock your **own** company. |
 | **Name**, **Street and house number**, **ZIP**, **City** | Address of the company. Required. |
 
 ## Section "Contact and language"
 
-| Setting | Effect | Default |
+| Setting | What it does | Default |
 |---|---|---|
-| **Contact email addresses of the fleet management** | These addresses receive the [weekly escalation list](company-edit-drivers.md#weekly-escalation-list) (Fridays 10 pm). Separate several addresses with comma or semicolon. Required. | – |
-| **Language of the request emails to drivers** | Language of the emails to drivers of this company. | German |
+| **Fleet management contact e-mail addresses** | These addresses receive the [weekly escalation list](company-edit-drivers.md#weekly-escalation-list) (Fridays 10 pm). Separate several addresses with a comma or semicolon. Required. | – |
+| **Language of the request e-mails to drivers** | VeriFleet chooses the mail templates for the company's drivers in this language, for example requests and expiry warnings. | German |
 
 ## Section "Security and booked services"
 
-| Setting | Effect | Default |
-|---|---|---|
-| **Enforce login with verification code (2FA)** | Users additionally enter a code from an email when logging in. Also applies to all subsidiaries. | Inherit; not enforced without a setting |
-| **Booked services** | Decides which checks and settings exist for the company (licence check, UVV instruction, DQC check). Also applies to subsidiaries. | Inherit; all services without a setting |
+This section exists for **existing subsidiaries** only. It also applies to all subsidiaries below.
 
-Request more services with **"Request more services"**.
+| Setting | What it does | Default |
+|---|---|---|
+| **Require sign-in with a confirmation code (2FA)** (Enforce / Do not enforce) | Users additionally enter a code from the e-mail when logging in. Changeable with `ManageCompany`. | Inherit; without a setting not enforced |
+| **Booked services** | Determines which checks and settings exist for the company (licence check, UVV driver instruction, DQC check). Changeable with `AlterCompanyServices`. | Inherit; without a setting all services |
+
+Those who may not change the services see the link **"Request more services"** below (a prepared mail to support).
 
 !!! warning
     A service that is not booked hides its settings, for example the DQC warning under

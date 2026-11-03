@@ -4,12 +4,11 @@ Companies do not have to be created manually — they can alternatively be impor
 Carano fleet-management system. For this, Carano has to provide them via the dedicated
 REST API.
 
-With the Carano link, your data (companies and users/drivers) is updated at least once a
-day. You can import individual companies or all of them — you decide when calling the
+With the Carano link, your data (companies and users/drivers) is updated every 4 hours. You can import individual companies or all of them — you decide when calling the
 import function described below.
 
 !!! info "Prerequisite: data source “Carano”"
-    The Carano connection is part of the **"Driver data & interface"** section (formerly
+    The Carano connection is part of the **"Where the driver data comes from"** section in the **"Platform"** tab (formerly
     "Carano connection"). Credentials and import are only available when the **driver data
     source** there is set to **"Carano"**. How to choose the data source or detach a company from
     Carano again — without losing the Carano IDs — is described under
@@ -44,11 +43,11 @@ After [creating a company](company-create.md) that you want to use as the Carano
 ### Entering the credentials
 
 1. Click "Company" in the menu.
-2. Open the "Driver data & interface" section (formerly "Carano connection").
+2. Open the "Platform" tab and there the "Where the driver data comes from" section (formerly "Carano connection").
 3. Set the driver data source to "Carano" and confirm the change
    (see [Driver data & interface](company-driver-data.md#changing-the-data-source)).
-4. Enter tenant identifier, user and password in the dedicated fields.
-5. Save with the "Save" button.
+4. Enter tenant identifier, user and password in the dedicated fields. They appear as soon as the effective data source is "Carano".
+5. Save with the "Save" button at the top right. Unlike switching the data source, the credentials only apply after saving.
 
 ![Dashboard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
@@ -59,20 +58,21 @@ After [creating a company](company-create.md) that you want to use as the Carano
 
 !!! note
     The Carano fields are only visible with the required user permission ("Carano import
-    authorized"). Contact your administrator if you cannot see the "Driver data & interface"
+    authorized"). Contact your administrator if you cannot see the "Where the driver data comes from"
     section.
 
 ## Importing companies
 
-After entering the credentials in the Carano tenant company, a new entry
-"Import sub-company from Carano" appears below the company data — only as long as the driver
-data source is set to "Carano".
+After entering the credentials in the Carano tenant company, the button
+"Import subsidiary from Carano" is available in the page header at the top right — only as long as the driver
+data source is set to "Carano". It is greyed out while tenant identifier, user and password are missing or the
+company itself already has a Carano customer number (imported companies).
 
 ![Dashboard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 ### Opening the Carano import
 
-Click the new entry to open the Carano import dialog.
+Click the button to open the "Import sub-company from Carano" dialog.
 
 ![Dashboard](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 

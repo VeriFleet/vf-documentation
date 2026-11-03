@@ -44,7 +44,7 @@ Below the selection you see what actually applies and where it comes from, for e
 
 !!! warning "The change takes effect immediately"
     The new data source applies **as soon as you confirm** — not only when you click "Save" at
-    the bottom. The change is recorded in the history of the administrator who made it.
+    the top right. The change is recorded in the history of the administrator who made it.
 
 ### What changes
 

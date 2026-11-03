@@ -3,6 +3,14 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — Firma bearbeiten: Hilfe Aussage für Aussage gegen Oberfläche und Code geprüft (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #176.
+- **Geändert:** `company-edit`, `-master-data`, `-drivers`, `-communication`, `-appearance`, `-platform`, die drei Anleitungen,
+  `company-carano-connection`, `company-driver-data`, `company-management`, `company-theming`: Beschriftungen wie in der Oberfläche,
+  Rechte mit ihren technischen Namen statt erfundener Bezeichnungen, Standardwerte und Grenzen aus dem Code, Absender-Postfach
+  (Rückfall, Versandgrenzen, Test-Mail, Verbindung löschen) ausführlich.
+
 ### 2026-09-30 · docs — Fahrerdaten & Schnittstelle: Datenquelle je Firma, API-Schlüssel (de + en)
 
 - **Branch:** `docs/driver-data-source-api-keys`, noch nicht auf `main` (ein Push auf `main` baut

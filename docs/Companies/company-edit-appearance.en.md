@@ -1,35 +1,37 @@
 # Tab "Appearance"
 
-Logo and colors of the interface and the emails.
+Logo and colours of the interface and the emails.
 
 !!! note "Who sees this tab?"
-    Users with the **"Corporate identity"** permission, for subsidiaries only.
+    Users with the `AlterCorporateIdentity` permission (administrator or custom role), subsidiaries only.
 
-## Logo and colors
+## Logo and colours
 
-Choose **"Inherit"** (from the parent company) or **"Own appearance"**.
+Applies to the interface of this company and its subsidiaries. Choose **"Inherit"** (from the parent company) or
+**"Own appearance"**.
 
-| Setting | Effect |
+| Setting | What it does |
 |---|---|
-| **Logo (sidebar & login)** | PNG or JPG, at most 500 KB; a wide, transparent logo is recommended. The logo is also used in emails. |
-| **Logo for dark background** | Optional, for dark surfaces. |
-| **Logo width** sidebar / login | In pixels. |
-| **Main color**, **Second color**, info, success, warning, error color | Colors of the interface; main and second color also apply to the emails. |
-| Sidebar, header, menu and login background | Optional; only activated colors override the default. |
+| **Logo (sidebar & login)** | PNG or JPG, at most 500 KB; a wide, transparent logo is recommended. **"Remove logo"** takes it out again. The logo is also used in mails. |
+| **Logo for dark background (optional)** | For dark areas. |
+| **Logo width sidebar (px)**, **Logo width login (px)** | Width in pixels, 20 to 1000. |
+| **Main colour**, **Second colour**, info, success, warning and error colour | Colours of the interface; main and second colour also apply to the mails. |
+| Sidebar, header, active menu and login background (group "Navigation & Login") | Optional; only enabled colours override the default. |
 
-**Every color** has a hex field (`#RRGGBB`, e.g. `#bb171c`), a color picker and the button **"Use the parent company's
-value"**. An invalid format is shown immediately and prevents saving.
+**Every colour** has a hex field (`#RRGGBB`, e.g. `#bb171c`), a colour picker and, when there is a value to take over, the
+button **"Use the parent company's value"** (if no parent company has its own colours, it is the default). An invalid format
+is shown immediately and prevents saving.
 
 !!! warning "Contrast warning"
-    Below a contrast of **4.5 : 1** a notice appears: for the main color regarding **white text on the color**, for
-    the second color regarding **the color as a link on white**. You can still save the color; the system does not
-    suggest fixed colors.
+    If the contrast is below **4.5 : 1**, a notice appears: for the main colour for **white text on the colour**, for the
+    second colour for **the colour as a link on white**. The colour can still be saved; the system does not suggest
+    colours.
 
 ## Emails
 
-Emails use the main color, second color and logo from the appearance. If they need something else, tick
-**"Different for emails only"** and enter **Main color of emails**, **Second color of emails** and optionally a
-**Logo for emails only** (PNG or JPEG). Without an email logo the appearance logo applies.
+Mails use the main colour, second colour and logo from the appearance. If they need something different, tick
+**"Different for emails only"** and enter **Main color of emails**, **Second color of emails** and optionally a **Logo for
+emails only** (PNG or JPEG). Without a mail logo, the appearance logo applies.
 
-Prerequisite: **"Own value"** is chosen under [Communication › Details in the emails](company-edit-communication.md).
-With "Inherit" the parent company's values apply.
+Prerequisite: under [Communication › Details in the emails](company-edit-communication.md) **"Set own details"** is chosen;
+otherwise a corresponding notice appears there. With "Inherit", the parent company's values apply.
