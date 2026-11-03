@@ -21,8 +21,9 @@ Siehe auch [Abrechnung](../Admin/invoices.md).
 ## Woher die Fahrerdaten kommen
 
 Datenquelle der Fahrer (Wie Mutterfirma, Manuell, Carano, REST-Schnittstelle), Carano-Zugangsdaten und
-API-Schlüssel. Die **Umstellung der Datenquelle** und die **API-Schlüssel** wirken sofort; die **Carano-Zugangsdaten**
-gelten erst nach „Speichern“ oben rechts. Ausführlich: [Fahrerdaten & Schnittstelle](company-driver-data.md).
+API-Schlüssel. Die **Umstellung der Datenquelle** und die **API-Schlüssel** wirken sofort; die **Carano-Zugangsdaten** und die
+Einstellungen zu **ausgeschiedenen Fahrern** gelten erst nach „Speichern“ oben rechts, obwohl der ganze Abschnitt das Kennzeichen
+„wirkt sofort“ trägt. Ausführlich: [Fahrerdaten & Schnittstelle](company-driver-data.md).
 
 ## Automatische Prüfung der Führerscheinkontrolle
 
@@ -33,8 +34,8 @@ Gilt nur für die Führerscheinkontrolle. **Abgelehnt wird nie automatisch.** Je
 |---|---|
 | **Automatisch abnehmen ab Gesamtwert** | Kontrollen mit mindestens diesem Wert werden ohne Nachkontrolle abgenommen, wenn kein Ausschlussgrund vorliegt (z. B. abgelaufen, Namensabweichung). Bei 0 % wird jede Kontrolle ohne Ausschlussgrund abgenommen. Ohne Wert in der ganzen Kette wird nichts automatisch abgenommen. |
 | **Zur Ablehnung vorschlagen unter** | Darunter empfiehlt die Nachkontrolle eine Ablehnung; die Entscheidung trifft immer ein Mensch. Ohne Wert gilt die Empfehlung der Seite. |
-| **Gewichtung der Prüfkriterien** | Aus diesen Kriterien setzt sich der Gesamtwert zusammen: Dokumenten-Echtheit, Aufnahme-Echtheit, Porträt-Abgleich, Maschinenlesbare Zone, Bildqualität, Texterkennung. Je Kriterium **Berücksichtigen** und **Gewicht**; „Wirksamer Anteil“ zeigt den Anteil an der Summe (die Gewichte müssen nicht 100 ergeben, mindestens ein Kriterium muss zählen). |
-| **Abgelaufener Führerschein setzt den Gesamtwert auf 0** | Schalter in der Gewichtung. Unabhängig davon wird ein abgelaufener Führerschein nie automatisch abgenommen. |
+| **Gewichtung der Prüfkriterien** | Aus diesen Kriterien setzt sich der Gesamtwert zusammen: Dokumenten-Echtheit, Aufnahme-Echtheit, Porträt-Abgleich, Maschinenlesbare Zone, Bildqualität, Texterkennung. Je Kriterium **Berücksichtigen** und **Gewicht**; „Wirksamer Anteil“ zeigt den Anteil an der Summe (die Gewichte müssen nicht 100 ergeben). Mindestens ein Kriterium muss berücksichtigt werden **und ein Gewicht über 0** haben, sonst erscheint eine Warnung. |
+| **Abgelaufener Führerschein setzt den Gesamtwert auf 0** | Auswahl **Ja / Nein** in der Gewichtung. Unabhängig davon wird ein abgelaufener Führerschein nie automatisch abgenommen. |
 
 Der Wert für die Abnahme muss über dem Ablehnungsvorschlag liegen. Wählen Sie „Eigener Wert“, muss ein Wert eingetragen
 sein, sonst lässt sich nicht speichern.

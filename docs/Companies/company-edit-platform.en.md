@@ -21,8 +21,8 @@ See also [Billing](../Admin/invoices.md).
 ## Where the driver data comes from
 
 Data source of the drivers (As parent company, Manual, Carano, REST interface), Carano credentials and API keys.
-**Switching the data source** and the **API keys** take effect immediately; the **Carano credentials** apply only after
-"Save" at the top right. In detail: [Driver data & interface](company-driver-data.md).
+**Switching the data source** and the **API keys** take effect immediately; the **Carano credentials** and the settings for **departed drivers** apply only after
+"Save" at the top right, even though the whole section carries the "takes effect immediately" mark. In detail: [Driver data & interface](company-driver-data.md).
 
 ## Automatic review of the licence check
 
@@ -33,8 +33,8 @@ Applies to the licence check only. **Nothing is ever rejected automatically.** E
 |---|---|
 | **Approve automatically from score** | Checks with at least this score are approved without a follow-up check if no exclusion reason applies (e.g. expired, name mismatch). At 0 %, every check without an exclusion reason is approved. Without a value anywhere in the chain nothing is approved automatically. |
 | **Suggest rejection below** | Below it, the follow-up check recommends rejection; a human always decides. Without a value the page's recommendation applies. |
-| **Weighting of the check criteria** | The score is made up of these criteria: document authenticity, capture authenticity, portrait match, machine-readable zone, image quality, text recognition. Per criterion **Take into account** and **Weight**; "Effective share" shows the share of the sum (the weights do not have to add up to 100, at least one criterion must count). |
-| **An expired licence sets the score to 0** | Switch within the weighting. Independently of it, an expired licence is never approved automatically. |
+| **Weighting of the check criteria** | The score is made up of these criteria: document authenticity, capture authenticity, portrait match, machine-readable zone, image quality, text recognition. Per criterion **Take into account** and **Weight**; "Effective share" shows the share of the sum (the weights do not have to add up to 100). At least one criterion must be taken into account **and have a weight above 0**, otherwise a warning appears. |
+| **An expired licence sets the score to 0** | **Yes / No** choice within the weighting. Independently of it, an expired licence is never approved automatically. |
 
 The value for approval must be above the rejection suggestion. If you choose "Own value", a value must be entered, otherwise
 saving is not possible.

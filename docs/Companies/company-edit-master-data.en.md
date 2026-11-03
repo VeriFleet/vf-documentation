@@ -28,7 +28,7 @@ This section exists for **existing subsidiaries** only. It also applies to all s
 | Setting | What it does | Default |
 |---|---|---|
 | **Require sign-in with a confirmation code (2FA)** (Enforce / Do not enforce) | Users additionally enter a code from the e-mail when logging in. Changeable with `ManageCompany`. | Inherit; without a setting not enforced |
-| **Booked services** | Determines which checks and settings exist for the company (licence check, UVV driver instruction, DQC check). Changeable with `AlterCompanyServices`. | Inherit; without a setting all services |
+| **Booked services** | Determines which checks and settings exist for the company (driver's license check, APR driver training, FQN control and "Extended data readout"). "Extended data readout" is billed per user of the company and releases the data read from the documents of the checks in the interface. Changeable with `AlterCompanyServices`. | Inherit; without a setting all services |
 
 Those who may not change the services see the link **"Request more services"** below (a prepared mail to support).
 

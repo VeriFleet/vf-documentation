@@ -25,19 +25,21 @@ Below the settings, **"This is how it works with this setting:"** shows the stag
 
 ## Expiry of driving licence and driver qualification
 
-The warnings **always go by e-mail**, even with contact channel SMS. Drivers without an e-mail address are not warned; they
-still appear in the weekly list to the company's contact addresses.
+The warnings **always go by e-mail**, even with contact channel SMS, and only to users with the driver role. Drivers without an e-mail address are not warned; they
+still appear in the weekly mail to the company's contact addresses (list "Expiring licences").
 
 | Setting | What it does | Default |
 |---|---|---|
-| **Warning before the driving licence expires** | The driver is warned this many days before the expiry date (0 to 365). **0 = no warning.** | Inherit; without a setting no warning |
-| **Bring the check forward** | Creates a new check together with the warning (unless one is already open), so the new licence is on file before the old one expires. Only possible when the warning is switched on. | Inherit; without a setting off |
-| **Warning before the card expires** and **Bring the check forward** (section "Driver qualification (DQC)") | The same for the driver qualification card. If the DQC check is not booked, a note appears there instead. | Inherit; without a setting no warning, off |
+| **Warning before the driving licence expires** | The driver receives a warning mail this many days before the expiry date (0 to 365), **once per expiry date**. **0 = no warning.** Applies to drivers with the licence check booked and a known expiry date (from the last successful check). | Inherit; without a setting no warning |
+| **Bring the check forward** | Creates a new check within the warning period so the new licence is on file before the old one expires. This happens regardless of e-mail address and warning mail, but only if no check is open and none has been requested in the warning period yet, so at most once per period. Only possible when the warning is switched on. | Inherit; without a setting off |
+| **Warning before the card expires** and **Bring the check forward** (section "Driver qualification (DQC)") | The same for the driver qualification card. Drivers whose code 95 is still valid are not warned. If the DQC check is not booked, a note appears there instead. | Inherit; without a setting no warning, off |
 
 ## Weekly escalation list
 
-List of drivers with an overdue check, sent **Fridays at 10 pm** to the contact addresses under
-[Master data & services](company-edit-master-data.md). The setting applies to this company only.
+One mail with up to three Excel lists, sent **Fridays at 10 pm** (server time; Europe/Berlin in the production environment)
+to the contact addresses under [Master data & services](company-edit-master-data.md): **"Missed checks"** (drivers with an
+overdue check), **"Missed instructions"** (e-learning) and **"Expiring licences"** (within the warning period of the licence
+warning). Lists without entries are left out; if all are empty, no mail is sent. The setting applies to this company only.
 
 | Choice | Meaning |
 |---|---|

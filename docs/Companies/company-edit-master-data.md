@@ -28,7 +28,7 @@ Diesen Abschnitt gibt es nur bei **bestehenden Tochterfirmen**. Er gilt jeweils 
 | Einstellung | Was sie bewirkt | Standard |
 |---|---|---|
 | **Anmeldung mit Bestätigungscode (2FA) erzwingen** (Erzwingen / Nicht erzwingen) | Benutzer geben beim Login zusätzlich einen Code aus der E-Mail ein. Ändern darf es, wer `ManageCompany` hat. | Übernehmen; ohne Vorgabe nicht erzwungen |
-| **Gebuchte Dienste** | Bestimmt, welche Kontrollen und Einstellungen es für die Firma gibt (Führerscheinkontrolle, UVV-Fahrerunterweisung, FQN-Kontrolle). Ändern darf es, wer `AlterCompanyServices` hat. | Übernehmen; ohne Vorgabe alle Dienste |
+| **Gebuchte Dienste** | Bestimmt, welche Kontrollen und Einstellungen es für die Firma gibt (Führerscheinkontrolle, UVV-Fahrerunterweisung, FQN-Kontrolle und „Erweitertes Auslesen von Daten“). „Erweitertes Auslesen von Daten“ wird je Benutzer der Firma abgerechnet und gibt in der Schnittstelle die ausgelesenen Dokumentdaten der Kontrollen frei. Ändern darf die Dienste, wer `AlterCompanyServices` hat. | Übernehmen; ohne Vorgabe alle Dienste |
 
 Wer die Dienste nicht ändern darf, sieht darunter den Link **„Weitere Dienste anfragen“** (eine vorbereitete Mail
 an den Support).

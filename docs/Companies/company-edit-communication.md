@@ -29,7 +29,7 @@ Wählen Sie die Kachel, die zu Ihrem Mailsystem passt:
 | **SMTP** („Manuell einrichten“) | Jeder andere Mailserver. | Sie tragen Server, Port, Benutzer und Passwort selbst ein, am besten mit Ihrer IT. |
 
 Ist die Anmeldung über Microsoft oder Google noch nicht eingerichtet, sind die Schaltflächen gesperrt und ein Hinweis
-nennt Ihren Ansprechpartner bei VeriFleet. Beim ersten Verbinden werden Ihre offenen Änderungen vorher gespeichert.
+nennt Ihren Ansprechpartner bei VeriFleet. Bei jedem Verbinden und Neu-Verbinden werden Ihre offenen Änderungen vorher gespeichert.
 Verbunden zeigt der Abschnitt **„Verbunden als …“**, Anbieter und Anmeldeart, den **letzten erfolgreichen Versand**,
 den **letzten Fehler** und die Versandgrenze; mit **„Neu verbinden“** erneuern Sie die Anmeldung.
 
@@ -42,7 +42,7 @@ vorgibt. Der Bereich ist zugeklappt; **„Manuell einrichten“** wählt dort SM
 
 | Feld | Was es bedeutet |
 |---|---|
-| **Anbieter** | Über welchen Dienst gesendet wird: Microsoft 365, Google Workspace oder SMTP. |
+| **Anbieter** | Über welchen Dienst gesendet wird: Microsoft 365, Google Workspace oder SMTP. Zusätzlich gibt es **„VeriFleet-Postfach“** (kein eigenes Postfach, wie „Übernehmen“) und **„SendGrid“** (Versand über den Mail-Dienst von VeriFleet mit Ihrer Absenderadresse; nur nach Absprache mit VeriFleet, nicht gedrosselt). |
 | **Authentifizierungsmodus** | „Verbundenes Benutzerkonto (OAuth)“: Anmeldung per Klick. „App-Berechtigung (IT-Administration)“: ein Dienstkonto, das Ihre IT einrichtet. „Benutzername/Passwort“: direkt am Mailserver (SMTP). |
 | **Absenderadresse** | Diese Adresse sehen die Fahrer als Absender. Sie muss zum Postfach gehören (SMTP-Server lehnen fremde Absender oft ab). Beim Verbinden trägt VeriFleet sie selbst ein; bei SMTP und Google ist sie Pflicht. |
 | **Anzeigename** | Der Name neben der Adresse, zum Beispiel „Fuhrpark Muster GmbH“. Leer = Produktname aus „Angaben in den Mails“. Beim Verbinden übernimmt VeriFleet den Namen des Kontos, wenn das Feld leer ist. |
@@ -77,7 +77,7 @@ Test-Mail ein gespeichertes Postfach brauchen und Löschen nicht erst auf „Spe
 ## Mail-Texte
 
 Ein Katalog **„Alle Mails & Stufen“** aller Mails, die VeriFleet für die Firma verschickt, mit Auslöser, Stufe und
-Status. Je Mail: **Ansehen** (Vorschau mit Beispieldaten, nichts wird versendet) und **Überschreiben** bzw. **Anlegen**;
+Status. Je Mail: **Ansehen** (Vorschau mit Beispieldaten, nichts wird versendet) und, je nach Stand, **Bearbeiten** (bei einer eigenen Vorlage), **Überschreiben** (bei einer übernommenen oder mitgelieferten Vorlage) oder **Anlegen** (wenn es keinen Standardtext gibt);
 darunter die **eigenen Vorlagen dieser Firma** mit **„Neue Vorlage anlegen“**.
 
 | Status | Bedeutung |
@@ -99,7 +99,7 @@ Produktname, Support-Adresse, Impressum und Datenschutz, wie sie in den Mails an
 | Einstellung | Was sie bewirkt |
 |---|---|
 | **Produktname** | Name der Software in den Mails; auch der Absendername, wenn kein Anzeigename gesetzt ist. |
-| **Support-E-Mail** | Kontaktadresse in Mails und im Profil-Menü („Support“). |
+| **Support-E-Mail** | Kontaktadresse in Mails und im Profil-Menü (Eintrag „Support EMail“). |
 | **Impressum-URL**, **Datenschutz-URL** | Links in der Fußzeile der Mails. |
 
 Wählen Sie **„Übernehmen“** (Standard) oder **„Eigene Angaben festlegen“**. Beim Umschalten sind die Felder bereits mit den

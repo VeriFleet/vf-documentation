@@ -24,7 +24,7 @@ zusätzlich erst, nachdem die Firma angelegt ist.
 
 **Übernehmen oder eigener Wert.** Jede Einstellung, die eine Tochterfirma von ihrer Mutterfirma
 übernehmen kann, hat die Wahl **„Übernehmen“** / **„Eigener Wert“** (je nach Einstellung auch „Eigenes
-Erscheinungsbild“, „Eigene Gewichtung“ oder „Eigene Angaben festlegen“). Bei „Übernehmen“ steht darunter,
+Erscheinungsbild“, „Eigene Gewichtung“, „Eigenes Postfach“ oder „Eigene Angaben festlegen“). Bei „Übernehmen“ steht darunter,
 was gilt und woher es kommt, zum Beispiel „↳ Übernommen von Fleet Partner GmbH: 7 Tage“. Ist in der
 ganzen Kette nichts eingestellt, gilt der Standardwert. Am Reitertitel zeigt „n angepasst“, wie
 viele Einstellungen die Firma selbst setzt.
@@ -34,7 +34,7 @@ ungespeicherten Änderungen und „Zurücksetzen“). Verlassen Sie die Seite mi
 System nach. Was ohne Speichern **sofort wirkt**, ist mit **„wirkt sofort“** gekennzeichnet: die
 Datenquelle-Umstellung und die API-Schlüssel, die Mail-Texte sowie am Absender-Postfach „Test-Mail senden“,
 „Mail-Konto speichern“ und „Verbindung löschen“. „Mit Microsoft/Google verbinden“ speichert vorher Ihre offenen
-Änderungen. Die Carano-Zugangsdaten im selben Abschnitt wie die Datenquelle gelten dagegen erst nach „Speichern“.
+Änderungen. Die Carano-Zugangsdaten und die Einstellungen zu ausgeschiedenen Fahrern im selben Abschnitt wie die Datenquelle gelten dagegen erst nach „Speichern“.
 
 **Aktionen in der Kopfzeile:** **Tochterfirma anlegen**, **Tochterfirma aus Carano importieren** (Recht
 `CaranoImport`; ausgegraut, solange die Carano-Zugangsdaten fehlen oder die Datenquelle nicht „Carano“ ist) und

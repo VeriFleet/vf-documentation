@@ -35,12 +35,16 @@ Aufruf der Importfunktion, die weiter unten beschrieben wird.
     werden. Tragen Sie die Zugangsdaten nicht in einer bereits aus Carano importierten Firma - also eine Ebene tiefer - ein!)**
     3. Unterhalb des Mandanten die gewünschten Firmen importieren
 
+    Der Mandant ist die oberste Firma Ihres Kunden, also die Firma direkt unter der obersten Firma des Systems. Die oberste
+    Firma des Systems selbst hat keine Mutterfirma und damit keinen Reiter „Plattform“; dort lassen sich keine
+    Zugangsdaten eintragen.
+
 ## Zugangsdaten des Carano-Mandanten eintragen
 
 ### Carano-Mandanten anlegen / auswählen
 
-Nachdem Sie - wie oben beschrieben - eine [Firma angelegt](company-create.md) haben, die Sie als Carano-Mandant verwenden wollen (dies
-kann auch die Basisfirma sein, die für Sie im System angelegt ist), wählen Sie diese Firma über die Suchfunktion
+Nachdem Sie - wie oben beschrieben - eine [Firma angelegt](company-create.md) haben, die Sie als Carano-Mandant verwenden wollen (in der Regel die oberste Firma Ihres Kunden,
+direkt unter der obersten Firma des Systems), wählen Sie diese Firma über die Suchfunktion
 aus.
 
 ### Zugangsdaten eintragen

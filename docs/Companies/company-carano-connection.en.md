@@ -33,12 +33,15 @@ import function described below.
     below!)**
     3. import the desired companies below the tenant
 
+    The tenant is your customer's top company, i.e. the company directly below the system's top company. The system's top
+    company itself has no parent company and therefore no "Platform" tab; no credentials can be entered there.
+
 ## Entering the Carano tenant credentials
 
 ### Creating / selecting the Carano tenant
 
 After [creating a company](company-create.md) that you want to use as the Carano tenant
-(this can also be the base company created for you), select it via the search function.
+(usually your customer's top company, directly below the system's top company), select it via the search function.
 
 ### Entering the credentials
 
