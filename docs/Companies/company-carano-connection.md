@@ -6,12 +6,12 @@ Firmen können nicht nur manuell angelegt werden. Sie können alternativ aus dem
 importiert werden. Um Firmen aus Carano importieren zu können, müssen diese seitens Carano auf der dafür vorgesehenen
 Rest-API zur Verfügung gestellt werden.
 
-Mit Hilfe der Carano-Verknüpfung werden Ihre Daten (Firmen und Benutzer/Fahrer) mindestens einmal täglich aktualisiert.
+Mit Hilfe der Carano-Verknüpfung werden Ihre Daten (Firmen und Benutzer/Fahrer) alle 4 Stunden aktualisiert.
 Sie können dabei entweder einzelne Firmen importieren oder alle Ihre Firmen importieren. Dies entscheiden Sie beim
 Aufruf der Importfunktion, die weiter unten beschrieben wird.
 
 !!! info "Voraussetzung: Datenquelle „Carano“"
-    Die Carano-Anbindung ist Teil des Abschnitts **„Fahrerdaten & Schnittstelle“** (früher
+    Die Carano-Anbindung ist Teil des Abschnitts **„Woher die Fahrerdaten kommen“** im Reiter **„Plattform“** (früher
     „Carano-Anbindung“). Zugangsdaten und Import stehen nur zur Verfügung, wenn dort als
     **Datenquelle der Fahrer „Carano“** eingestellt ist. Wie Sie die Datenquelle wählen oder eine
     Firma wieder von Carano lösen — ohne Carano-Kennungen zu verlieren —, lesen Sie unter
@@ -46,11 +46,13 @@ aus.
 ### Zugangsdaten eintragen
 
 1. Klicken Sie im Menü auf "Firma".
-2. Öffnen Sie den Bereich "Fahrerdaten & Schnittstelle" (früher "Carano-Anbindung").
+2. Öffnen Sie den Reiter "Plattform" und dort den Abschnitt "Woher die Fahrerdaten kommen" (früher "Carano-Anbindung").
 3. Stellen Sie die Datenquelle der Fahrer auf "Carano" und bestätigen Sie die Umstellung
    (siehe [Fahrerdaten & Schnittstelle](company-driver-data.md#datenquelle-umstellen)).
-4. Tragen Sie Mandantenkürzel, Benutzer und Passwort in die dafür vorgesehenen Felder ein.
-5. Speichern Sie die Änderungen durch Klick auf den Button "Speichern".
+4. Tragen Sie Mandantenkürzel, Benutzer und Passwort in die dafür vorgesehenen Felder ein. Die Felder erscheinen, sobald
+   die wirksame Datenquelle "Carano" ist.
+5. Speichern Sie die Änderungen durch Klick auf den Button "Speichern" oben rechts. Anders als die Umstellung der
+   Datenquelle gelten die Zugangsdaten erst nach dem Speichern.
 
 ![DashBoard](images/1-Firma_Carano-Anbindung.png){ border-effect="line" thumbnail="true" width="500" }
 
@@ -62,7 +64,7 @@ aus.
 !!! note
     Sie sehen die Eingabefelder für die Carano-Anbindung nur, wenn Sie die notwendigen Benutzer-Berechtigungen
     besitzen ("Carano-Import berechtigt"). Wenden Sie sich ggf. an Ihren Administrator, falls Sie den Bereich
-    "Fahrerdaten & Schnittstelle" nicht sehen.
+    "Woher die Fahrerdaten kommen" nicht sehen.
 
 ## Ausgeschiedene Fahrer
 
@@ -85,14 +87,15 @@ fasst der Import nie an.
 ## Firmen importieren
 
 Nachdem Sie Ihre Zugangsdaten in die Carano-Mandanten-Firma eingetragen haben, steht Ihnen unterhalb der
-Firmendaten ein neuer Menüpunkt "Sub-Firma aus Carano importieren" zur Verfügung — nur solange die
-Datenquelle der Fahrer auf "Carano" steht.
+Kopfzeile oben rechts die Schaltfläche "Tochterfirma aus Carano importieren" zur Verfügung — nur solange die
+Datenquelle der Fahrer auf "Carano" steht. Sie ist ausgegraut, solange Mandantenkürzel, Benutzer und Passwort fehlen
+oder die Firma selbst schon eine Carano-Kundennummer hat (importierte Firmen).
 
 ![DashBoard](images/2-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 
 ### Carano-Import aufrufen
 
-Klicken Sie auf den neuen Menüpunkt, um den Carano-Import Dialog zu öffnen.
+Klicken Sie auf die Schaltfläche, um den Dialog "Sub-Firma aus Carano importieren" zu öffnen.
 
 ![DashBoard](images/3-Sub-Firma-aus-Carano-importieren.png){ border-effect="line" thumbnail="true" width="500" }
 

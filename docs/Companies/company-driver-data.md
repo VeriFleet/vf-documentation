@@ -43,7 +43,7 @@ die keinen eigenen Wert haben. Ist in der ganzen Firmenkette nichts eingestellt,
 3. Bestätigen Sie den Dialog.
 
 !!! warning "Die Umstellung wirkt sofort"
-    Die neue Datenquelle gilt **unmittelbar nach der Bestätigung** — nicht erst, wenn Sie unten auf
+    Die neue Datenquelle gilt **unmittelbar nach der Bestätigung** — nicht erst, wenn Sie oben rechts auf
     „Speichern“ klicken. Die Umstellung wird in der Historie des Administrators festgehalten, der
     sie vorgenommen hat.
 

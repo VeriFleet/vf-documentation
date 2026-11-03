@@ -29,7 +29,8 @@ anderes, wählen Sie dort **„Abweichend nur für Mails“**.
 | **Produktname** | Name der Software in Mails | Kommunikation |
 | **Support-E-Mail** | Kontaktadresse im Profil-Menü und in Mails | Kommunikation |
 | **Impressum-URL**, **Datenschutz-URL** | Links in den Mails | Kommunikation |
-| **Fahrersoftware-URL**, **Adminsoftware-URL**, **Splash-Link** | Links in den Mails | Plattform |
+| **Fahrersoftware-URL**, **Adminsoftware-URL** | Links in den Mails | Plattform |
+| **Splash-Link** | Zusätzlicher Link für eigene Mail-Texte (Platzhalter `{{splashLink}}`) | Plattform |
 | **Absenderadresse beim VeriFleet-Postfach** | Absender der System-Mails dieser Firma | Plattform |
 | **E-Mail-Adaption** | Auswahl einer kundenspezifischen Mail-Vorlagen-Variante | Plattform |
 

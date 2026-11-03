@@ -28,7 +28,8 @@ the **logo** apply to the interface **and** the emails. If the emails need somet
 | **Product name** | Name of the software in emails | Communication |
 | **Support email** | Contact address in the profile menu and emails | Communication |
 | **Imprint URL**, **Privacy URL** | Links in the emails | Communication |
-| **Driver software URL**, **Admin software URL**, **Splash link** | Links in the emails | Platform |
+| **Driver software URL**, **Admin software URL** | Links in the emails | Platform |
+| **Splash-Link** | Additional link for your own mail texts (placeholder `{{splashLink}}`) | Platform |
 | **Sender address at the VeriFleet mailbox** | Sender of this company's system emails | Platform |
 | **Email adaptation** | Choice of a customer-specific email template variant | Platform |
 
