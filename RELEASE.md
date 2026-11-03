@@ -3,6 +3,45 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — Hilfebilder der übrigen Bereiche neu aufgenommen (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
+- **Ersetzt:** Start-Dashboard, `getting-started` (Dashboard mit neun Markierungen, Listenansichten, vier Bilder „Fahrer anlegen“), `Users` (Liste, Anlegen, Bearbeiten), `Admin` (Rechnungen, Einstellungen, Mail-Anbindung), `Reporting`, `Checks` (Nachkontrolle); alle mit Testdaten, englische Seiten zeigen jetzt `*.en.png`. „Mandant auswählen“ ist ein zugeschnittenes Bild für `company-activate` und `company-carano-connection` (`Mandant-auswaehlen`).
+- **Text:** `invoices` (kein Monatsfilter, Vormonat; Abrechnungs-Optionen wie in der Oberfläche), `user-list` (Spalten UVV/FQN), `user-create`/`-edit` (Kontaktkanal, Schlüsselzahl 95, UVV-Kurs), `reporting` (Filter), Dashboard-Beschreibung in `getting-started` (FSK/FQN/UVV), Rolle „Administrator“, Mail-Konto → Kommunikation › Absender der Mails.
+
+### 2026-11-03 · docs — Hilfebilder zu „Firma bearbeiten“ neu aufgenommen (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
+- **Ersetzt:** `Firma-sperren`, `gesperrte_Firma_in_Suchansicht`, `1-Firma_anlegen`, `company-create-form` (zeigte eine Fehlerseite), die fünf Bilder von `getting-started`; neu: `company-edit` und je ein bis zwei Bilder für `-master-data`, `-drivers`, `-communication`, `-appearance`, `-platform`, `company-create-interval`; englische Fassungen `*.en.png`. Gelöscht: `company-edit-branding(.en)`, `2-Firma-anlegen-speichern` (nirgends verwendet).
+- **Text:** `company-activate` neu geschrieben (Umschalter liegt im Reiter „Stammdaten & Dienste“, nicht „oben links“), `company-create`/`getting-started`: Lage von „Tochterfirma anlegen“ (Kopfzeile unter dem Firmennamen) und Kontroll-Intervall (Reiter „Fahrer & Kontrollen“).
+
+### 2026-11-03 · docs — Hilfebilder Carano-Anbindung neu (de + en)
+
+- **Branch:** `docs/55-carano-leavers`, dann `dev`. Gehört zu VeriFleet #180.
+- **Geändert:** `company-carano-connection`: alle sechs Bilder neu aufgenommen (Reiter Plattform, Kopfzeile mit Import-Schaltfläche,
+  Import-Dialog, Auswahl, Aktiv/Gesperrt, Kennzeichen „Carano“), englische Bilder `*.en.png`; Lage der Schaltfläche (Kopfzeile unter dem
+  Firmennamen) und des Kennzeichens (Dialog „Mandant auswählen“) korrigiert; Hinweis auf die deutschen Dialogtexte in der englischen Oberfläche.
+
+### 2026-11-03 · docs — Firma bearbeiten: Hilfe Aussage für Aussage gegen Oberfläche und Code geprüft (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #176.
+- **Geändert:** `company-edit`, `-master-data`, `-drivers`, `-communication`, `-appearance`, `-platform`, die drei Anleitungen,
+  `company-carano-connection`, `company-driver-data`, `company-management`, `company-theming`: Beschriftungen wie in der Oberfläche,
+  Rechte mit ihren technischen Namen statt erfundener Bezeichnungen, Standardwerte und Grenzen aus dem Code, Absender-Postfach
+  (Rückfall, Versandgrenzen, Test-Mail, Verbindung löschen) ausführlich.
+
+### 2026-11-02 · docs — Mail-Anbindung (Microsoft/Google) im Systembereich (de + en)
+
+- **Branch:** `docs/165-system-menu-mail-connection` (PR nach `main`; ein Push auf `main` baut das
+  Produktions-Image der Doku). Gehört zu VeriFleet #165.
+- **Neu gefasst:** Seite `Admin/mail-oauth` heißt jetzt **„Mail-Anbindung (Microsoft/Google)“** /
+  „Mail connection (Microsoft/Google)“: Menüweg System › …, wozu die Anbindung dient, was ohne sie
+  nicht geht, Status je Anbieter, App bei Microsoft und Google anlegen, Redirect-URIs. Neue
+  Screenshots (de, en). Der Pfad bleibt, die kontextsensitive Hilfe im AdminPanel zeigt weiter hierher.
+- **Angepasst:** Abrechnung und Einstellungen nennen den neuen Menüweg **System › …**. Nav-Eintrag
+  umbenannt (mit englischer Übersetzung).
+- Build aller 3 Mandanten `--strict`-sauber.
+
 ### 2026-09-30 · docs — Fahrerdaten & Schnittstelle: Datenquelle je Firma, API-Schlüssel (de + en)
 
 - **Branch:** `docs/driver-data-source-api-keys`, noch nicht auf `main` (ein Push auf `main` baut

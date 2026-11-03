@@ -4,7 +4,7 @@ Our system is a digital driving-licence check for your fleet. Its algorithm is b
 AI-supported system to give you the highest level of assurance when checking your
 employees' driving licences.
 
-![Dashboard](images/Dashboard.png){ border-effect="line" thumbnail="true" width="100%" }
+![Dashboard](images/Dashboard.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 <div class="grid cards" markdown>
 

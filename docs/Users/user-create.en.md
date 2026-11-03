@@ -7,7 +7,7 @@ This guide describes how to create a new user in the system.
 1. **Left sidebar** > **Users**
 2. Click **New user**
 
-![Create user](images/user-create.png){ border-effect="line" thumbnail="true" width="100%" }
+![Create user form](images/user-create.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Form: create user
 
@@ -26,6 +26,7 @@ At the top of the form choose between:
 | **Mobile phone number (*)** | If no e-mail is available, the phone number can be used for SMS notifications. Format: `+49...` |
 | **First name (*)** | The user's first name. |
 | **Last name (*)** | The user's last name. |
+| **Preferred contact channel** | **Default (company)**, **email** or **SMS**: how the user is asked to perform a check (see [Edit user](user-edit.md)). |
 | **Roles** | Role selection, e.g. `driver`. Further roles can be selected from the drop-down. |
 
 ### 3. **Actions**

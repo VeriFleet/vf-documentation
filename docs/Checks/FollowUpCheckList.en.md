@@ -4,7 +4,7 @@ This module lists all users for whom a **follow-up check is required**. Follow-u
 usually concern driving-licence checks (DLC) or other recurring checks whose automatic
 verification was not conclusive.
 
-![Follow-up check list](images/nachkontrolle-queue.png){ border-effect="line" thumbnail="true" width="100%" }
+![List of users requiring a follow-up check](images/nachkontrolle-queue.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Navigation path
 

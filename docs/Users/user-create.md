@@ -7,7 +7,7 @@ Diese Anleitung beschreibt, wie ein neuer Benutzer im System angelegt wird.
 1. **Linke Seitenleiste** > **Benutzer**
 2. Klicken Sie auf **Benutzer anlegen**
 
-![Benutzer anlegen](images/user-create.png){ border-effect="line" thumbnail="true" width="100%" }
+![Maske „Benutzer anlegen“](images/user-create.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Formular: Benutzer Anlegen
 
@@ -22,6 +22,7 @@ Oben im Formular wählen Sie zwischen folgenden Status:
 |------|--------------|
 | **E-Mail-Adresse (*)** | Tragen Sie die E-Mail-Adresse des Benutzers ein, z. B. für Prüfaufforderungen oder Mitteilungen. |
 | **Mobil-Telefonnummer (*)** | Falls keine E-Mail vorliegt, kann die Telefonnummer genutzt werden, um Benachrichtigungen per SMS zu versenden. Format: `+49...` |
+| **Bevorzugter Kontaktkanal** | **Standard (Firma)**, **E-Mail** oder **SMS**: Wie der Benutzer zur Kontrolle aufgefordert wird (siehe [Benutzer bearbeiten](user-edit.md)). |
 | **Vorname (*)** | Vorname des Benutzers. |
 | **Nachname (*)** | Nachname des Benutzers. |
 | **Rollen** | Auswahl der Rolle, z. B. `Fahrer`. Weitere Rollen können ggf. aus einer Dropdown-Liste ausgewählt werden. |

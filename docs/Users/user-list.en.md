@@ -3,7 +3,7 @@
 The **Users** area manages all drivers and users of your fleet. Here you can create new
 users, view, check and export existing data.
 
-![User list](images/user-list.png){ border-effect="line" thumbnail="true" width="100%" }
+![User list with the buttons "New user", "Import users", "Export user" and "Global user search"](images/user-list.en.png){ border-effect="line" thumbnail="true" width="100%" }
 
 ## Overview of the user list
 
@@ -11,12 +11,12 @@ The table shows all registered users with the relevant information:
 
 | Column | Description |
 |--------|-------------|
-| **DLC** | Driving-licence check status (✓ done / ⏱ pending) |
+| **DLC**, **APR**, **DQC** | Status of the driving-licence check, the APR instruction and the DQC check (✓ done / ⏱ pending / ❗ verification); the columns are shown when the service is booked |
 | **Last name / first name** | Name of the user |
 | **E-mail** | Contact address |
 | **Licence number** | Number of the stored driving licence |
 | **Seal no.** | Seal number of the most recently checked licence |
-| **Last check** | Date and time of the last performed check |
+| **Last DLC check**, **Last APR training**, **Last DQC check** | Date of the last successfully performed check or instruction |
 
 ## Functions at a glance
 

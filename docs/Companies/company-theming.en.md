@@ -1,50 +1,43 @@
 # Design & branding (tenant CI)
 
-Every company can adapt the look of the system and of the e-mails it sends to its own
-corporate identity. All settings live under **Edit company** in the sections
-**Corporate identity (logo & colors)**, **Backend customizations**,
-**Mailing/client customizations** and **Mail templates**.
+Every company can adapt the look of the system and of the emails it sends to its own corporate identity. The
+settings are spread over three tabs of **Edit a company**:
 
-![Edit company — branding sections](images/company-edit-branding.png){ border-effect="line" thumbnail="true" width="100%" }
+| What | Where |
+|---|---|
+| Logo and colors of the interface and the emails | [Appearance](company-edit-appearance.md) |
+| Product name, support address, imprint, privacy in the emails; email texts | [Communication](company-edit-communication.md) |
+| Software addresses, email variant, own CSS | [Platform › Technical settings](company-edit-platform.md) |
 
 ## Inheritance across the company hierarchy
 
-Branding settings are **inherited top-down**: if a company has no configuration of its
-own, the configuration of its parent company applies automatically — up to the top level,
-where the system default takes over. It is therefore enough to maintain the branding once
-at tenant level; all sub-companies pick it up automatically.
+Settings are **taken over from top to bottom**: if a company has no configuration of its own, its parent company's
+applies, up to the top level where the system default applies. It is enough to maintain branding once at tenant
+level. For every setting the page shows what applies and where it comes from.
 
-## Corporate identity (logo & colors)
+## Logo and colors
 
-Per company you choose between **"own branding"** and **"inherit from parent company"**.
-With own branding you maintain the colour scheme (colour pickers, no CSS knowledge
-required) and logos — separately for light and dark mode.
+Maintain logo (light and dark) and colors in the **Appearance** tab. The **main color**, the **second color** and
+the **logo** apply to the interface **and** the emails. If the emails need something else, choose
+**"Different for emails only"** there.
 
-## Backend customizations (expert CSS)
+## Details in the emails and technical settings
 
-Additional CSS rules for fine-tuning the interface. Loaded after the theme and overrides
-it selectively.
+| Setting | Effect | Tab |
+|---|---|---|
+| **Product name** | Name of the software in emails | Communication |
+| **Support email** | Contact address in the profile menu and emails | Communication |
+| **Imprint URL**, **Privacy URL** | Links in the emails | Communication |
+| **Driver software URL**, **Admin software URL** | Links in the emails | Platform |
+| **Splash-Link** | Additional link for your own mail texts (placeholder `{{splashLink}}`) | Platform |
+| **Sender address at the VeriFleet mailbox** | Sender of this company's system emails | Platform |
+| **Email adaptation** | Choice of a customer-specific email template variant | Platform |
 
-## Mailing/client customizations (e-mails & links)
+## Adapt email templates
 
-These settings determine how check requests and notifications appear:
-
-| Setting | Effect |
-|---|---|
-| **Product name** | Name of the software in mails and UI |
-| **Support e-mail** | Contact address in the profile menu and in mails |
-| **URLs** | Links to driver software, admin software, documentation, imprint, privacy policy |
-| **Primary/secondary colour** | Colours of the e-mail templates |
-| **Logo** | Logo in the e-mail templates |
-| **Sender address** | Sender of this company's system mails |
-| **E-mail adaptation** | Selection of a customer-specific mail template variant |
-
-## Customising mail templates
-
-In addition to branding, the **texts of the mail templates** can be adapted per company
-(section **Mail templates**; toggle "mail template customisation" / "template from parent company"). Templates that are not customised inherit — like
-the rest of the branding — from the parent company.
+Adapt the **texts of the email templates** per company in the [Communication](company-edit-communication.md) tab
+under **Email texts**. Templates that are not adapted are inherited from the parent company.
 
 !!! tip
-    After branding changes, verify the result with a test check request to one of your own
-    test drivers before the next automatic request wave runs.
+    After branding changes, check the result with a test check request to your own test driver before the next
+    automatic request wave runs.

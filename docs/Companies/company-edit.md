@@ -1,62 +1,50 @@
 # Firma bearbeiten
 
-In diesem Bereich verwalten Sie zentrale Informationen zur aktuell ausgewählten Firma. Hier können Sie Stammdaten ändern, zusätzliche Einstellungen konfigurieren und Sub-Firmen verwalten.
+Hier verwalten Sie die ausgewählte Firma. Die Seite ist nach Aufgaben in **Reiter** gegliedert; ein
+**„?“ am Reiter** öffnet die passende Hilfeseite.
 
-![Firma bearbeiten](images/company-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+![Firma bearbeiten: Kopfzeile mit Aktionen und „Speichern“ oben rechts, darunter die Reiter](images/company-edit.png){ border-effect="line" thumbnail="true" width="500" }
 
-## Übersicht
+| Reiter | Wofür | Wer sieht ihn |
+|---|---|---|
+| [Stammdaten & Dienste](company-edit-master-data.md) | Name, Anschrift, Kontaktadressen, Sprache, 2FA, gebuchte Dienste | alle mit Zugriff auf die Firma |
+| [Fahrer & Kontrollen](company-edit-drivers.md) | Kontroll-Rhythmus, Erinnerungen, Ablauf-Warnungen, Eskalationsliste | alle mit Zugriff auf die Firma; die Abschnitte nach dem Kontroll-Rhythmus nur mit dem Recht `ManageCompany` und nur bei Tochterfirmen |
+| [Kommunikation](company-edit-communication.md) | Absender der Mails, Mail-Texte, Angaben in den Mails, Aufbewahrung | Tochterfirmen, sobald ein Abschnitt sichtbar ist |
+| [Erscheinungsbild](company-edit-appearance.md) | Logo, Farben, Mail-Aussehen | Tochterfirmen, Recht `AlterCorporateIdentity` |
+| [Plattform](company-edit-platform.md) | Abrechnung, Datenquelle, automatische Prüfung, Technik | Tochterfirmen, sobald ein Abschnitt sichtbar ist; Kennzeichnung „nur Admins“ |
 
-Die Firmenbearbeitungsmaske ist in zwei Hauptbereiche unterteilt:
+Die Reiter „Kommunikation“, „Erscheinungsbild“ und „Plattform“ gibt es nur bei **Tochterfirmen**; „Kommunikation“
+zusätzlich erst, nachdem die Firma angelegt ist.
 
-- **Linker Bereich**: Anzeige grundlegender Informationen (Name, Status, Anlagedatum)
-- **Rechter Bereich**: Bearbeitungsfelder und erweiterte Konfigurationen
+!!! note "Rechte"
+    Welche Abschnitte Sie sehen, hängt von Ihren Rechten ab. Die Rolle **Administrator** hat alle Rechte, ein
+    **Fuhrparkleiter** unter anderem `ManageCompany` und `ManageMailTemplates`. Zusätzliche Rechte vergibt ein
+    Administrator über benutzerdefinierte Rollen unter **System › Einstellungen**; dort stehen die Rechte mit
+    genau diesen Namen. Die Abschnittsseiten nennen das jeweils nötige Recht.
 
-## Stammdaten bearbeiten
+## Gleiche Bedienung überall
 
-Im rechten Formularbereich können Sie die Stammdaten der Firma anpassen:
+**Übernehmen oder eigener Wert.** Jede Einstellung, die eine Tochterfirma von ihrer Mutterfirma
+übernehmen kann, hat die Wahl **„Übernehmen“** / **„Eigener Wert“** (je nach Einstellung auch „Eigenes
+Erscheinungsbild“, „Eigene Gewichtung“, „Eigenes Postfach“ oder „Eigene Angaben festlegen“). Bei „Übernehmen“ steht darunter,
+was gilt und woher es kommt, zum Beispiel „↳ Übernommen von Fleet Partner GmbH: 7 Tage“. Ist in der
+ganzen Kette nichts eingestellt, gilt der Standardwert. Am Reitertitel zeigt „n angepasst“, wie
+viele Einstellungen die Firma selbst setzt.
 
-- **Name**: Offizieller Firmenname
-- **Straße, PLZ, Stadt**: Anschrift des Unternehmens
-- **Kontakt E-Mail Adresse**: Hauptkontaktadresse der Firma
-- **Kontroll-Intervall (in Tagen)**: Zyklus für interne Prüfungen (z. B. Führerscheinkontrolle)
-- **Gebuchte Dienste**: Auswahl der aktuell aktiven Module/Dienste (z. B. Führerscheinkontrolle)
+**Speichern.** Alle Änderungen gelten erst nach **„Speichern“** (oben rechts in der Kopfzeile, mit Anzeige der
+ungespeicherten Änderungen und „Zurücksetzen“). Verlassen Sie die Seite mit ungespeicherten Änderungen, fragt das
+System nach. Was ohne Speichern **sofort wirkt**, ist mit **„wirkt sofort“** gekennzeichnet: die
+Datenquelle-Umstellung und die API-Schlüssel, die Mail-Texte sowie am Absender-Postfach „Test-Mail senden“,
+„Mail-Konto speichern“ und „Verbindung löschen“. „Mit Microsoft/Google verbinden“ speichert vorher Ihre offenen
+Änderungen. Die Carano-Zugangsdaten und die Einstellungen zu ausgeschiedenen Fahrern im selben Abschnitt wie die Datenquelle gelten dagegen erst nach „Speichern“.
 
-Der Status der Firma (Aktiv / Gesperrt) lässt sich oben per Schaltfläche umschalten.
+**Aktionen in der Kopfzeile:** **Tochterfirma anlegen**, **Tochterfirma aus Carano importieren** (Recht
+`CaranoImport`; ausgegraut, solange die Carano-Zugangsdaten fehlen oder die Datenquelle nicht „Carano“ ist) und
+**Firma löschen** (nur bei Tochterfirmen und mit Recht `DeleteCompany`; löscht die Firma und alle ihre Benutzer
+unwiderruflich, nach einer Rückfrage).
 
-## Erweiterte Einstellungen
+## Anleitungen
 
-Unterhalb der Stammdaten finden Sie aufklappbare Abschnitte für zusätzliche Konfigurationen:
-
-- **Abrechnungseinstellungen**: Abrechnungsart (keine / individuell / vererbt) — siehe [Abrechnung](../Admin/invoices.md)
-- **Corporate Identity (Logo & Farben)**: eigenes Branding oder von der übergeordneten Firma erben — siehe [Design & Branding](company-theming.md)
-- **Backendanpassungen**: Experten-CSS für die Oberfläche — siehe [Design & Branding](company-theming.md)
-- **Mailing/-Clientanpassungen**: Mail-Template-Anpassung oder Vererbung — siehe [Design & Branding](company-theming.md)
-- **Fahrerdaten & Schnittstelle** (früher „Carano-Anbindung“): Datenquelle der Fahrer (*Vererbt* / *Manuell* / *Carano* / *REST-API*), Carano-Zugangsdaten und API-Schlüssel für die Schnittstelle — siehe [Fahrerdaten & Schnittstelle](company-driver-data.md) und [Carano-Anbindung](company-carano-connection.md). Nur für Plattform-Administratoren sichtbar
-- **Mail-Konto**: eigenes Firmen-Postfach (Microsoft 365 / Google) als Mail-Absender verbinden
-- **Nachkontrolle: Score-Schwellen**: Schwellwerte, ab denen Kontrollen automatisch genehmigt bzw. zur Nachkontrolle gegeben werden
-- **Erinnerungen & Führerschein-Ablauf**: Erinnerungs-Intervalle, Vorwarnzeit vor Ablauf des Führerscheins und der **Standard-Kontaktkanal** (*Erben* / *E-Mail* / *SMS*), über den die Fahrer dieser Firma zur Kontrolle aufgefordert werden. *Erben* übernimmt den Wert der übergeordneten Firma; einzelne Fahrer können den Kanal in ihrem Profil überschreiben (siehe [Benutzer bearbeiten](../Users/user-edit.md))
-- **Datenaufbewahrung**: Aufbewahrungsfristen für Daten dieser Firma
-- **Mail-Vorlagen**: Texte der versendeten E-Mails je Firma anpassen
-
-!!! note
-    Die aufklappbaren Abschnitte erscheinen nur bei **Unterfirmen** (Firmen mit übergeordneter
-    Firma) und nur, wenn Ihr Benutzer die jeweilige Berechtigung besitzt.
-
-## Sub-Firma verwalten
-
-Am unteren Rand der Seite stehen Ihnen folgende Optionen zur Verfügung:
-
-- **Sub-Firma anlegen**: Manuelles Anlegen einer untergeordneten Firma
-- **Sub-Firma aus Carano importieren**: Übernahme von Sub-Firmen aus dem Carano-System (nur bei Datenquelle „Carano“ mit hinterlegten Zugangsdaten)
-
-## Weitere Aktionen
-
-- **Firma löschen**: Entfernt die Firma dauerhaft aus dem System
-- **Zurücksetzen**: Setzt alle nicht gespeicherten Änderungen zurück
-- **Speichern**: Übernimmt alle vorgenommenen Änderungen
-
-## Hinweise
-
-- Änderungen werden erst nach Klick auf **„Speichern“** übernommen. Ausnahme: Das Umstellen der **Datenquelle der Fahrer** wirkt sofort nach Bestätigung des Dialogs „Datenquelle umstellen?“.
-- Einige Abschnitte (z. B. Fahrerdaten & Schnittstelle) sind nur sichtbar, wenn entsprechende Berechtigungen oder Konfigurationen vorliegen.
-- Gesperrte Firmen können nicht bearbeitet oder im System verwendet werden.
+- [Neue Kundenfirma einrichten](guide-new-customer.md)
+- [Erinnerungen und Eskalation einstellen](guide-reminders-escalation.md)
+- [Eigenes Postfach als Absender](guide-own-mailbox.md)
