@@ -1,6 +1,6 @@
 # Billing
 
-The **Billing** area generates the monthly invoice data for all companies in the system.
+The **System › Billing** area generates the monthly invoice data for all companies in the system.
 It is based on the services booked per company and the checks performed in the billing
 month.
 

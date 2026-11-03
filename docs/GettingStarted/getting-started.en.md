@@ -126,7 +126,7 @@ Click "Company" in the menu on the left to display the master data of the curren
 
 ### 3. Create a new (sub-)company
 
-In the view showing the current company's data, click "Create sub-company" at the bottom.
+In the view showing the current company's data, click "Create subsidiary" at the top right.
 This creates a new company below the current one.
 
 ![Dashboard](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500"}
@@ -151,7 +151,7 @@ city, e-mail).
 
 ### 5. Save the new company
 
-Click the "Save" button at the bottom right to save the new company.
+Click the "Save" button at the top right to save the new company.
 
 ![Dashboard](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
 

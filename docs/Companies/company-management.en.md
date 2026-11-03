@@ -18,20 +18,20 @@ application. The hierarchy is shown as a tree. Click the desired company to sele
 ### Editing a company
 
 The currently selected company can be edited at any time via the menu on the left. Click
-the **"Company"** menu entry. The edit form opens, where you can adjust all company data.
+the **"Company"** menu entry. The edit page opens ([organised in tabs](company-edit.md)), where you can adjust all company data.
 Make sure all entries are complete and follow the respective requirements.
 
 ## Driver data & interface
 
 Where a company's driver data comes from — the user interface, Carano, or the customer's own
 system via the interface (REST API) — is set by platform administrators in the
-**"Driver data & interface"** section of the company settings. The API keys for the interface
+**"Platform"** tab, **"Where the driver data comes from"** section. The API keys for the interface
 are managed there as well. Details: [Driver data & interface](company-driver-data.md).
 
 ## Carano connection
 
 If you are enabled for the Carano connection, you can enter the required data in the
-company settings ("Driver data & interface" section, data source "Carano"). You need the
+company settings ("Platform" tab, "Where the driver data comes from" section, data source "Carano"). You need the
 **Carano identifier** (also known as the **Carano ID**) and a Carano login.
 
 !!! tip
@@ -40,7 +40,7 @@ company settings ("Driver data & interface" section, data source "Carano"). You 
 
 ## Importing sub-companies from Carano
 
-Clicking **"Import sub-company from Carano"** transfers all subordinate companies assigned
+Clicking **"Import subsidiary from Carano"** (top right of the page header) transfers all subordinate companies assigned
 to the currently selected company in the Carano system.
 
 ## Managing Carano tenants

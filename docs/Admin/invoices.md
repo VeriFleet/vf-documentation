@@ -1,6 +1,6 @@
 # Abrechnung
 
-Der Bereich **Abrechnung** erzeugt die monatlichen Rechnungsdaten für alle Firmen im
+Der Bereich **System › Abrechnung** erzeugt die monatlichen Rechnungsdaten für alle Firmen im
 System. Grundlage sind die je Firma gebuchten Services und die im Abrechnungsmonat
 angefallenen Kontrollen.
 

@@ -1,65 +1,44 @@
-# Editing a company
+# Edit a company
 
-This area manages the central information of the currently selected company. Here you can
-change master data, configure additional settings and manage sub-companies.
+Manage the selected company here. The page is organised by task into **tabs**; the **"?" on a tab** opens its help page.
 
-![Edit company](images/company-edit.png){ border-effect="line" thumbnail="true" width="100%" }
+| Tab | Purpose | Who sees it |
+|---|---|---|
+| [Master data & services](company-edit-master-data.md) | Name, address, contact addresses, language, 2FA, booked services | everyone with access to the company |
+| [Drivers & checks](company-edit-drivers.md) | Check interval, reminders, expiry warnings, escalation list | everyone with access to the company; the sections after the check interval only with the `ManageCompany` permission and only for subsidiaries |
+| [Communication](company-edit-communication.md) | Mail sender, mail texts, details in the emails, retention | subsidiaries, as soon as one section is visible |
+| [Appearance](company-edit-appearance.md) | Logo, colours, look of the emails | subsidiaries, `AlterCorporateIdentity` permission |
+| [Platform](company-edit-platform.md) | Billing, data source, automatic review, technical settings | subsidiaries, as soon as one section is visible; marked "admins only" |
 
-## Overview
+The tabs "Communication", "Appearance" and "Platform" exist for **subsidiaries** only; "Communication" additionally only
+once the company has been created.
 
-The company edit form is divided into two main areas:
+!!! note "Permissions"
+    Which sections you see depends on your permissions. The **Administrator** role has all permissions, a
+    **fleet manager** has `ManageCompany` and `ManageMailTemplates`, among others. An administrator grants further
+    permissions through custom roles under **System › Settings**, where the permissions appear under exactly these
+    names. Each section page names the permission it needs.
 
-- **Left area**: basic information (name, status, creation date)
-- **Right area**: edit fields and advanced configuration
+## Same operation everywhere
 
-## Editing master data
+**Inherit or own value.** Every setting a subsidiary can take over from its parent company offers the choice
+**"Inherit"** / **"Own value"** (depending on the setting also "Own appearance", "Own weighting", "Own mailbox" or "Set own details").
+With "Inherit" the line below shows what applies and where it comes from, for example "↳ Inherited from Fleet Partner
+GmbH: 7 days". If nothing is set anywhere in the chain, the default applies. On the tab title "n customized" shows how many
+settings the company sets itself.
 
-In the form area on the right you can adjust the company's master data:
+**Saving.** All changes apply only after **"Save"** (top right in the page header, with a count of unsaved changes and
+"Reset"). If you leave the page with unsaved changes, the system asks first. What takes effect **immediately** is marked
+**"takes effect immediately"**: switching the data source and the API keys, the mail texts, and at the mail sender "Send
+test mail", "Save mail account" and "Delete connection". "Connect with Microsoft/Google" saves your open changes first.
+The Carano credentials and the settings for departed drivers in the same section as the data source, however, apply only after "Save".
 
-- **Name**: official company name
-- **Street, postcode, city**: company address
-- **Contact e-mail address**: the company's main contact address
-- **Check interval (days)**: cycle for recurring checks (e.g. driving-licence check)
-- **Booked services**: selection of the active modules/services (e.g. licence check, UVV, DQC)
+**Actions in the page header:** **Create subsidiary**, **Import subsidiary from Carano** (`CaranoImport` permission;
+greyed out while the Carano credentials are missing or the data source is not "Carano") and **Delete company** (subsidiaries
+only and with the `DeleteCompany` permission; deletes the company and all its users irrevocably, after a confirmation).
 
-The company status (active/blocked) is toggled with the switch at the top.
+## Guides
 
-## Advanced settings
-
-Below the master data you find expandable sections for additional configuration:
-
-- **Billing settings**: how the company is invoiced (none / individual / inherited) — see [Billing](../Admin/invoices.md)
-- **Corporate identity (logo & colors)**: own branding or inherit from the parent company — see [Design & branding](company-theming.md)
-- **Backend customizations**: expert CSS for the user interface — see [Design & branding](company-theming.md)
-- **Mailing/client customizations**: mail template customisation or inheritance — see [Design & branding](company-theming.md)
-- **Driver data & interface** (formerly "Carano connection"): driver data source (*Inherited* / *Manual* / *Carano* / *REST API*), Carano credentials and API keys for the interface — see [Driver data & interface](company-driver-data.md) and [Carano connection](company-carano-connection.md). Visible to platform administrators only
-- **Mail account**: connect the company's own mailbox (Microsoft 365 / Google) as mail sender
-- **Manual review: score thresholds**: thresholds for automatic approval vs. follow-up check
-- **Reminders & licence expiry**: reminder intervals, early warning before licence expiry and the **default contact channel** (*Inherit* / *Email* / *SMS*) used to request checks from this company's drivers. *Inherit* takes the value from the parent company; individual drivers can override the channel in their profile (see [Editing a user](../Users/user-edit.en.md))
-- **Data retention**: retention periods for this company's data
-- **Mail templates**: customise the texts of the e-mails sent, per company
-
-!!! note
-    The expandable sections only appear for **sub-companies** (companies with a parent) and
-    only if your user holds the respective permission.
-
-## Managing sub-companies
-
-At the bottom of the page:
-
-- **Create sub-company**: manually create a subordinate company
-- **Import sub-company from Carano**: transfer sub-companies from the Carano system (only with data source "Carano" and stored credentials)
-
-## Further actions
-
-- **Delete company**: removes the company from the system permanently
-- **Reset**: discards all unsaved changes
-- **Save**: applies all changes
-
-## Notes
-
-- Changes only take effect after clicking **"Save"**. Exception: changing the **driver data
-  source** takes effect immediately once you confirm the "Change data source?" dialog.
-- Some sections (e.g. Driver data & interface) are only visible with the corresponding
-  permissions or configuration.
-- Blocked companies cannot be edited or used in the system.
+- [Set up a new customer company](guide-new-customer.md)
+- [Set up reminders and escalation](guide-reminders-escalation.md)
+- [Own mailbox as sender](guide-own-mailbox.md)

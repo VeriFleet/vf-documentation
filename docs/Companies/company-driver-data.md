@@ -1,6 +1,6 @@
 # Fahrerdaten & Schnittstelle
 
-Im Abschnitt **„Fahrerdaten & Schnittstelle“** der Firmeneinstellungen legen Sie fest, **woher die
+Im Reiter **„Plattform“** der Firmeneinstellungen, Abschnitt **„Woher die Fahrerdaten kommen“**, legen Sie fest, **woher die
 Fahrerdaten einer Firma kommen**: aus der Oberfläche, aus dem Fuhrpark-System Carano oder aus dem
 System des Kunden über die Schnittstelle (REST-API). Für die Schnittstelle verwalten Sie hier
 außerdem die **API-Schlüssel**, mit denen sich das Kundensystem anmeldet.
@@ -14,9 +14,9 @@ Der Abschnitt hieß bisher **„Carano-Anbindung“**.
 
 ## Abschnitt öffnen
 
-1. Wählen Sie die Firma aus — in der Regel den **Mandanten**, also die oberste Firma des Kunden.
+1. Wählen Sie die Firma aus — in der Regel den **Mandanten**, also die oberste Firma Ihres Kunden, direkt unter der obersten Firma des Systems. Diese oberste Firma des Systems hat keine Mutterfirma und deshalb keinen Reiter „Plattform“.
 2. Klicken Sie im Menü auf **„Firma“**.
-3. Öffnen Sie den aufklappbaren Abschnitt **„Fahrerdaten & Schnittstelle“**.
+3. Öffnen Sie den Reiter **„Plattform“** und dort den Abschnitt **„Woher die Fahrerdaten kommen“**.
 
 ## Datenquelle der Fahrer
 
@@ -24,10 +24,10 @@ Oben im Abschnitt wählen Sie die Datenquelle:
 
 | Auswahl | Bedeutung |
 |---|---|
-| **Vererbt** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
+| **Wie Mutterfirma** | Es gilt die Einstellung der übergeordneten Firma. Nur bei Firmen mit übergeordneter Firma verfügbar. |
 | **Manuell** | Die Fahrer werden in der Oberfläche gepflegt. |
 | **Carano** | Die Fahrer kommen aus Carano; der Import läuft alle 4 Stunden. |
-| **REST-API** | Das System des Kunden legt Fahrer an, pflegt sie und verbucht Kontrollen über die Schnittstelle. |
+| **REST-Schnittstelle** | Das System des Kunden legt Fahrer an, pflegt sie und verbucht Kontrollen über die Schnittstelle. |
 
 **Vererbung:** Die Datenquelle wird am Mandanten eingestellt und gilt für alle Firmen darunter,
 die keinen eigenen Wert haben. Ist in der ganzen Firmenkette nichts eingestellt, gilt
@@ -43,13 +43,13 @@ die keinen eigenen Wert haben. Ist in der ganzen Firmenkette nichts eingestellt,
 3. Bestätigen Sie den Dialog.
 
 !!! warning "Die Umstellung wirkt sofort"
-    Die neue Datenquelle gilt **unmittelbar nach der Bestätigung** — nicht erst, wenn Sie unten auf
+    Die neue Datenquelle gilt **unmittelbar nach der Bestätigung** — nicht erst, wenn Sie oben rechts auf
     „Speichern“ klicken. Die Umstellung wird in der Historie des Administrators festgehalten, der
     sie vorgenommen hat.
 
 ### Was sich dabei ändert
 
-**Von Carano auf „Manuell“ oder „REST-API“:**
+**Von Carano auf „Manuell“ oder „REST-Schnittstelle“:**
 
 - Carano-Import und -Export überspringen diese Firmen ab ihrem nächsten Lauf.
 - Carano-Kundennummern, die Carano-Zugangsdaten und die Carano-Kennungen der Fahrer **bleiben
@@ -69,7 +69,7 @@ Carano-Fahrer wieder.
     Prüfen Sie vor dem Zurückstellen, ob die Fahrerliste in Carano aktuell ist: Carano-Fahrer, die
     Carano nicht mehr als aktiv führt, entfernt der Import wie gewohnt.
 
-**Weg von „REST-API“:** Die aktiven API-Schlüssel dieser Firma werden widerrufen. Das Kundensystem
+**Weg von „REST-Schnittstelle“:** Die aktiven API-Schlüssel dieser Firma werden widerrufen. Das Kundensystem
 kann sich damit nicht mehr anmelden.
 
 ### Bestehende Firmen
@@ -92,25 +92,27 @@ Das gespeicherte Passwort wird **nie angezeigt** — das Feld bleibt leer:
 - **Geben Sie ein neues Passwort ein**, ersetzt es das gespeicherte.
 - Mit **„Gespeichertes Passwort entfernen“** löschen Sie es.
 
-Die Schaltfläche **„Sub-Firma aus Carano importieren“** steht nur im Modus „Carano“ zur Verfügung.
+Zugangsdaten und die Einstellungen zu ausgeschiedenen Fahrern darunter gelten erst nach **„Speichern“** oben rechts — anders als die Umstellung der Datenquelle und die API-Schlüssel, die sofort wirken, obwohl der ganze Abschnitt das Kennzeichen „wirkt sofort“ trägt.
+
+Die Schaltfläche **„Tochterfirma aus Carano importieren“** (Kopfzeile oben rechts; „Sub-Firma aus Carano importieren“ ist nur der Titel des Dialogs) sehen Benutzer mit dem Recht `CaranoImport`. Sie ist nur im Modus „Carano“ bedienbar, bei einer anderen Datenquelle ausgegraut.
 Wie Sie Firmen aus Carano importieren, lesen Sie unter [Carano-Anbindung](company-carano-connection.md).
 
-## Datenquelle „REST-API“: API-Schlüssel
+## Datenquelle „REST-Schnittstelle“: API-Schlüssel
 
-Im Modus „REST-API“ verwalten Sie die Schlüssel, mit denen sich das Kundensystem an der
+Im Modus „REST-Schnittstelle“ verwalten Sie die Schlüssel, mit denen sich das Kundensystem an der
 Schnittstelle anmeldet.
 
 ### Übersicht „API-Schlüssel“
 
-| Spalte | Inhalt |
-|---|---|
-| **Bezeichnung** | frei gewählter Name, z. B. das anbindende System |
-| **Schlüssel** | nur der öffentliche Anfang, z. B. `vfk_1a2b3c4d_…` — genug, um mit dem Kunden über denselben Schlüssel zu sprechen |
-| **Handelt als** | der Benutzer, in dessen Namen der Schlüssel arbeitet |
-| **Erstellt** | Zeitpunkt der Erzeugung |
-| **Zuletzt genutzt** | letzter erfolgreicher Aufruf mit diesem Schlüssel |
-| **Läuft ab** | optionales Ablaufdatum |
-| **Status** | *Aktiv*, *Widerrufen* oder *Abgelaufen* |
+Jeder Schlüssel erscheint als eigene Karte. Die Kopfzeile der Karte zeigt die **Bezeichnung** (frei gewählt, z. B. das
+anbindende System), den öffentlichen Anfang des Schlüssels, z. B. `vfk_1a2b3c4d_…` (genug, um mit dem Kunden über
+denselben Schlüssel zu sprechen), den **Status** (*Aktiv*, *Widerrufen* oder *Abgelaufen*) und die Schaltfläche
+**„Widerrufen“**. Eine Zeile darunter nennt, jeweils mit Beschriftung:
+
+- **Handelt als:** der Benutzer, in dessen Namen der Schlüssel arbeitet,
+- **Erstellt:** Zeitpunkt der Erzeugung,
+- **Zuletzt genutzt:** letzter erfolgreicher Aufruf mit diesem Schlüssel („nie“, solange er unbenutzt ist),
+- **Läuft ab:** optionales Ablaufdatum („–“ ohne Ablauf).
 
 Über **„Widerrufen“** sperren Sie einen Schlüssel nach einer Sicherheitsabfrage dauerhaft.
 Widerrufene Schlüssel bleiben zur Nachvollziehbarkeit in der Liste.
@@ -123,7 +125,7 @@ Widerrufene Schlüssel bleiben zur Nachvollziehbarkeit in der Liste.
     - **Handelt als** — ein aktiver Benutzer dieser Firma mit dem Recht, Benutzer zu verwalten;
       typischerweise der bereits vorhandene API-Benutzer des Kunden. Alternativ wählen Sie
       **„Neuer technischer API-Benutzer“**: Dann wird ein Benutzer „API &lt;Firmenname&gt;“ mit der
-      Rolle Firmen-Administrator angelegt, **ohne E-Mail-Adresse und ohne Passwort**. Er kann sich
+      Rolle Fuhrparkleiter angelegt, **ohne E-Mail-Adresse und ohne Passwort**. Er kann sich
       nirgends anmelden; nur der Schlüssel handelt in seinem Namen.
     - **Läuft ab am** (optional) — danach wird der Schlüssel abgewiesen.
 3. Bestätigen Sie. Der Schlüssel wird **genau einmal** angezeigt, mit einer Schaltfläche zum
