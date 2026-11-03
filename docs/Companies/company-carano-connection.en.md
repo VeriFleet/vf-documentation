@@ -66,8 +66,10 @@ After [creating a company](company-create.md) that you want to use as the Carano
 
 ## Drivers who have left
 
-If Carano stops delivering a driver, the import no longer deletes them right away. In the "Driver data & interface"
-section of the tenant (below the credentials) you choose what happens instead:
+If Carano stops delivering a driver, the import no longer deletes them right away. In the "Platform" tab, "Where the driver
+data comes from" section, at the tenant (below the credentials) you choose what happens instead. The "Departed drivers"
+block appears only when the effective data source is "Carano" and the company was not itself imported from Carano.
+The setting applies only after "Save" at the top right:
 
 - **Deactivate** (default): The driver is deactivated and receives no more requests. Their check history is kept. After
   the retention period (default 12 months, adjustable from 1 to 60 months) they are permanently deleted together with

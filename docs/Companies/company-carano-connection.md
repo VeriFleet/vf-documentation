@@ -72,8 +72,10 @@ aus.
 
 ## Ausgeschiedene Fahrer
 
-Liefert Carano einen Fahrer nicht mehr, löscht der Import ihn nicht sofort. Im Bereich "Fahrerdaten & Schnittstelle"
-des Mandanten (unter den Zugangsdaten) legen Sie fest, was stattdessen passiert:
+Liefert Carano einen Fahrer nicht mehr, löscht der Import ihn nicht sofort. Im Reiter "Plattform", Abschnitt "Woher die
+Fahrerdaten kommen", beim Mandanten (unter den Zugangsdaten) legen Sie fest, was stattdessen passiert. Der Block
+"Ausgeschiedene Fahrer" erscheint nur, wenn die wirksame Datenquelle "Carano" ist und die Firma nicht selbst aus Carano
+importiert wurde. Die Einstellung gilt erst nach "Speichern" oben rechts:
 
 - **Deaktivieren** (Standard): Der Fahrer wird deaktiviert und bekommt keine Aufforderungen mehr. Seine
   Kontrollhistorie bleibt erhalten. Nach der eingestellten Aufbewahrungsfrist (Standard 12 Monate, einstellbar von 1 bis
