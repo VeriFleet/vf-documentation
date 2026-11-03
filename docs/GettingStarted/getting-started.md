@@ -150,7 +150,7 @@ Klicken Sie links im Menü auf "Firma", um die Stammdaten der aktuellen Firma an
 
 ### 3. Neue (Sub-)Firma anlegen
 
-Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - oben rechts auf "Sub-Firma
+Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - oben rechts auf "Tochterfirma
 anlegen".
 
 Damit wird eine neue Firma unterhalb der aktuellen Firma erzeugt.

@@ -4,7 +4,7 @@ Um eine Firma anzulegen, wählen Sie zunächst die Firma aus, unterhalb derer si
 Eine neue Firma kann immer nur hierarchisch unterhalb einer bereits vorhandenen Firma angelegt werden.
 
 1. Klicken Sie dazu links im Menü auf den Button "Firma", um die Firmenstammdaten anzuzeigen.
-2. Klicken Sie danach oben rechts in der Ansicht auf "Sub-Firma anlegen".
+2. Klicken Sie danach oben rechts in der Ansicht auf "Tochterfirma anlegen".
 
 ![Firma bearbeiten](images/1-Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500" }
 

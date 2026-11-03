@@ -4,7 +4,7 @@ To create a company, first select the company below which you want to create the
 A new company can only ever be created hierarchically below an existing company.
 
 1. Click "Company" in the menu on the left to display the company master data.
-2. Then click "Create sub-company" at the top right of the view.
+2. Then click "Create subsidiary" at the top right of the view.
 
 ![Edit company](images/1-Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500" }
 
