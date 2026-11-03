@@ -51,7 +51,7 @@ Der Bereich ist zugeklappt.
     |---|---|
     | **Fahrersoftware-URL** | Webadresse der Fahrer-Seite; daraus entsteht der Link in den Aufforderungs-Mails (ein „/“ am Ende ergänzt VeriFleet selbst). Pflichtfeld. |
     | **Adminsoftware-URL** | Webadresse dieser Verwaltungsoberfläche; Link in der Mail mit den Zugangsdaten für neue Benutzer. Pflichtfeld. |
-    | **Absenderadresse beim VeriFleet-Postfach (optional)** | Gilt nur, wenn die Mails über das VeriFleet-Postfach gehen (weder eigenes noch geerbtes Postfach). Leer = Standardabsender von VeriFleet. |
+    | **Absenderadresse beim VeriFleet-Postfach (optional)** | Gilt nur, wenn die Mails über das VeriFleet-Postfach gehen (kein eigenes und kein von der Mutterfirma übernommenes Postfach). Leer = Standardabsender von VeriFleet. |
     | **Splash-Link** | Zusätzlicher Link für eigene Mail-Texte (Platzhalter `{{splashLink}}`); die mitgelieferten Mails verwenden ihn nicht. |
     | **E-Mail Adaptionen** | Aussehen der Aufforderungs-Mail: „Standard“ oder eine Sondervariante für bestimmte Kundenaktionen (Testdrive). |
 
