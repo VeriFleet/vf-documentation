@@ -6,6 +6,8 @@ How often drivers are checked, how they are reminded and who is informed in case
     All users with access to the company see the section "Check interval". The other sections exist only for existing
     subsidiaries and with the `ManageCompany` permission (fleet manager and administrator).
 
+![Tab "Drivers & checks": check interval and request and reminders](images/company-edit-drivers.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Check interval
 
 **Check every … days:** Every driver is checked again at this interval. Required, default **180 days**. The value applies
@@ -22,6 +24,8 @@ the company can change it.
 Below the settings, **"This is how it works with this setting:"** shows the stages with days: request (day 0), reminder
 (after one interval), urgent reminder (after two intervals) and escalation (from three intervals). With 7 days that is day 0, 7,
 14 and from day 21.
+
+![Expiry warnings and weekly escalation list](images/company-edit-drivers-expiry.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 ## Expiry of driving licence and driver qualification
 

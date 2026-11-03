@@ -18,6 +18,8 @@ Aufforderungen, Erinnerungen und Eskalationslisten. Die Fahrer sehen die Adresse
 | **Übernehmen** | Die Mails gehen über das Postfach der nächsthöheren Firma, die eines hat, sonst über das **VeriFleet-Postfach**. Darunter steht, welches Postfach gilt und woher es kommt. |
 | **Eigenes Postfach** | Die Mails kommen von einer Adresse Ihrer Firma, zum Beispiel `fuehrerschein@ihre-firma.de`. Tochterfirmen ohne eigenes Postfach nutzen es mit. |
 
+![Reiter „Kommunikation“: Absender der Mails mit gewähltem „Eigenes Postfach“ und den drei Kacheln](images/company-edit-communication.png){ border-effect="line" thumbnail="true" width="500" }
+
 ### Eigenes Postfach verbinden
 
 Wählen Sie die Kachel, die zu Ihrem Mailsystem passt:
@@ -79,6 +81,8 @@ Test-Mail ein gespeichertes Postfach brauchen und Löschen nicht erst auf „Spe
 Ein Katalog **„Alle Mails & Stufen“** aller Mails, die VeriFleet für die Firma verschickt, mit Auslöser, Stufe und
 Status. Je Mail: **Ansehen** (Vorschau mit Beispieldaten, nichts wird versendet) und, je nach Stand, **Bearbeiten** (bei einer eigenen Vorlage), **Überschreiben** (bei einer übernommenen oder mitgelieferten Vorlage) oder **Anlegen** (wenn es keinen Standardtext gibt);
 darunter die **eigenen Vorlagen dieser Firma** mit **„Neue Vorlage anlegen“**.
+
+![Mail-Texte: Katalog „Alle Mails & Stufen“ mit „Ansehen“ und „Überschreiben“](images/company-edit-communication-catalog.png){ border-effect="line" thumbnail="true" width="500" }
 
 | Status | Bedeutung |
 |---|---|

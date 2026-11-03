@@ -8,6 +8,8 @@ Billing, data source and technical settings. The tab is marked **"admins only"**
     import authorized") · **Automatic review**: `ManageScoreThresholds` · **Technical settings**:
     `AlterCorporateIdentity`. The administrator has all permissions and grants further ones through custom roles.
 
+![Tab "Platform": billing, where the driver data comes from, automatic review](images/company-edit-platform.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Billing
 
 | Choice | Meaning |

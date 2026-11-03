@@ -140,22 +140,22 @@ definiert werden (z.B. Carano).
 
 Melden Sie sich am System an, so dass Sie das DashBoard sehen.
 
-![DashBoard](images/1-Firma_anlegen_anmelden.png){ border-effect="line" thumbnail="true" width="500"}
+![Dashboard mit dem Menüpunkt „Firma“](images/1-Firma_anlegen_anmelden.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Firma (aktuelle) aufrufen
 
 Klicken Sie links im Menü auf "Firma", um die Stammdaten der aktuellen Firma anzuzeigen.
 
-![DashBoard](images/2-Firma_anlegen_aktuelle_Firma_aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
+![Firma bearbeiten: Kopfzeile, Reiter und Stammdaten der aktuellen Firma](images/2-Firma_anlegen_aktuelle_Firma_aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Neue (Sub-)Firma anlegen
 
-Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - oben rechts auf "Tochterfirma
-anlegen".
+Klicken Sie in der View - in der die Daten der aktuellen Firma angezeigt werden - in der Kopfzeile, unter dem Firmennamen, auf
+"Tochterfirma anlegen".
 
 Damit wird eine neue Firma unterhalb der aktuellen Firma erzeugt.
 
-![DashBoard](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500"}
+![Kopfzeile mit der Schaltfläche „Tochterfirma anlegen“](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Daten der neuen Firma erfassen
 
@@ -174,13 +174,13 @@ Geben Sie die Daten für die neue Firma möglichst vollständig ein (Name, Stra�
     Sollten Sie Pflichtfelder nicht füllen, werden Sie vom System durch eine Meldung darauf
     hingewiesen.
 
-![DashBoard](images/4-Firma-neu_Daten_erfassen.png){ border-effect="line" thumbnail="true" width="500"}
+![Maske „Firma anlegen“ mit ausgefüllten Stammdaten](images/4-Firma-neu_Daten_erfassen.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 5. Speichern der neuen Firma
 
-Klicken Sie oben rechts auf den Button "Speichern", um die neue Firma zu speichern.
+Klicken Sie oben rechts in der Kopfzeile auf den Button "Speichern", um die neue Firma zu speichern.
 
-![DashBoard](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
+![Kopfzeile mit hervorgehobenem Button „Speichern“](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
 
 !!! tip
     Weiterführende Informationen zur Verwaltung von Firmen finden Sie unter [Firmenverwaltung](../Companies/company-management.md).

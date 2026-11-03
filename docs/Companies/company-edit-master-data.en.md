@@ -7,6 +7,8 @@ Basic data of the company and which services it uses.
     interval** can only be changed by those who may manage the company (`ManageCompany` permission, for a new
     subsidiary `CreateSubCompany`); the fields are locked for everyone else.
 
+![Tab "Master data & services": sections "Company" and "Contact and language"](images/company-edit-master-data.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Section "Company"
 
 | Setting | What it does |
@@ -24,6 +26,8 @@ Basic data of the company and which services it uses.
 ## Section "Security and booked services"
 
 This section exists for **existing subsidiaries** only. It also applies to all subsidiaries below.
+
+![Section "Security and booked services"](images/company-edit-master-data-security.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 | Setting | What it does | Default |
 |---|---|---|

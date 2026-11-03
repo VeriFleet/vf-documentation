@@ -18,6 +18,8 @@ reminders and escalation lists. Drivers see the mailbox address as the sender.
 | **Inherit** | Mails go through the mailbox of the nearest parent company that has one, otherwise through the **VeriFleet mailbox**. The line below shows which mailbox applies and where it comes from. |
 | **Own mailbox** | Mails come from an address of your company, for example `fleet@your-company.com`. Subsidiaries without an own mailbox use it too. |
 
+![Tab "Communication": mail sender with "Own mailbox" selected and the three tiles](images/company-edit-communication.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 ### Connecting an own mailbox
 
 Pick the tile that matches your mail system:
@@ -78,6 +80,8 @@ mail need a stored mailbox and deleting should not wait for "Save".
 A catalogue **"All mails & stages"** of all mails VeriFleet sends for the company, with trigger, stage and status. Per mail:
 **View** (preview with sample data, nothing is sent) and, depending on the state, **Edit** (for an own template), **Override** (for an inherited or built-in template) or **Create** (when there is no default text); below it **this company's own
 templates** with **"Create new template"**.
+
+![Mail texts: catalogue "All mails & stages" with "View" and "Override"](images/company-edit-communication-catalog.en.png){ border-effect="line" thumbnail="true" width="500" }
 
 | Status | Meaning |
 |---|---|

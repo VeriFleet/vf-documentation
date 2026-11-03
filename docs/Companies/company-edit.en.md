@@ -2,6 +2,8 @@
 
 Manage the selected company here. The page is organised by task into **tabs**; the **"?" on a tab** opens its help page.
 
+![Edit a company: page header with actions and "Save" at the top right, the tabs below](images/company-edit.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 | Tab | Purpose | Who sees it |
 |---|---|---|
 | [Master data & services](company-edit-master-data.md) | Name, address, contact addresses, language, 2FA, booked services | everyone with access to the company |

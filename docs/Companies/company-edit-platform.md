@@ -8,6 +8,8 @@ Abrechnung, Datenquelle und Technik. Der Reiter trägt die Kennzeichnung **„nu
     berechtigt“) · **Automatische Prüfung**: `ManageScoreThresholds` · **Technische Einstellungen**:
     `AlterCorporateIdentity`. Der Administrator hat alle Rechte; weitere vergibt er über benutzerdefinierte Rollen.
 
+![Reiter „Plattform“: Abrechnung, Woher die Fahrerdaten kommen, Automatische Prüfung](images/company-edit-platform.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Abrechnung
 
 | Auswahl | Bedeutung |

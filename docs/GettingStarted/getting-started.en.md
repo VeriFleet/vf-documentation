@@ -116,20 +116,20 @@ configuring the connection to a leading system (e.g. Carano).
 
 Sign in so that you can see the dashboard.
 
-![Dashboard](images/1-Firma_anlegen_anmelden.png){ border-effect="line" thumbnail="true" width="500"}
+![Dashboard with the "Company" menu item](images/1-Firma_anlegen_anmelden.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 2. Open the current company
 
 Click "Company" in the menu on the left to display the master data of the current company.
 
-![Dashboard](images/2-Firma_anlegen_aktuelle_Firma_aufrufen.png){ border-effect="line" thumbnail="true" width="500"}
+![Edit company: page header, tabs and master data of the current company](images/2-Firma_anlegen_aktuelle_Firma_aufrufen.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 3. Create a new (sub-)company
 
-In the view showing the current company's data, click "Create subsidiary" at the top right.
+In the view showing the current company's data, click "Create subsidiary" in the page header, below the company name.
 This creates a new company below the current one.
 
-![Dashboard](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.png){ border-effect="line" thumbnail="true" width="500"}
+![Page header with the "Create subsidiary" button](images/3-Firma-bearbeiten-neue_Sub_Firma_anlegen.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 4. Enter the new company's data
 
@@ -147,13 +147,13 @@ city, e-mail).
 
     If you leave mandatory fields empty, the system points this out with a message.
 
-![Dashboard](images/4-Firma-neu_Daten_erfassen.png){ border-effect="line" thumbnail="true" width="500"}
+![Company create form with the master data filled in](images/4-Firma-neu_Daten_erfassen.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 ### 5. Save the new company
 
-Click the "Save" button at the top right to save the new company.
+Click the "Save" button at the top right of the page header to save the new company.
 
-![Dashboard](images/5-Firma-neu_Daten_speichern.png){ border-effect="line" thumbnail="true" width="500"}
+![Page header with the "Save" button highlighted](images/5-Firma-neu_Daten_speichern.en.png){ border-effect="line" thumbnail="true" width="500"}
 
 !!! tip
     Further information on managing companies: [Company management](../Companies/company-management.md).

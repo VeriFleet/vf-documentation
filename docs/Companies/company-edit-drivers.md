@@ -6,6 +6,8 @@ Wie oft Fahrer kontrolliert werden, wie sie erinnert werden und wer bei Verzug i
     Alle Benutzer mit Zugriff auf die Firma sehen den Abschnitt „Kontroll-Rhythmus“. Die übrigen Abschnitte gibt es
     nur bei bestehenden Tochterfirmen und mit dem Recht `ManageCompany` (Fuhrparkleiter und Administrator).
 
+![Reiter „Fahrer & Kontrollen“: Kontroll-Rhythmus sowie Aufforderung und Erinnerungen](images/company-edit-drivers.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Kontroll-Rhythmus
 
 **Kontrolle alle … Tage:** In diesem Abstand wird jeder Fahrer neu kontrolliert. Pflichtfeld, Standard **180 Tage**. Der
@@ -22,6 +24,8 @@ darf ihn, wer die Firma verwalten darf.
 Unter den Einstellungen zeigt **„So läuft es mit dieser Einstellung ab:“** die Stufen mit Tagen: Aufforderung (Tag 0),
 Erinnerung (nach einem Abstand), dringende Erinnerung (nach zwei Abständen) und Eskalation (ab drei Abständen). Bei 7 Tagen
 sind das Tag 0, 7, 14 und ab Tag 21.
+
+![Ablauf-Warnungen und wöchentliche Eskalationsliste](images/company-edit-drivers-expiry.png){ border-effect="line" thumbnail="true" width="500" }
 
 ## Ablauf von Führerschein und Fahrerqualifikation
 

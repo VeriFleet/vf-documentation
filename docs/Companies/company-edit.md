@@ -3,6 +3,8 @@
 Hier verwalten Sie die ausgewählte Firma. Die Seite ist nach Aufgaben in **Reiter** gegliedert; ein
 **„?“ am Reiter** öffnet die passende Hilfeseite.
 
+![Firma bearbeiten: Kopfzeile mit Aktionen und „Speichern“ oben rechts, darunter die Reiter](images/company-edit.png){ border-effect="line" thumbnail="true" width="500" }
+
 | Reiter | Wofür | Wer sieht ihn |
 |---|---|---|
 | [Stammdaten & Dienste](company-edit-master-data.md) | Name, Anschrift, Kontaktadressen, Sprache, 2FA, gebuchte Dienste | alle mit Zugriff auf die Firma |

@@ -3,6 +3,12 @@
 > Liegt bewusst im Repo-Root (nicht unter `docs/`), da `docs/` das MkDocs-Quellverzeichnis
 > der veröffentlichten Kunden-Dokumentation ist. Neueste Einträge oben.
 
+### 2026-11-03 · docs — Hilfebilder zu „Firma bearbeiten“ neu aufgenommen (de + en)
+
+- **Branch:** `docs/162-company-edit-tabs` (PR #3), dann `dev`. Gehört zu VeriFleet #180.
+- **Ersetzt:** `Firma-sperren`, `gesperrte_Firma_in_Suchansicht`, `1-Firma_anlegen`, `company-create-form` (zeigte eine Fehlerseite), die fünf Bilder von `getting-started`; neu: `company-edit` und je ein bis zwei Bilder für `-master-data`, `-drivers`, `-communication`, `-appearance`, `-platform`, `company-create-interval`; englische Fassungen `*.en.png`. Gelöscht: `company-edit-branding(.en)`, `2-Firma-anlegen-speichern` (nirgends verwendet).
+- **Text:** `company-activate` neu geschrieben (Umschalter liegt im Reiter „Stammdaten & Dienste“, nicht „oben links“), `company-create`/`getting-started`: Lage von „Tochterfirma anlegen“ (Kopfzeile unter dem Firmennamen) und Kontroll-Intervall (Reiter „Fahrer & Kontrollen“).
+
 ### 2026-11-03 · docs — Hilfebilder Carano-Anbindung neu (de + en)
 
 - **Branch:** `docs/55-carano-leavers`, dann `dev`. Gehört zu VeriFleet #180.

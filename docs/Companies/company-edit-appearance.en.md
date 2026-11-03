@@ -5,6 +5,8 @@ Logo and colours of the interface and the emails.
 !!! note "Who sees this tab?"
     Users with the `AlterCorporateIdentity` permission (administrator or custom role), subsidiaries only.
 
+![Tab "Appearance" with "Own appearance" selected](images/company-edit-appearance.en.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Logo and colours
 
 Applies to the interface of this company and its subsidiaries. Choose **"Inherit"** (from the parent company) or

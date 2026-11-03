@@ -5,6 +5,8 @@ Logo und Farben der Oberfläche und der Mails.
 !!! note "Wer sieht diesen Reiter?"
     Benutzer mit dem Recht `AlterCorporateIdentity` (Administrator oder benutzerdefinierte Rolle), nur bei Tochterfirmen.
 
+![Reiter „Erscheinungsbild“ mit gewähltem „Eigenes Erscheinungsbild“](images/company-edit-appearance.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Logo und Farben
 
 Gilt für die Oberfläche dieser Firma und ihrer Tochterfirmen. Wählen Sie **„Übernehmen“** (von der Mutterfirma) oder

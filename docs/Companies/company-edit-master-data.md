@@ -7,6 +7,8 @@ Grunddaten der Firma und welche Dienste sie nutzt.
     Kontroll-Intervall** ändert nur, wer die Firma verwalten darf (Recht `ManageCompany`, bei einer neuen
     Tochterfirma `CreateSubCompany`); für alle anderen sind die Felder gesperrt.
 
+![Reiter „Stammdaten & Dienste“: Abschnitte „Firma“ und „Kontakt und Sprache“](images/company-edit-master-data.png){ border-effect="line" thumbnail="true" width="500" }
+
 ## Abschnitt „Firma“
 
 | Einstellung | Was sie bewirkt |
@@ -24,6 +26,8 @@ Grunddaten der Firma und welche Dienste sie nutzt.
 ## Abschnitt „Sicherheit und gebuchte Dienste“
 
 Diesen Abschnitt gibt es nur bei **bestehenden Tochterfirmen**. Er gilt jeweils auch für alle Tochterfirmen darunter.
+
+![Abschnitt „Sicherheit und gebuchte Dienste“](images/company-edit-master-data-security.png){ border-effect="line" thumbnail="true" width="500" }
 
 | Einstellung | Was sie bewirkt | Standard |
 |---|---|---|
