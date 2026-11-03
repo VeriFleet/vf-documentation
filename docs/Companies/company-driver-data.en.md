@@ -14,7 +14,7 @@ This section used to be called **"Carano connection"**.
 
 ## Opening the section
 
-1. Select the company — usually the **tenant**, i.e. the customer's top-level company.
+1. Select the company — usually the **tenant**, i.e. your customer's top company, directly below the system's top company. The system's top company has no parent company and therefore no "Platform" tab.
 2. Click **"Company"** in the menu.
 3. Open the **"Platform"** tab and its **"Where the driver data comes from"** section.
 
@@ -27,7 +27,7 @@ At the top of the section you choose the data source:
 | **Like parent company** | The setting of the parent company applies. Only available for companies with a parent company. |
 | **Manual** | Drivers are maintained in the user interface. |
 | **Carano** | Drivers come from Carano; the import runs every 4 hours. |
-| **REST API** | The customer's system creates and maintains drivers and books checks via the interface. |
+| **REST interface** | The customer's system creates and maintains drivers and books checks via the interface. |
 
 **Inheritance:** The data source is set at the tenant and applies to every company below it that
 has no value of its own. If nothing is set anywhere in the company chain, **"Manual"** applies.
@@ -48,7 +48,7 @@ Below the selection you see what actually applies and where it comes from, for e
 
 ### What changes
 
-**From Carano to "Manual" or "REST API":**
+**From Carano to "Manual" or "REST interface":**
 
 - The Carano import and export skip these companies from their next run on.
 - Carano customer numbers, the Carano credentials and the drivers' Carano IDs **are kept**. You
@@ -67,7 +67,7 @@ drivers again.
     Before switching back, check that the driver list in Carano is up to date: the import removes
     Carano drivers that Carano no longer lists as active, as usual.
 
-**Leaving "REST API":** The company's active API keys are revoked. The customer system can no
+**Leaving "REST interface":** The company's active API keys are revoked. The customer system can no
 longer authenticate with them.
 
 ### Existing companies
@@ -90,24 +90,25 @@ The stored password is **never displayed** — the field stays empty:
 - **Type a new password** to replace the stored one.
 - Click **"Remove stored password"** to delete it.
 
-The **"Import sub-company from Carano"** button is only available in "Carano" mode. How to import
+Credentials and the settings for departed drivers below them apply only after **"Save"** at the top right — unlike switching the data source and the API keys, which take effect immediately even though the whole section carries the "takes effect immediately" mark.
+
+The **"Import subsidiary from Carano"** button (page header, top right; "Import sub-company from Carano" is only the dialog title) is visible to users with the `CaranoImport` permission. It can only be used in "Carano" mode and is greyed out for any other data source. How to import
 companies from Carano is described under [Carano connection](company-carano-connection.md).
 
-## Data source "REST API": API keys
+## Data source "REST interface": API keys
 
-In "REST API" mode you manage the keys the customer system uses to authenticate at the interface.
+In "REST interface" mode you manage the keys the customer system uses to authenticate at the interface.
 
 ### "API keys" overview
 
-| Column | Content |
-|---|---|
-| **Name** | a name of your choice, e.g. the connecting system |
-| **Key** | only the public beginning, e.g. `vfk_1a2b3c4d_…` — enough to talk to the customer about the same key |
-| **Acts as** | the user on whose behalf the key works |
-| **Created** | time of creation |
-| **Last used** | last successful request with this key |
-| **Expires** | optional expiry date |
-| **Status** | *Active*, *Revoked* or *Expired* |
+Every key appears as its own card. The card's top line shows the **name** (of your choice, e.g. the connecting system),
+the public beginning of the key, e.g. `vfk_1a2b3c4d_…` (enough to talk to the customer about the same key), the **status**
+(*Active*, *Revoked* or *Expired*) and the **"Revoke"** button. A line below names, each with its label:
+
+- **Acts as:** the user on whose behalf the key works,
+- **Created:** time of creation,
+- **Last used:** last successful request with this key ("never" while unused),
+- **Expires:** optional expiry date ("–" without expiry).
 
 **"Revoke"** blocks a key permanently after a confirmation prompt. Revoked keys stay in the list
 for traceability.
@@ -119,7 +120,7 @@ for traceability.
     - **Name** (required) — for example the name of the connecting system.
     - **Acts as** — an active user of this company with the right to manage users; typically the
       customer's existing API user. Alternatively choose **"New technical API user"**: this
-      creates a user "API &lt;company name&gt;" with the company administrator role, **without an
+      creates a user "API &lt;company name&gt;" with the fleet manager role, **without an
       e-mail address and without a password**. It cannot log in anywhere; only the key acts on its
       behalf.
     - **Expires on** (optional) — after this date the key is rejected.

@@ -29,7 +29,7 @@ Pick the tile that matches your mail system:
 | **SMTP** ("Set up manually") | Any other mail server. | You enter server, port, user and password yourself, ideally together with your IT. |
 
 If sign-in via Microsoft or Google is not set up yet, the buttons are locked and a notice names your contact at VeriFleet.
-When you connect, your open changes are saved first. Once connected, the section shows **"Connected as …"**, provider and
+Whenever you connect or reconnect, your open changes are saved first. Once connected, the section shows **"Connected as …"**, provider and
 sign-in type, the **last successful send**, the **last error** and the sending limit; **"Reconnect"** renews the sign-in.
 
 The steps are in the guide [Own mailbox as sender](guide-own-mailbox.md).
@@ -41,7 +41,7 @@ is collapsed; **"Set up manually"** preselects SMTP there.
 
 | Field | What it means |
 |---|---|
-| **Provider** | Which service sends: Microsoft 365, Google Workspace or SMTP. |
+| **Provider** | Which service sends: Microsoft 365, Google Workspace or SMTP. There are also **"VeriFleet mailbox"** (no own mailbox, like "Inherit") and **"SendGrid"** (sending through VeriFleet's mail service with your from address; only by arrangement with VeriFleet, not throttled). |
 | **Authentication mode** | "Connected user account (OAuth)": sign-in with one click. "App permission (IT administration)": a service account set up by your IT. "Username/password": directly at the mail server (SMTP). |
 | **From address** | Drivers see this address as the sender. It must belong to the mailbox (SMTP servers often reject foreign senders). When connecting, VeriFleet fills it in itself; it is required for SMTP and Google. |
 | **Display name** | The name next to the address, for example "Fleet Muster Ltd". Empty = product name from "Details in the emails". When connecting, VeriFleet takes the account's name if the field is empty. |
@@ -76,7 +76,7 @@ mail need a stored mailbox and deleting should not wait for "Save".
 ## Mail texts
 
 A catalogue **"All mails & stages"** of all mails VeriFleet sends for the company, with trigger, stage and status. Per mail:
-**View** (preview with sample data, nothing is sent) and **Override** or **Create**; below it **this company's own
+**View** (preview with sample data, nothing is sent) and, depending on the state, **Edit** (for an own template), **Override** (for an inherited or built-in template) or **Create** (when there is no default text); below it **this company's own
 templates** with **"Create new template"**.
 
 | Status | Meaning |
@@ -98,7 +98,7 @@ Product name, support address, imprint and data protection as they appear in the
 | Setting | What it does |
 |---|---|
 | **Product name** | Name of the software in the mails; also the sender name when no display name is set. |
-| **Support e-mail** | Contact address in mails and in the profile menu ("Support"). |
+| **Support e-mail** | Contact address in mails and in the profile menu (entry "Support EMail"). |
 | **URL Imprint**, **Data protection URL** | Links in the footer of the mails. |
 
 Choose **"Inherit"** (default) or **"Set own details"**. When you switch, the fields are already filled with the parent

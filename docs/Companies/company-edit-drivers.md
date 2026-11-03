@@ -25,19 +25,22 @@ sind das Tag 0, 7, 14 und ab Tag 21.
 
 ## Ablauf von Führerschein und Fahrerqualifikation
 
-Die Warnungen gehen **immer per E-Mail**, auch bei Kontaktkanal SMS. Fahrer ohne E-Mail-Adresse werden nicht gewarnt; sie
-erscheinen weiter in der wöchentlichen Liste an die Kontaktadressen der Firma.
+Die Warnungen gehen **immer per E-Mail**, auch bei Kontaktkanal SMS, und nur an Benutzer mit der Rolle Fahrer. Fahrer ohne E-Mail-Adresse werden nicht gewarnt; sie
+erscheinen weiter in der wöchentlichen Mail an die Kontaktadressen der Firma (Liste „Ablaufende Führerscheine“).
 
 | Einstellung | Was sie bewirkt | Standard |
 |---|---|---|
-| **Warnung vor Ablauf des Führerscheins** | So viele Tage vor dem Ablaufdatum wird der Fahrer gewarnt (0 bis 365). **0 = keine Warnung.** | Übernehmen; ohne Vorgabe keine Warnung |
-| **Kontrolle vorziehen** | Legt mit der Warnung gleich eine neue Kontrolle an (außer es ist schon eine offen), damit der neue Führerschein vor Ablauf des alten vorliegt. Nur möglich, wenn die Warnung eingeschaltet ist. | Übernehmen; ohne Vorgabe aus |
-| **Warnung vor Ablauf des Nachweises** und **Prüfung vorziehen** (Abschnitt „Fahrerqualifikation (FQN)“) | Dasselbe für den Fahrerqualifizierungsnachweis. Ist die FQN-Kontrolle nicht gebucht, steht dort stattdessen ein Hinweis. | Übernehmen; ohne Vorgabe keine Warnung, aus |
+| **Warnung vor Ablauf des Führerscheins** | So viele Tage vor dem Ablaufdatum bekommt der Fahrer eine Warn-Mail (0 bis 365), **einmal je Ablaufdatum**. **0 = keine Warnung.** Gilt für Fahrer mit gebuchter Führerscheinkontrolle und bekanntem Ablaufdatum (aus der letzten erfolgreichen Kontrolle). | Übernehmen; ohne Vorgabe keine Warnung |
+| **Kontrolle vorziehen** | Legt im Warnzeitraum eine neue Kontrolle an, damit der neue Führerschein vor Ablauf des alten vorliegt. Das geschieht unabhängig von E-Mail-Adresse und Warn-Mail, aber nur, wenn keine Kontrolle offen ist und im Warnzeitraum noch keine angefordert wurde, also höchstens einmal je Zeitraum. Nur möglich, wenn die Warnung eingeschaltet ist. | Übernehmen; ohne Vorgabe aus |
+| **Warnung vor Ablauf des Nachweises** und **Prüfung vorziehen** (Abschnitt „Fahrerqualifikation (FQN)“) | Dasselbe für den Fahrerqualifizierungsnachweis. Fahrer, deren Schlüsselzahl 95 noch gültig ist, werden nicht gewarnt. Ist die FQN-Kontrolle nicht gebucht, steht dort stattdessen ein Hinweis. | Übernehmen; ohne Vorgabe keine Warnung, aus |
 
 ## Wöchentliche Eskalationsliste
 
-Liste der Fahrer mit überfälliger Kontrolle, versandt **freitags um 22 Uhr** an die Kontaktadressen
-unter [Stammdaten & Dienste](company-edit-master-data.md). Die Einstellung gilt nur für diese Firma.
+Eine Mail mit bis zu drei Excel-Listen, versandt **freitags um 22 Uhr** (Serverzeit; in der Betriebsumgebung Europe/Berlin)
+an die Kontaktadressen unter [Stammdaten & Dienste](company-edit-master-data.md): **„Versäumte Kontrollen“** (Fahrer mit
+überfälliger Kontrolle), **„Versäumte Unterweisungen“** (E-Learning) und **„Ablaufende Führerscheine“** (innerhalb des
+Warnzeitraums der Führerschein-Warnung). Listen ohne Einträge entfallen; sind alle leer, geht keine Mail. Die Einstellung
+gilt nur für diese Firma.
 
 | Auswahl | Bedeutung |
 |---|---|

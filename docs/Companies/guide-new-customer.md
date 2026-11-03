@@ -5,7 +5,7 @@
    Fuhrparkleitung** ein und speichern Sie. Erst danach sind die weiteren Einstellungen verfügbar (2FA, gebuchte
    Dienste, Erinnerungen, Mails, automatische Prüfung).
 3. Prüfen Sie **Gebuchte Dienste** und **2FA** (beides lässt sich von der Mutterfirma übernehmen).
-4. Prüfen Sie unter [Fahrer & Kontrollen](company-edit-drivers.md) das **Kontroll-Intervall** (Voreinstellung 180 Tage;
+4. Prüfen Sie unter [Fahrer & Kontrollen](company-edit-drivers.md) das Feld **„Kontrolle alle … Tage“** (Voreinstellung 180 Tage;
    es gilt nur für diese Firma und wird nicht übernommen) sowie Kontaktkanal und Abstand der Erinnerungen. Bei Kontaktkanal
    und Abstand genügt meist **„Übernehmen“**.
 5. Wählen Sie unter [Plattform](company-edit-platform.md) die **Abrechnung** und die
